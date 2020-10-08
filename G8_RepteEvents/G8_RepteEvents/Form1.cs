@@ -66,7 +66,7 @@ namespace G8_RepteEvents
             }
         }
 
-        private void TXB_codi_Leave_1(object sender, EventArgs e)
+        private void TXB_codi_Validating(object sender, CancelEventArgs e)
         {
             if (TXB_codi.Text == "MAGA")
             {
@@ -74,13 +74,14 @@ namespace G8_RepteEvents
                 TBX_departament.Text = "Comercial";
                 TXB_codiusuari.Enabled = false;
                 TBX_departament.Enabled = false;
-
+                e.Cancel = true;
             }
             else
             {
                 TXB_codiusuari.Text = "Usuari desconegut";
                 TXB_codiusuari.Enabled = false;
                 TBX_departament.Text = string.Empty;
+                e.Cancel = false;
             }
         }
     }

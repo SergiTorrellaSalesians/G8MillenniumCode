@@ -90,16 +90,16 @@
             // TXB_codi
             // 
             this.TXB_codi.Location = new System.Drawing.Point(109, 61);
-            this.TXB_codi.Multiline = true;
             this.TXB_codi.Name = "TXB_codi";
             this.TXB_codi.Size = new System.Drawing.Size(70, 20);
             this.TXB_codi.TabIndex = 5;
-            this.TXB_codi.Leave += new System.EventHandler(this.TXB_codi_Leave_1);
+            this.TXB_codi.Validating += new System.ComponentModel.CancelEventHandler(this.TXB_codi_Validating);
             // 
             // TXB_codiusuari
             // 
             this.TXB_codiusuari.Location = new System.Drawing.Point(186, 61);
             this.TXB_codiusuari.Name = "TXB_codiusuari";
+            this.TXB_codiusuari.ReadOnly = true;
             this.TXB_codiusuari.Size = new System.Drawing.Size(100, 20);
             this.TXB_codiusuari.TabIndex = 6;
             // 
@@ -107,6 +107,7 @@
             // 
             this.TBX_departament.Location = new System.Drawing.Point(109, 90);
             this.TBX_departament.Name = "TBX_departament";
+            this.TBX_departament.ReadOnly = true;
             this.TBX_departament.Size = new System.Drawing.Size(177, 20);
             this.TBX_departament.TabIndex = 7;
             // 
