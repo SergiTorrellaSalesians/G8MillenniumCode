@@ -36,5 +36,28 @@ namespace G8_RepteEvents
         {
 
         }
+
+        private void TXB_codi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TXB_codi_Leave_1(object sender, EventArgs e)
+        {
+            if (TXB_codi.Text == "MAGA")
+            {
+                TXB_codiusuari.Text = "Manel Garcia";
+                TBX_departament.Text = "Comercial";
+                TXB_codiusuari.Enabled = false;
+                TBX_departament.Enabled = false;
+
+            }
+            else
+            {
+                TXB_codiusuari.Text = "Usuari desconegut";
+                TXB_codiusuari.Enabled = false;
+                TBX_departament.Text = string.Empty;
+            }
+        }
     }
 }

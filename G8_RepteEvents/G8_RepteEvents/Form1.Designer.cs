@@ -98,6 +98,8 @@
             this.TXB_codi.Name = "TXB_codi";
             this.TXB_codi.Size = new System.Drawing.Size(70, 20);
             this.TXB_codi.TabIndex = 5;
+            this.TXB_codi.TextChanged += new System.EventHandler(this.TXB_codi_TextChanged);
+            this.TXB_codi.Leave += new System.EventHandler(this.TXB_codi_Leave_1);
             // 
             // TXB_codiusuari
             // 

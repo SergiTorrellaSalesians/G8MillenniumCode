@@ -1,0 +1,10 @@
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEvents\G8_RepteEvents\obj\Debug\G8_RepteEvents.csprojAssemblyReference.cache
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEvents\G8_RepteEvents\obj\Debug\G8_RepteEvents.FRM_esdeveniment.resources
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEvents\G8_RepteEvents\obj\Debug\G8_RepteEvents.Properties.Resources.resources
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEvents\G8_RepteEvents\obj\Debug\G8_RepteEvents.csproj.GenerateResource.cache
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEvents\G8_RepteEvents\obj\Debug\G8_RepteEvents.csproj.CoreCompileInputs.cache
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEvents\G8_RepteEvents\bin\Debug\G8_RepteEvents.exe.config
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEvents\G8_RepteEvents\bin\Debug\G8_RepteEvents.exe
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEvents\G8_RepteEvents\bin\Debug\G8_RepteEvents.pdb
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEvents\G8_RepteEvents\obj\Debug\G8_RepteEvents.exe
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEvents\G8_RepteEvents\obj\Debug\G8_RepteEvents.pdb
