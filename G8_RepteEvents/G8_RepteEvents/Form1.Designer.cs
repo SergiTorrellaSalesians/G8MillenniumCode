@@ -142,6 +142,7 @@
             this.BTN_calcul_liquidacio.TabIndex = 11;
             this.BTN_calcul_liquidacio.Text = "Calcular liquidació";
             this.BTN_calcul_liquidacio.UseVisualStyleBackColor = true;
+            this.BTN_calcul_liquidacio.Click += new System.EventHandler(this.BTN_calcul_liquidacio_Click);
             // 
             // FRM_esdeveniment
             // 
@@ -160,6 +161,7 @@
             this.Controls.Add(this.LBL_usuari);
             this.Name = "FRM_esdeveniment";
             this.Text = "Esdeveniments";
+            this.Load += new System.EventHandler(this.FRM_esdeveniment_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
