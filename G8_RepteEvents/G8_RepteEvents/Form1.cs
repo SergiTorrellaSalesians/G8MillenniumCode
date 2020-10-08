@@ -10,11 +10,31 @@ using System.Windows.Forms;
 
 namespace G8_RepteEvents
 {
-    public partial class Form1 : Form
+    public partial class FRM_esdeveniment : Form
     {
-        public Form1()
+        public FRM_esdeveniment()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
