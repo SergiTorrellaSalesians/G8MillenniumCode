@@ -50,7 +50,6 @@
             this.LBL_usuari.Size = new System.Drawing.Size(37, 13);
             this.LBL_usuari.TabIndex = 0;
             this.LBL_usuari.Text = "Usuari";
-            this.LBL_usuari.Click += new System.EventHandler(this.label1_Click);
             // 
             // LBL_departament
             // 
@@ -60,7 +59,6 @@
             this.LBL_departament.Size = new System.Drawing.Size(68, 13);
             this.LBL_departament.TabIndex = 1;
             this.LBL_departament.Text = "Departament";
-            this.LBL_departament.Click += new System.EventHandler(this.label2_Click);
             // 
             // LBL_bestreta_setmanal
             // 
@@ -70,7 +68,6 @@
             this.LBL_bestreta_setmanal.Size = new System.Drawing.Size(91, 13);
             this.LBL_bestreta_setmanal.TabIndex = 2;
             this.LBL_bestreta_setmanal.Text = "Bestreta setmanal";
-            this.LBL_bestreta_setmanal.Click += new System.EventHandler(this.label3_Click);
             // 
             // LBL_despesa_setmanal
             // 
@@ -80,7 +77,6 @@
             this.LBL_despesa_setmanal.Size = new System.Drawing.Size(94, 13);
             this.LBL_despesa_setmanal.TabIndex = 3;
             this.LBL_despesa_setmanal.Text = "Despesa setmanal";
-            this.LBL_despesa_setmanal.Click += new System.EventHandler(this.label4_Click);
             // 
             // LBL_total_liquidacio
             // 
@@ -98,7 +94,6 @@
             this.TXB_codi.Name = "TXB_codi";
             this.TXB_codi.Size = new System.Drawing.Size(70, 20);
             this.TXB_codi.TabIndex = 5;
-            this.TXB_codi.TextChanged += new System.EventHandler(this.TXB_codi_TextChanged);
             this.TXB_codi.Leave += new System.EventHandler(this.TXB_codi_Leave_1);
             // 
             // TXB_codiusuari
@@ -136,7 +131,6 @@
             this.TBX_total.ReadOnly = true;
             this.TBX_total.Size = new System.Drawing.Size(69, 20);
             this.TBX_total.TabIndex = 10;
-            this.TBX_total.TextChanged += new System.EventHandler(this.TBX_total_TextChanged);
             // 
             // BTN_calcul_liquidacio
             // 
@@ -165,6 +159,7 @@
             this.Controls.Add(this.LBL_usuari);
             this.Name = "FRM_esdeveniment";
             this.Text = "Esdeveniments";
+            this.Load += new System.EventHandler(this.FRM_esdeveniment_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

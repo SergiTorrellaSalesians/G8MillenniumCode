@@ -16,28 +16,7 @@ namespace G8_RepteEvents
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TXB_codi_TextChanged(object sender, EventArgs e)
+        private void FRM_esdeveniment_Load(object sender, EventArgs e)
         {
 
         }
@@ -86,7 +65,7 @@ namespace G8_RepteEvents
                 MessageBox.Show("Omple els valors bestreta i despesa");
             }
         }
-        
+
         private void TXB_codi_Leave_1(object sender, EventArgs e)
         {
             if (TXB_codi.Text == "MAGA")
@@ -103,11 +82,6 @@ namespace G8_RepteEvents
                 TXB_codiusuari.Enabled = false;
                 TBX_departament.Text = string.Empty;
             }
-        }
-
-        private void TBX_total_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
