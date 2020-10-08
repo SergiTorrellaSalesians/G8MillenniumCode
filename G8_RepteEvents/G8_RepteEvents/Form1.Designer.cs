@@ -133,8 +133,10 @@
             // 
             this.TBX_total.Location = new System.Drawing.Point(110, 190);
             this.TBX_total.Name = "TBX_total";
+            this.TBX_total.ReadOnly = true;
             this.TBX_total.Size = new System.Drawing.Size(69, 20);
             this.TBX_total.TabIndex = 10;
+            this.TBX_total.TextChanged += new System.EventHandler(this.TBX_total_TextChanged);
             // 
             // BTN_calcul_liquidacio
             // 
@@ -163,7 +165,6 @@
             this.Controls.Add(this.LBL_usuari);
             this.Name = "FRM_esdeveniment";
             this.Text = "Esdeveniments";
-            this.Load += new System.EventHandler(this.FRM_esdeveniment_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

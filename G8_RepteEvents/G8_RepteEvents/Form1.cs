@@ -104,5 +104,10 @@ namespace G8_RepteEvents
                 TBX_departament.Text = string.Empty;
             }
         }
+
+        private void TBX_total_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
