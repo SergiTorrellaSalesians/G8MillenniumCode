@@ -16,7 +16,7 @@ usuari desconegut
 
 
 Per calcular la liquidació es prem el botó Calcular liquidació i es
-bestreta setmanal - despesa setmanal
+resta bestreta setmanal - despesa setmanal
 
 si bestreta setmanal introduida >120
 bestreta setmanal es torna (VERMELL LLETRES BLANQUES)
