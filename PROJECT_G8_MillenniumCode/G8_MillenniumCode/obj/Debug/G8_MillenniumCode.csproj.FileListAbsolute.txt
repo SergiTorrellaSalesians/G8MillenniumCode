@@ -1,0 +1,10 @@
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\bin\Debug\G8_MillenniumCode.exe.config
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\bin\Debug\G8_MillenniumCode.exe
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\bin\Debug\G8_MillenniumCode.pdb
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\obj\Debug\G8_MillenniumCode.csprojAssemblyReference.cache
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\obj\Debug\G8_MillenniumCode.Form1.resources
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\obj\Debug\G8_MillenniumCode.Properties.Resources.resources
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\obj\Debug\G8_MillenniumCode.csproj.GenerateResource.cache
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\obj\Debug\G8_MillenniumCode.csproj.CoreCompileInputs.cache
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\obj\Debug\G8_MillenniumCode.exe
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\obj\Debug\G8_MillenniumCode.pdb
