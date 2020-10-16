@@ -1,0 +1,6 @@
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MilleniumCode_Clases\bin\Debug\G8_MilleniumCode_Clases.dll
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MilleniumCode_Clases\bin\Debug\G8_MilleniumCode_Clases.pdb
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MilleniumCode_Clases\obj\Debug\G8_MilleniumCode_Clases.csprojAssemblyReference.cache
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MilleniumCode_Clases\obj\Debug\G8_MilleniumCode_Clases.csproj.CoreCompileInputs.cache
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MilleniumCode_Clases\obj\Debug\G8_MilleniumCode_Clases.dll
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MilleniumCode_Clases\obj\Debug\G8_MilleniumCode_Clases.pdb

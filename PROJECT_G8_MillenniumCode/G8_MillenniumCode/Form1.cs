@@ -16,5 +16,11 @@ namespace G8_MillenniumCode
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frm_base frm = new frm_base();
+            frm.Show();
+        }
     }
 }
