@@ -28,27 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.pbx_logo = new System.Windows.Forms.PictureBox();
+            this.lbl_loading = new System.Windows.Forms.Label();
+            this.tmr_timer_splash = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbx_logo)).BeginInit();
             this.SuspendLayout();
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(202, 319);
+            this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(219)))), ((int)(((byte)(58)))));
+            this.progressBar1.Location = new System.Drawing.Point(211, 319);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(372, 23);
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.progressBar1.TabIndex = 0;
             // 
             // pbx_logo
             // 
+            this.pbx_logo.BackColor = System.Drawing.Color.Transparent;
             this.pbx_logo.Image = global::G8_MillenniumCode.Properties.Resources.Reverse_LOGO;
-            this.pbx_logo.Location = new System.Drawing.Point(242, 31);
+            this.pbx_logo.Location = new System.Drawing.Point(245, 27);
             this.pbx_logo.Name = "pbx_logo";
             this.pbx_logo.Size = new System.Drawing.Size(298, 244);
             this.pbx_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbx_logo.TabIndex = 1;
             this.pbx_logo.TabStop = false;
+            // 
+            // lbl_loading
+            // 
+            this.lbl_loading.AutoSize = true;
+            this.lbl_loading.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_loading.Font = new System.Drawing.Font("Carlito", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_loading.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbl_loading.Location = new System.Drawing.Point(353, 284);
+            this.lbl_loading.Name = "lbl_loading";
+            this.lbl_loading.Size = new System.Drawing.Size(87, 23);
+            this.lbl_loading.TabIndex = 2;
+            this.lbl_loading.Text = "Loading...";
+            // 
+            // tmr_timer_splash
+            // 
+            this.tmr_timer_splash.Interval = 1000;
+            this.tmr_timer_splash.Tick += new System.EventHandler(this.tmr_timer_splash_Tick);
             // 
             // frm_splash
             // 
@@ -56,7 +81,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.BackgroundImage = global::G8_MillenniumCode.Properties.Resources.istockphoto_606667670_612x612;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_loading);
             this.Controls.Add(this.pbx_logo);
             this.Controls.Add(this.progressBar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -65,6 +92,7 @@
             this.Load += new System.EventHandler(this.frm_splash_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbx_logo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -72,5 +100,7 @@
 
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.PictureBox pbx_logo;
+        private System.Windows.Forms.Label lbl_loading;
+        private System.Windows.Forms.Timer tmr_timer_splash;
     }
 }
