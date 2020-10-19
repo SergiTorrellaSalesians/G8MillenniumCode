@@ -14,10 +14,5 @@ namespace G8M_FormBase
 		{
 			InitializeComponent();
 		}
-
-		private void frm_MenuTemplate_Load(object sender, EventArgs e)
-		{
-
-		}
 	}
 }
