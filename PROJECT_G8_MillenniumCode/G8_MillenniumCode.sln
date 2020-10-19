@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G8_MillenniumCode", "G8_Mil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G8M_FormBase", "G8M_FormBase\G8M_FormBase.csproj", "{F4633FEA-BC70-4823-BF39-03BDB0E42018}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G8M_LibreriaUsuario", "G8M_LibreriaUsuario\G8M_LibreriaUsuario.csproj", "{66CF8FC2-3464-4E92-987C-A5183EC51407}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F4633FEA-BC70-4823-BF39-03BDB0E42018}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4633FEA-BC70-4823-BF39-03BDB0E42018}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4633FEA-BC70-4823-BF39-03BDB0E42018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66CF8FC2-3464-4E92-987C-A5183EC51407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66CF8FC2-3464-4E92-987C-A5183EC51407}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66CF8FC2-3464-4E92-987C-A5183EC51407}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66CF8FC2-3464-4E92-987C-A5183EC51407}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

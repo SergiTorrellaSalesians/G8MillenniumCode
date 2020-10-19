@@ -25,3 +25,5 @@ C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_Mi
 C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\obj\Debug\G8_MillenniumCode.frm_UserLogin.resources
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\obj\Debug\G8_MillenniumCode.frm_UserLogin.resources
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\obj\Debug\G8_MillenniumCode.frm_splash.resources
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\bin\Debug\G8M_LibreriaUsuario.dll
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\bin\Debug\G8M_LibreriaUsuario.pdb

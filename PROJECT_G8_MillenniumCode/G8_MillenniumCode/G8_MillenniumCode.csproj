@@ -121,6 +121,10 @@
       <Project>{f4633fea-bc70-4823-bf39-03bdb0e42018}</Project>
       <Name>G8M_FormBase</Name>
     </ProjectReference>
+    <ProjectReference Include="..\G8M_LibreriaUsuario\G8M_LibreriaUsuario.csproj">
+      <Project>{66cf8fc2-3464-4e92-987c-a5183ec51407}</Project>
+      <Name>G8M_LibreriaUsuario</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
