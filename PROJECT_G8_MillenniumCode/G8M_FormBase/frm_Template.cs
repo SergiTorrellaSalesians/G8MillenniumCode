@@ -56,5 +56,10 @@ namespace G8M_FormBase
 		{
 			mouseDown = false;
 		}
+
+		private void frm_Template_Load(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
