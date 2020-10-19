@@ -95,7 +95,7 @@
 			this.txt_topbarTitle.TabIndex = 1;
 			this.txt_topbarTitle.Text = "DEMO";
 			// 
-			// frm_formbase
+			// frm_Template
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackColor = System.Drawing.Color.Black;
@@ -104,8 +104,9 @@
 			this.ControlBox = false;
 			this.Controls.Add(this.topbar);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Name = "frm_formbase";
+			this.Name = "frm_Template";
 			this.Text = "frm_formbase";
+			this.Load += new System.EventHandler(this.frm_Template_Load);
 			this.topbar.ResumeLayout(false);
 			this.topbar.PerformLayout();
 			this.ResumeLayout(false);
