@@ -10,8 +10,8 @@ using System.Windows.Forms;
 
 namespace G8M_FormBase
 {
-    public partial class frm_Template : Form
-    {
+	public partial class frm_Template : Form
+	{
 		private bool mouseDown;
 		private Point lastLocation;
 
@@ -22,9 +22,9 @@ namespace G8M_FormBase
 
 
 		public frm_Template()
-        {
-            InitializeComponent();
-        }
+		{
+			InitializeComponent();
+		}
 
 		private void btn_topbarMinimize_Click(object sender, EventArgs e)
 		{

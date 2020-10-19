@@ -16,7 +16,7 @@ namespace G8_MillenniumCode
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_UserLogin()); //Primera pantalla que aparece del programa
+            Application.Run(new frm_splash()); //Primera pantalla que aparece del programa
         }
     }
 }
