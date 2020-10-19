@@ -30,6 +30,8 @@ namespace G8_MillenniumCode
 			{
 				MessageBox.Show("Login correct");
 			}
+
+			//omg
 		}
 
 		private void frm_UserLogin_Load(object sender, EventArgs e)
