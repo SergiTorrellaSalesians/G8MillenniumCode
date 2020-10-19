@@ -77,5 +77,8 @@
   <ItemGroup>
     <None Include="Resources\istockphoto-606667670-612x612.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reverse LOGO.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

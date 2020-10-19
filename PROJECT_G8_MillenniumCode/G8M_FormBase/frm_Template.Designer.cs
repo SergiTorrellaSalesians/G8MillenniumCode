@@ -91,9 +91,9 @@
 			this.txt_topbarTitle.ForeColor = System.Drawing.Color.Yellow;
 			this.txt_topbarTitle.Location = new System.Drawing.Point(10, 8);
 			this.txt_topbarTitle.Name = "txt_topbarTitle";
-			this.txt_topbarTitle.Size = new System.Drawing.Size(62, 24);
+			this.txt_topbarTitle.Size = new System.Drawing.Size(114, 24);
 			this.txt_topbarTitle.TabIndex = 1;
-			this.txt_topbarTitle.Text = "DEMO";
+			this.txt_topbarTitle.Text = "TEMPLATE";
 			// 
 			// frm_Template
 			// 
