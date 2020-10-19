@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace G8_MillenniumCode
 {
-    public partial class frm_UserLogin : G8M_FormBase.frm_Template
-    {
-        public frm_UserLogin()
-        {
-            InitializeComponent();
-        }
+	public partial class frm_UserLogin : G8M_FormBase.frm_Template
+	{
+		public frm_UserLogin()
+		{
+			InitializeComponent();
+		}
 	}
 }
