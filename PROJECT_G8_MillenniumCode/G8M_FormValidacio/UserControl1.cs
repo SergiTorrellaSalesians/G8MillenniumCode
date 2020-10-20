@@ -31,12 +31,12 @@ namespace G8M_FormValidacio
                 if (Validat=true)
                 {
                     label1.Text = "Oleeee";
-                    pictureBox1.Image =;
+                    img_correct.Visible = true;
                 }
                 else
                 {
                     label1.Text = "Fuera de aquí o te parto";
-                    pictureBox1.Image = ;
+                    img_wrong.Visible = true;
                 }
             }
         }
@@ -62,6 +62,9 @@ namespace G8M_FormValidacio
             }
         }
 
-       
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
