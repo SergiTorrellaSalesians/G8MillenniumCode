@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_MenuTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MenuTemplate.Designer.cs">
+      <DependentUpon>frm_MenuTemplate.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Template.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_MenuTemplate.resx">
+      <DependentUpon>frm_MenuTemplate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Template.resx">
       <DependentUpon>frm_Template.cs</DependentUpon>
     </EmbeddedResource>
@@ -67,6 +76,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\istockphoto-606667670-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reverse LOGO.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
