@@ -32,7 +32,7 @@
 			// 
 			// frm_PantallaPrincipal
 			// 
-			this.ClientSize = new System.Drawing.Size(672, 323);
+			this.ClientSize = new System.Drawing.Size(610, 368);
 			this.Name = "frm_PantallaPrincipal";
 			this.TopBar_Title = "MAIN";
 			this.Load += new System.EventHandler(this.frm_PantallaPrincipal_Load);
