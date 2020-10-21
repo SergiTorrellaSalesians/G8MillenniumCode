@@ -31,7 +31,7 @@ namespace G8_MillenniumCode
 				MessageBox.Show("Login correct");
 			}
 
-			//omg
+			//omgwaatt
 		}
 
 		private void frm_UserLogin_Load(object sender, EventArgs e)
