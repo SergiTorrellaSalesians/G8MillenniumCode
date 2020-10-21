@@ -22,7 +22,7 @@ namespace G8_MillenniumCode
         private void frm_splash_Load(object sender, EventArgs e)
         {
             tmr_timer_splash.Start();
-            timeLeft = 10;
+            timeLeft = 5;
         }
 
         private void tmr_timer_splash_Tick(object sender, EventArgs e)

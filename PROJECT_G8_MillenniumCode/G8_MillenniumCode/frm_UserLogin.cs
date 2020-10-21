@@ -16,6 +16,7 @@ namespace G8_MillenniumCode
 		public frm_UserLogin()
 		{
 			InitializeComponent();
+			lbl_msg.Text = "";
 		}
 
 		private void tbn_validaciousuari_Click(object sender, EventArgs e)
@@ -25,18 +26,29 @@ namespace G8_MillenniumCode
 
 			if (!validar)
 			{
-				MessageBox.Show("Login details are incorrect");
+				lbl_msg.ForeColor = Color.Red;
+				lbl_msg.Text = "Login details are incorrect.\nGet out immediately, sith.";
 			} else
 			{
-				MessageBox.Show("Login correct");
+				lbl_msg.ForeColor = Color.Green;
+				lbl_msg.Text = "Login details are correct.\nInitializing program...";
+				//Add Countdown (class)
 			}
-
-			//omgwaatt
 		}
 
 		private void frm_UserLogin_Load(object sender, EventArgs e)
 		{
 
+		}
+
+		private void tbx_username_TextChanged(object sender, EventArgs e)
+		{
+			lbl_msg.Text = "";
+		}
+
+		private void tbx_password_TextChanged(object sender, EventArgs e)
+		{
+			lbl_msg.Text = "";
 		}
 	}
 }
