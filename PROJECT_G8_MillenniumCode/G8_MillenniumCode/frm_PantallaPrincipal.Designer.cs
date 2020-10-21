@@ -28,18 +28,31 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.formShowPanel = new System.Windows.Forms.Panel();
 			this.SuspendLayout();
+			// 
+			// formShowPanel
+			// 
+			this.formShowPanel.BackColor = System.Drawing.Color.Transparent;
+			this.formShowPanel.Location = new System.Drawing.Point(167, 50);
+			this.formShowPanel.Name = "formShowPanel";
+			this.formShowPanel.Size = new System.Drawing.Size(619, 304);
+			this.formShowPanel.TabIndex = 3;
 			// 
 			// frm_PantallaPrincipal
 			// 
-			this.ClientSize = new System.Drawing.Size(610, 368);
+			this.ClientSize = new System.Drawing.Size(798, 366);
+			this.Controls.Add(this.formShowPanel);
 			this.Name = "frm_PantallaPrincipal";
 			this.TopBar_Title = "MAIN";
 			this.Load += new System.EventHandler(this.frm_PantallaPrincipal_Load);
+			this.Controls.SetChildIndex(this.formShowPanel, 0);
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
+
+		private System.Windows.Forms.Panel formShowPanel;
 	}
 }

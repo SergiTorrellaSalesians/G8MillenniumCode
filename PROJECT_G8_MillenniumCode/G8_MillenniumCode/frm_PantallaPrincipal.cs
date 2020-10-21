@@ -17,7 +17,14 @@ namespace G8_MillenniumCode
 
 		private void frm_PantallaPrincipal_Load(object sender, EventArgs e)
 		{
-
+			/* //Codigo para mostrar form dentro del panel
+			frm_UserLogin insideForm = new frm_UserLogin();
+			insideForm.TopLevel = false;
+			insideForm.AutoScroll = true;
+			this.formShowPanel.Controls.Add(insideForm);
+			insideForm.FormBorderStyle = FormBorderStyle.None;
+			insideForm.Show();
+			*/
 		}
 	}
 }
