@@ -21,18 +21,26 @@ namespace G8_MillenniumCode
 
 		private void tbn_validaciousuari_Click(object sender, EventArgs e)
 		{
-			G8M_LibreriaUsuario.Metodos val = new Metodos();
-			bool validar = val.ValidacioLogin(tbx_username.Text, tbx_password.Text);
+			G8M_LibreriaUsuario.Metodos met = new Metodos();
+			bool validar = met.ValidacioLogin(tbx_username.Text, tbx_password.Text);
 
 			if (!validar)
 			{
 				lbl_msg.ForeColor = Color.Red;
 				lbl_msg.Text = "Login details are incorrect.\nGet out immediately, sith.";
-			} else
-			{
+			} else {
+				tbn_validaciousuari.Enabled = false;
+
 				lbl_msg.ForeColor = Color.Green;
 				lbl_msg.Text = "Login details are correct.\nInitializing program...";
-				//Add Countdown (class)
+
+				frm_PantallaPrincipal new_frm = new frm_PantallaPrincipal();
+
+				void fnc(){
+					new_frm.Show();
+					this.Hide();
+				}
+				met.SetTimeout(fnc, 3000);
 			}
 		}
 

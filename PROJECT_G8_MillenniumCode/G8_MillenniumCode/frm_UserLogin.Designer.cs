@@ -72,6 +72,7 @@
 			// 
 			this.tbx_password.Location = new System.Drawing.Point(302, 159);
 			this.tbx_password.Name = "tbx_password";
+			this.tbx_password.PasswordChar = '*';
 			this.tbx_password.Size = new System.Drawing.Size(153, 20);
 			this.tbx_password.TabIndex = 5;
 			this.tbx_password.TextChanged += new System.EventHandler(this.tbx_password_TextChanged);
@@ -96,7 +97,7 @@
 			this.lbl_msg.ForeColor = System.Drawing.Color.White;
 			this.lbl_msg.Location = new System.Drawing.Point(12, 257);
 			this.lbl_msg.Name = "lbl_msg";
-			this.lbl_msg.Size = new System.Drawing.Size(644, 34);
+			this.lbl_msg.Size = new System.Drawing.Size(644, 55);
 			this.lbl_msg.TabIndex = 7;
 			this.lbl_msg.Text = "Contrasenya incorrecta";
 			this.lbl_msg.TextAlign = System.Drawing.ContentAlignment.TopCenter;
