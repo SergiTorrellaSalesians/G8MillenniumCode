@@ -44,7 +44,7 @@
 			this.progressBar1.Location = new System.Drawing.Point(196, 301);
 			this.progressBar1.Name = "progressBar1";
 			this.progressBar1.Size = new System.Drawing.Size(395, 23);
-			this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+			this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
 			this.progressBar1.TabIndex = 0;
 			// 
 			// pbx_logo
@@ -72,7 +72,7 @@
 			// 
 			// tmr_timer_splash
 			// 
-			this.tmr_timer_splash.Interval = 1000;
+			this.tmr_timer_splash.Enabled = true;
 			this.tmr_timer_splash.Tick += new System.EventHandler(this.tmr_timer_splash_Tick);
 			// 
 			// frm_splash

@@ -13,7 +13,8 @@ namespace G8_MillenniumCode
 {
     public partial class frm_splash : Form
     {
-        private int timeLeft;
+        int val = 0;
+
         public frm_splash()
         {
             InitializeComponent();
@@ -22,23 +23,21 @@ namespace G8_MillenniumCode
         private void frm_splash_Load(object sender, EventArgs e)
         {
             tmr_timer_splash.Start();
-            timeLeft = 5;
         }
 
         private void tmr_timer_splash_Tick(object sender, EventArgs e)
         {
+            val += 3;
 
-            if (timeLeft > 0)
-            {
-                timeLeft = timeLeft - 1;
-                progressBar1.Value = progressBar1.Value + 5;
-            }
-            else
-            {
+            if (val >= 100) {
+                val = 100;
+
                 tmr_timer_splash.Stop();
-                new frm_UserLogin().Show();
+                frm_UserLogin new_frm = new frm_UserLogin();
+                new_frm.Show();
                 this.Hide();
             }
+            progressBar1.Value = val;
         }
     }
 }
