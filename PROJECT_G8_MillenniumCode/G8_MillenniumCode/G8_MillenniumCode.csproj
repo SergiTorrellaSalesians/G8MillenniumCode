@@ -131,7 +131,7 @@
       <Name>G8M_FormBase</Name>
     </ProjectReference>
     <ProjectReference Include="..\G8M_LibreriaControles\G8M_LibreriaControles.csproj">
-      <Project>{E4EE86A8-0F48-49FF-84B1-00E29CD07BEF}</Project>
+      <Project>{e4ee86a8-0f48-49ff-84b1-00e29cd07bef}</Project>
       <Name>G8M_LibreriaControles</Name>
     </ProjectReference>
     <ProjectReference Include="..\G8M_LibreriaUsuario\G8M_LibreriaUsuario.csproj">
