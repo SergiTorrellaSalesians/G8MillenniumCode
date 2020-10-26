@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using G8M_LibreriaUsuario;
@@ -13,6 +14,7 @@ namespace G8_MillenniumCode
 {
 	public partial class frm_UserLogin : G8M_FormBase.frm_Template
 	{
+		int timerCount = 0;
 		public frm_UserLogin()
 		{
 			InitializeComponent();
@@ -28,25 +30,14 @@ namespace G8_MillenniumCode
 			{
 				lbl_msg.ForeColor = Color.Red;
 				lbl_msg.Text = "Login details are incorrect.\nGet out immediately, sith.";
-			} else {
+			} else
+			{
 				tbn_validaciousuari.Enabled = false;
-
 				lbl_msg.ForeColor = Color.Green;
 				lbl_msg.Text = "Login details are correct.\nInitializing program...";
 
-				frm_PantallaPrincipal new_frm = new frm_PantallaPrincipal();
-
-				void fnc(){
-					new_frm.Show();
-					this.Hide();
-				}
-				met.SetTimeout(fnc, 3000);
+				TimerForm.Enabled = true;
 			}
-		}
-
-		private void frm_UserLogin_Load(object sender, EventArgs e)
-		{
-
 		}
 
 		private void tbx_username_TextChanged(object sender, EventArgs e)
@@ -57,6 +48,19 @@ namespace G8_MillenniumCode
 		private void tbx_password_TextChanged(object sender, EventArgs e)
 		{
 			lbl_msg.Text = "";
+		}
+
+		private void TimerForm_Tick(object sender, EventArgs e)
+		{
+			timerCount += 1;
+
+			if(timerCount >= 3)
+			{
+				frm_PantallaPrincipal new_frm = new frm_PantallaPrincipal();
+				new_frm.Show();
+				this.Hide();
+				TimerForm.Enabled = false;
+			}
 		}
 	}
 }

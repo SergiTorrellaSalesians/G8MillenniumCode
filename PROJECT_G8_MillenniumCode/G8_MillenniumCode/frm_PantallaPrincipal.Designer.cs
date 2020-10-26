@@ -29,35 +29,37 @@
 		private void InitializeComponent()
 		{
 			this.formShowPanel = new System.Windows.Forms.Panel();
-			this.customMenuPanel1 = new G8M_LibreriaControles.CustomMenuPanel();
+			this.MenuPanel = new System.Windows.Forms.Panel();
 			this.SuspendLayout();
 			// 
 			// formShowPanel
 			// 
 			this.formShowPanel.BackColor = System.Drawing.Color.Transparent;
-			this.formShowPanel.Location = new System.Drawing.Point(336, 50);
+			this.formShowPanel.Location = new System.Drawing.Point(155, 50);
 			this.formShowPanel.Name = "formShowPanel";
-			this.formShowPanel.Size = new System.Drawing.Size(450, 304);
+			this.formShowPanel.Size = new System.Drawing.Size(631, 302);
 			this.formShowPanel.TabIndex = 3;
 			// 
-			// customMenuPanel1
+			// MenuPanel
 			// 
-			this.customMenuPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-			this.customMenuPanel1.Location = new System.Drawing.Point(0, 39);
-			this.customMenuPanel1.Name = "customMenuPanel1";
-			this.customMenuPanel1.Size = new System.Drawing.Size(162, 327);
-			this.customMenuPanel1.TabIndex = 4;
+			this.MenuPanel.AutoScroll = true;
+			this.MenuPanel.BackColor = System.Drawing.Color.Transparent;
+			this.MenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
+			this.MenuPanel.Location = new System.Drawing.Point(0, 39);
+			this.MenuPanel.Name = "MenuPanel";
+			this.MenuPanel.Size = new System.Drawing.Size(149, 325);
+			this.MenuPanel.TabIndex = 4;
 			// 
 			// frm_PantallaPrincipal
 			// 
-			this.ClientSize = new System.Drawing.Size(798, 366);
-			this.Controls.Add(this.customMenuPanel1);
+			this.ClientSize = new System.Drawing.Size(798, 364);
+			this.Controls.Add(this.MenuPanel);
 			this.Controls.Add(this.formShowPanel);
 			this.Name = "frm_PantallaPrincipal";
 			this.TopBar_Title = "MAIN";
 			this.Load += new System.EventHandler(this.frm_PantallaPrincipal_Load);
 			this.Controls.SetChildIndex(this.formShowPanel, 0);
-			this.Controls.SetChildIndex(this.customMenuPanel1, 0);
+			this.Controls.SetChildIndex(this.MenuPanel, 0);
 			this.ResumeLayout(false);
 
 		}
@@ -65,6 +67,6 @@
 		#endregion
 
 		private System.Windows.Forms.Panel formShowPanel;
-		private G8M_LibreriaControles.CustomMenuPanel customMenuPanel1;
+		private System.Windows.Forms.Panel MenuPanel;
 	}
 }

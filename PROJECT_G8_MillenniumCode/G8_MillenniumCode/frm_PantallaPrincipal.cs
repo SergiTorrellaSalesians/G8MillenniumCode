@@ -1,4 +1,6 @@
-﻿using System;
+﻿using G8_MillenniumCode.Properties;
+using G8M_LibreriaControles;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +27,40 @@ namespace G8_MillenniumCode
 			insideForm.FormBorderStyle = FormBorderStyle.None;
 			insideForm.Show();
 			*/
+			LoadMenuTab();
+		}
+
+		private void LoadMenuTab(){
+			void btn_msg(object sender, EventArgs e)
+			{
+				Button btn = (Button)sender;
+				MessageBox.Show(btn.Name.ToString());
+			}
+			for (int i = 1; i <= 5; i++)
+			{
+				Button newButton = new Button();
+				{
+					newButton.Name = string.Format("Button{0}", i);
+					newButton.Text = string.Format("Button {0}", i);
+					newButton.Dock = DockStyle.Top;
+					newButton.FlatStyle = FlatStyle.Flat;
+					newButton.FlatAppearance.BorderSize = 1;
+					newButton.FlatAppearance.BorderColor = Color.Yellow;
+					newButton.Size = new System.Drawing.Size(1, 50);
+					newButton.Click += btn_msg;
+					MenuPanel.Controls.Add(newButton);
+				}
+			}
+
+			PictureBox newLogo = new PictureBox();
+			{
+				newLogo.Image = Resources.Reverse_LOGO;
+				newLogo.SizeMode = PictureBoxSizeMode.Zoom;
+				newLogo.BackColor = Color.Black;
+				newLogo.Dock = DockStyle.Top;
+				newLogo.Size = new System.Drawing.Size(1, 80);
+				MenuPanel.Controls.Add(newLogo);
+			}
 		}
 	}
 }

@@ -19,6 +19,7 @@ namespace G8M_LibreriaUsuario
 			return valid;
 		}
 
+		#region Función SetTimeOut (Funciona a medias)
 		public bool SetTimeout(Action theAction, int millisecond)
 		{
 			Stopwatch sw = new Stopwatch();
@@ -35,5 +36,6 @@ namespace G8M_LibreriaUsuario
 			theAction();
 			return true;
 		}
+		#endregion
 	}
 }

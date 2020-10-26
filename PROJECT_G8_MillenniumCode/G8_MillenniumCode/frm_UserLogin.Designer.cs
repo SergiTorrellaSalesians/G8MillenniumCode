@@ -28,12 +28,14 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.lbl_username = new System.Windows.Forms.Label();
 			this.lbl_password = new System.Windows.Forms.Label();
 			this.tbx_username = new System.Windows.Forms.TextBox();
 			this.tbx_password = new System.Windows.Forms.TextBox();
 			this.tbn_validaciousuari = new System.Windows.Forms.Button();
 			this.lbl_msg = new System.Windows.Forms.Label();
+			this.TimerForm = new System.Windows.Forms.Timer(this.components);
 			this.SuspendLayout();
 			// 
 			// lbl_username
@@ -102,6 +104,11 @@
 			this.lbl_msg.Text = "Contrasenya incorrecta";
 			this.lbl_msg.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
+			// TimerForm
+			// 
+			this.TimerForm.Interval = 1000;
+			this.TimerForm.Tick += new System.EventHandler(this.TimerForm_Tick);
+			// 
 			// frm_UserLogin
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -117,7 +124,6 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "frm_base";
 			this.TopBar_Title = "LOGIN";
-			this.Load += new System.EventHandler(this.frm_UserLogin_Load);
 			this.Controls.SetChildIndex(this.lbl_username, 0);
 			this.Controls.SetChildIndex(this.lbl_password, 0);
 			this.Controls.SetChildIndex(this.tbx_username, 0);
@@ -137,5 +143,6 @@
 		private System.Windows.Forms.TextBox tbx_password;
 		private System.Windows.Forms.Button tbn_validaciousuari;
 		private System.Windows.Forms.Label lbl_msg;
+		private System.Windows.Forms.Timer TimerForm;
 	}
 }
