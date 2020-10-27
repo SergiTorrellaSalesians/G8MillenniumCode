@@ -16,9 +16,11 @@ namespace G8M_LibreriaControles
         {
             InitializeComponent();
             this.TextChanged += new EventHandler(ORTextBox_TextChanged);
+            this.LostFocus += new EventHandler(ORTextBox_Focus);
             FTextC = this.Text;
         }
 
+        //ENUM//
         private InputType _InputSelection;
         public InputType InputTextType
         {
@@ -36,33 +38,19 @@ namespace G8M_LibreriaControles
             [Description("Input Date")]
             Date
         }
-        string FTextC;
 
+        string FTextC;
         private void ORTextBox_TextChanged(object sender, EventArgs e)
         {
+            /////VALIDACION INPUT ES EL TIPO CORRECTO////
             if (_InputSelection == InputType.Text)
             {
                 //Si es solo texto
             }
             else if (_InputSelection == InputType.Integer) //Si es numero
             {
-                /*
-                Int64 num = 0;
-                bool success = Int64.TryParse(((TextBox)sender).Text, out num);
-                if (success & num >= 0)
-                {
-                    ((TextBox)sender).Text.Trim();
-                    FTextC = ((TextBox)sender).Text;
-                } else
-                {
-                    ((TextBox)sender).Text = FTextC;
-                    ((TextBox)sender).SelectionStart = ((TextBox)sender).Text.Length;
-                }
-                */
-
                 string pattern = "^[0-9]*$";
                 string input = ((TextBox)sender).Text.Trim();
-                //Match m = Regex.Match(input, pattern);
 
                 Regexp(pattern, input);
 
@@ -84,7 +72,13 @@ namespace G8M_LibreriaControles
 
                 Regexp(pattern, input);
             }
+            /////VALIDACION INPUT ES EL TIPO CORRECTO////
+            ///
+
+            ///SI HAY CAMBIOS EN EL CONTENIDO DEL TEXTBOX, MODIFICAR SELECCIÓN DEL COMBOX ASOCIADO
+            ///
         }
+
 
         public void Regexp(string re, string tb)
         {
@@ -99,5 +93,62 @@ namespace G8M_LibreriaControles
 
             }
         }
+        //ENUM//
+
+        //FORECOLOR
+        protected override void OnGotFocus(EventArgs e)
+        {
+            base.OnGotFocus(e);
+
+            this.BackColor = Color.White;
+
+        }
+
+        protected override void OnLostFocus(EventArgs e)
+        {
+            base.OnLostFocus(e);
+            this.BackColor = Color.Gray;
+        }
+        //FORECOLOR
+
+        //SI CAMPO PUEDE ESTAR VACÍO O NO//
+
+        private EmptyTextbox _InputSelection2;
+        public EmptyTextbox AllowEmptyText
+        {
+            set { _InputSelection2 = value; }
+            get { return _InputSelection2; }
+        }
+        public enum EmptyTextbox
+        {
+            [Description("Allow empty textbox")]
+            Empty,
+            [Description("Not allow empty textbox")]
+            MandatoryText
+
+        }
+
+        private void ORTextBox_Focus(object sender, EventArgs e)
+        {
+            if (_InputSelection2 == EmptyTextbox.Empty)
+            {
+                //Si puede estar vacía, nada
+            }
+            else if (_InputSelection2 == EmptyTextbox.MandatoryText) //Si es numero
+            {
+                if (string.IsNullOrEmpty(this.Text))
+                {
+                    MessageBox.Show("Enter an Input");
+                }
+
+            }
+        }
+
+        //SI CAMPO PUEDE ESTAR VACÍO O NO//
+
+        //CAMBIOS + COMBOBOX//
+
+
+
     }
 }
