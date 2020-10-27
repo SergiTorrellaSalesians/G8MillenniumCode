@@ -48,6 +48,12 @@
     <Compile Include="SWTextBox.Designer.cs">
       <DependentUpon>SWTextBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="SWTextbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SWTextbox.Designer.cs">
+      <DependentUpon>SWTextbox.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -60,6 +66,9 @@
   <ItemGroup>
     <EmbeddedResource Include="SWTextBox.resx">
       <DependentUpon>SWTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWTextbox.resx">
+      <DependentUpon>SWTextbox.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
