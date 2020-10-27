@@ -6,3 +6,10 @@ C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_L
 C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\obj\Debug\G8M_LibreriaControles.Properties.Resources.resources
 C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\obj\Debug\G8M_LibreriaControles.csproj.GenerateResource.cache
 C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\obj\Debug\G8M_LibreriaControles.csprojAssemblyReference.cache
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\bin\Debug\G8M_LibreriaControles.dll
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\bin\Debug\G8M_LibreriaControles.pdb
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\obj\Debug\G8M_LibreriaControles.SWTextBox.resources
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\obj\Debug\G8M_LibreriaControles.csproj.GenerateResource.cache
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\obj\Debug\G8M_LibreriaControles.csproj.CoreCompileInputs.cache
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\obj\Debug\G8M_LibreriaControles.dll
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\obj\Debug\G8M_LibreriaControles.pdb
