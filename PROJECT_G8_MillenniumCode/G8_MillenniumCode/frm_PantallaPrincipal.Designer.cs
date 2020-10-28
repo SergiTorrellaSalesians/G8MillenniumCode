@@ -45,9 +45,9 @@
 			this.MenuPanel.AutoScroll = true;
 			this.MenuPanel.BackColor = System.Drawing.Color.Transparent;
 			this.MenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
-			this.MenuPanel.Location = new System.Drawing.Point(0, 39);
+			this.MenuPanel.Location = new System.Drawing.Point(0, 0);
 			this.MenuPanel.Name = "MenuPanel";
-			this.MenuPanel.Size = new System.Drawing.Size(149, 325);
+			this.MenuPanel.Size = new System.Drawing.Size(149, 364);
 			this.MenuPanel.TabIndex = 4;
 			// 
 			// frm_PantallaPrincipal

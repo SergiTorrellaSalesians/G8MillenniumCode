@@ -27,23 +27,30 @@ namespace G8_MillenniumCode
 			insideForm.FormBorderStyle = FormBorderStyle.None;
 			insideForm.Show();
 			*/
-			LoadMenuTab();
+			string[] menuTabs = {"users", "roles", "dogs", "cats", "pandas", "sloths"};
+			LoadMenuTab(menuTabs);
 		}
 
-		private void LoadMenuTab(){
-			void btn_msg(object sender, EventArgs e)
+		private void LoadMenuTab(string[] mTabs)
+		{
+			for (int i = 0; i < mTabs.Length; i++)
 			{
-				Button btn = (Button)sender;
-				MessageBox.Show(btn.Name.ToString());
-			}
-			for (int i = 1; i <= 5; i++)
-			{
+				void btn_msg(object sender, EventArgs e)
+				{
+					Button btn = (Button)sender;
+					MessageBox.Show(btn.Name.ToString());
+				}
+
 				Button newButton = new Button();
 				{
-					newButton.Name = string.Format("Button{0}", i);
-					newButton.Text = string.Format("Button {0}", i);
-					newButton.Dock = DockStyle.Top;
+					newButton.Name = "BTNmenu_" + mTabs[i];
+					newButton.Text = mTabs[i].ToUpper();
+					newButton.TabStop = false;
+					newButton.Dock = DockStyle.Bottom;
 					newButton.FlatStyle = FlatStyle.Flat;
+					newButton.ForeColor = Color.White;
+					newButton.Font = new Font("SimSun-ExtB", 14.25f, FontStyle.Bold);
+					newButton.BackColor = Color.FromArgb(255, 25, 25, 25);
 					newButton.FlatAppearance.BorderSize = 1;
 					newButton.FlatAppearance.BorderColor = Color.Yellow;
 					newButton.Size = new System.Drawing.Size(1, 50);
@@ -56,9 +63,9 @@ namespace G8_MillenniumCode
 			{
 				newLogo.Image = Resources.Reverse_LOGO;
 				newLogo.SizeMode = PictureBoxSizeMode.Zoom;
-				newLogo.BackColor = Color.Black;
+				newLogo.BackColor = Color.FromArgb(255, 25, 25, 25);
 				newLogo.Dock = DockStyle.Top;
-				newLogo.Size = new System.Drawing.Size(1, 80);
+				newLogo.Size = new System.Drawing.Size(1, 100);
 				MenuPanel.Controls.Add(newLogo);
 			}
 		}
