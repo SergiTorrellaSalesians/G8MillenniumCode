@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.formShowPanel = new System.Windows.Forms.Panel();
-			this.MenuPanel = new System.Windows.Forms.Panel();
+			this.MenuPanel = new G8M_LibreriaControles.MenuCustom();
 			this.SuspendLayout();
 			// 
 			// formShowPanel
@@ -42,13 +42,11 @@
 			// 
 			// MenuPanel
 			// 
-			this.MenuPanel.AutoScroll = true;
-			this.MenuPanel.BackColor = System.Drawing.Color.Transparent;
 			this.MenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
-			this.MenuPanel.Location = new System.Drawing.Point(0, 0);
+			this.MenuPanel.Location = new System.Drawing.Point(0, 39);
 			this.MenuPanel.Name = "MenuPanel";
-			this.MenuPanel.Size = new System.Drawing.Size(149, 364);
-			this.MenuPanel.TabIndex = 4;
+			this.MenuPanel.Size = new System.Drawing.Size(149, 325);
+			this.MenuPanel.TabIndex = 0;
 			// 
 			// frm_PantallaPrincipal
 			// 
@@ -67,6 +65,6 @@
 		#endregion
 
 		private System.Windows.Forms.Panel formShowPanel;
-		private System.Windows.Forms.Panel MenuPanel;
+		private G8M_LibreriaControles.MenuCustom MenuPanel;
 	}
 }
