@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G8M_LibreriaUsuario", "G8M_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G8M_LibreriaControles", "G8M_LibreriaControles\G8M_LibreriaControles.csproj", "{E4EE86A8-0F48-49FF-84B1-00E29CD07BEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G8M_AccesoDatos", "G8M_AccesoDatos\G8M_AccesoDatos.csproj", "{FE562EB4-7A92-4649-8E28-6784B88E0046}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{E4EE86A8-0F48-49FF-84B1-00E29CD07BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4EE86A8-0F48-49FF-84B1-00E29CD07BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4EE86A8-0F48-49FF-84B1-00E29CD07BEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE562EB4-7A92-4649-8E28-6784B88E0046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE562EB4-7A92-4649-8E28-6784B88E0046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE562EB4-7A92-4649-8E28-6784B88E0046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE562EB4-7A92-4649-8E28-6784B88E0046}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
