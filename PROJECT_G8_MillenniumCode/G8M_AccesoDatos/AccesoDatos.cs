@@ -18,9 +18,11 @@ namespace G8M_AccesoDatos
         //DataSet dts;
         public AccesoDatos()
         {
+            //query = "hpñs";
+
         }
 
-        public static string connectionString()
+        public string connectionString()
         {
             String connStr = ""; //conseguir el hostname??? o lo que sea
             String cadenacnnStr = connStr + "";
@@ -28,7 +30,7 @@ namespace G8M_AccesoDatos
             return cadenacnnStr;
         }
 
-        public static void Connectar()
+        public void Connectar()
         {
             //Crear conexión
             SqlConnection conn;
@@ -37,7 +39,7 @@ namespace G8M_AccesoDatos
             conn = new SqlConnection(cnx);
         }
 
-        public static DataSet PortarTaula(string table_name)
+        public DataSet PortarTaula(string table_name)
         {
             Connectar();
 
@@ -59,7 +61,7 @@ namespace G8M_AccesoDatos
             return dts;
         }
 
-        public static DataSet PortarPerConsulta(string consulta)
+        public DataSet PortarPerConsulta(string consulta)
         {
             DataSet dtsRegistres = new DataSet();
             string dataset_name = "";
@@ -67,14 +69,14 @@ namespace G8M_AccesoDatos
             return PortarPerConsulta(consulta, dataset_name);
         }
 
-        public static DataSet PortarPerConsulta(string consulta, string dataset_name)
+        public DataSet PortarPerConsulta(string consulta, string dataset_name)
         {
             DataSet dtsRegistres = new DataSet();
 
             return dtsRegistres;
         }
 
-        public static void Actualitzar(string table_name)
+        public void Actualitzar(string table_name)
         {
 
             //esborrar
@@ -82,8 +84,8 @@ namespace G8M_AccesoDatos
             //insertar
 
             string stringconnection = connectionString();
-            SqlConnection conn = new SqlConnection(stringconnection);
-            string query = "select * from " + table_name;
+            //SqlConnection conn = new SqlConnection(stringconnection);
+            //string query = "select * from " + table_name;
             DataSet dts = new DataSet();
 
             conn.Open();
