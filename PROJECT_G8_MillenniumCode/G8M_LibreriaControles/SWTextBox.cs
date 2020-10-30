@@ -144,6 +144,11 @@ namespace G8M_LibreriaControles
             }
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         //SI CAMPO PUEDE ESTAR VACÍO O NO//
 
         //CAMBIOS + COMBOBOX//
