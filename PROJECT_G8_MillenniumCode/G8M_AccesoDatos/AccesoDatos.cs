@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Globalization;
+using System.Configuration;
 
 namespace G8M_AccesoDatos
 {
@@ -18,7 +19,15 @@ namespace G8M_AccesoDatos
         //DataSet dts;
         public AccesoDatos()
         {
-            //query = "hpñs";
+            Configuration conf = ConfigurationManager.OpenExeConfiguration("App.exe");
+            ConnectionStringsSection section = conf.GetSection("connectionStrings")
+            as ConnectionStringsSection;
+
+            if (!section.SectionInformation.IsProtected)
+            {
+                section.SectionInformation.ProtectSection("DataProtectionConfigurationProvider");
+            }
+            conf.Save();
 
         }
 
