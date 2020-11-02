@@ -24,7 +24,10 @@ namespace G8M_AccesoDatos
 
         public string connectionString()
         {
-            String connStr = ""; //conseguir el hostname??? o lo que sea
+            //LAPTOP-45H9O8I4
+            String hostname = System.Environment.MachineName;
+
+            String connStr = "Data Source="+hostname+"\\SQLEXPRESS;Initial Catalog=SecureCore;Integrated Security=True"; //conseguir el hostname??? o lo que sea
             String cadenacnnStr = connStr + "";
 
             return cadenacnnStr;
@@ -65,6 +68,8 @@ namespace G8M_AccesoDatos
         {
             DataSet dtsRegistres = new DataSet();
             string dataset_name = "";
+
+            
 
             return PortarPerConsulta(consulta, dataset_name);
         }
