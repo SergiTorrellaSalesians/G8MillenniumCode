@@ -12,11 +12,13 @@ namespace G8M_AccesoDatos
 {
     public class AccesoDatos
     {
-        //ESTAS VARIABLES NO ME LAS LEEN EL RESTO DE CLASES ASÍ QUE A VER QUÉ PODEMOS HACER
-        public SqlConnection conn;
-        string connection_string;
-        public string query;
-        //DataSet dts;
+        #region variables globals
+
+        private SqlConnection conn;
+        private string query;
+        DataSet dts;
+
+        #endregion
 
         public AccesoDatos()
         {
@@ -35,10 +37,10 @@ namespace G8M_AccesoDatos
         {
             String hostname = System.Environment.MachineName;
 
-            String connStr = "Data Source=" + hostname + "\\SQLEXPRESS;Initial Catalog=SecureCore;Integrated Security=True"; //conseguir el hostname??? o lo que sea
-            String cadenacnnStr = connStr + "";
+            string connectString = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(connectString);
 
-            return cadenacnnStr;
+            return connectString;
         }
 
         public void Connectar()
@@ -55,7 +57,6 @@ namespace G8M_AccesoDatos
             Connectar();
 
             SqlDataAdapter adapter;
-            DataSet dts = new DataSet();
             string stringconnection = connectionString();
             SqlConnection conn = new SqlConnection(stringconnection);
             
@@ -74,6 +75,8 @@ namespace G8M_AccesoDatos
 
         public DataSet PortarPerConsulta(string consulta)
         {
+
+            //no sé si hace falta crear un nuevo dataset
             DataSet dtsRegistres = new DataSet();
             string dataset_name = "";
 
@@ -84,6 +87,7 @@ namespace G8M_AccesoDatos
 
         public DataSet PortarPerConsulta(string consulta, string dataset_name)
         {
+            //aquí tampoco sé si hace falta
             DataSet dtsRegistres = new DataSet();
 
             return dtsRegistres;
@@ -91,18 +95,13 @@ namespace G8M_AccesoDatos
 
         public void Actualitzar(string table_name)
         {
-
             //esborrar
             //modificar
             //insertar
-
+       
             string stringconnection = connectionString();
-            //SqlConnection conn = new SqlConnection(stringconnection);
-            //string query = "select * from " + table_name;
-            DataSet dts = new DataSet();
 
             conn.Open();
-
 
             SqlDataAdapter adapter;
             adapter = new SqlDataAdapter(query, conn);
@@ -121,33 +120,45 @@ namespace G8M_AccesoDatos
         //inserció o esborrat
         //i l’executarà directament sobre BBDD.
 
-        public static void Executa(string consulta)
+        public void Executa(string consulta)
+        { 
+
+            conn.Open();
+
+            SqlDataAdapter adapter;
+            adapter = new SqlDataAdapter(query, conn);
+            SqlCommandBuilder cmdBuilder;
+            cmdBuilder = new SqlCommandBuilder(adapter);
+
+            if (dts.HasChanges())
+            {
+                int result = adapter.Update(dts.Tables[0]);
+            }
+
+            conn.Close();
+        }
+
+        /*
+        Una funció GeneraConsultaCerca que rebrà el nom de la taula i 
+        un Dictionary amb
+        nom de camp i valor del camp per tal de generar la consulta en runtime.
+        Aquesta consulta s’ha de generar parametritzada per tal d’evitar atacs 
+        de SQL Injection.
+        */
+        public void GeneraConsultaCerca(string tablename, Dictionary<string, string> nomvalorcamps)
         {
 
         }
 
         /*
-         * 
-         * Una funció GeneraConsultaCerca que rebrà el nom de la taula i 
-         * un Dictionary amb
-nom de camp i valor del camp per tal de generar la consulta en runtime.
-        Aquesta
-consulta s’ha de generar parametritzada per tal d’evitar atacs de SQL Injection.
-         * */
-        public static void GeneraConsultaCerca(string tablename, Dictionary<string, string> nomvalorcamps)
-        {
+        Preveure que potser caldrà inserir imatges i/o documents en format PDF a la
+        BBDD. En la classe heretada caldrà implementar una funció que, en cas d’inserció o
+        modificació, permeti sobreescriure la funció Actualitza per tal de fer una crida a la
+        funció del base i a continuació modificar el registre acabat de modificar per tal de
+        modificar la fotografia o el document adjunt.
+        */
 
-        }
-
-        /*
-         * vPreveure que potser caldrà inserir imatges i/o documents en format PDF a la
-BBDD. En la classe heretada caldrà implementar una funció que, en cas d’inserció o
-modificació, permeti sobreescriure la funció Actualitza per tal de fer una crida a la
-funció del base i a continuació modificar el registre acabat de modificar per tal de
-modificar la fotografia o el document adjunt.
-         * */
-
-        public static void Actualitza()
+        public void Actualitza()
         {
 
         }
