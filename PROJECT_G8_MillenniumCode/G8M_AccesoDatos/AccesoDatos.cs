@@ -39,10 +39,10 @@ namespace G8M_AccesoDatos
             //LAPTOP-45H9O8I4
             String hostname = System.Environment.MachineName;
 
-            String connStr = "Data Source="+hostname+"\\SQLEXPRESS;Initial Catalog=SecureCore;Integrated Security=True"; //conseguir el hostname??? o lo que sea
-            String cadenacnnStr = connStr + "";
+            string connectString = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(connectString);
 
-            return cadenacnnStr;
+            return connectString;
         }
 
         public void Connectar()
