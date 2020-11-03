@@ -91,7 +91,7 @@ namespace G8M_AccesoDatos
 
             conn.Close();
 
-            return PortarPerConsulta(consulta, dts);
+            return PortarPerConsulta(consulta);
         }
 
         public DataSet PortarPerConsulta(string consulta, string dataset_name)
