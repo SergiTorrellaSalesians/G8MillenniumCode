@@ -17,6 +17,7 @@ namespace G8M_AccesoDatos
         string connection_string;
         public string query;
         //DataSet dts;
+
         public AccesoDatos()
         {
             Configuration conf = ConfigurationManager.OpenExeConfiguration("App.exe");
@@ -28,15 +29,13 @@ namespace G8M_AccesoDatos
                 section.SectionInformation.ProtectSection("DataProtectionConfigurationProvider");
             }
             conf.Save();
-
         }
 
         public string connectionString()
         {
-            //LAPTOP-45H9O8I4
             String hostname = System.Environment.MachineName;
 
-            String connStr = "Data Source="+hostname+"\\SQLEXPRESS;Initial Catalog=SecureCore;Integrated Security=True"; //conseguir el hostname??? o lo que sea
+            String connStr = "Data Source=" + hostname + "\\SQLEXPRESS;Initial Catalog=SecureCore;Integrated Security=True"; //conseguir el hostname??? o lo que sea
             String cadenacnnStr = connStr + "";
 
             return cadenacnnStr;
