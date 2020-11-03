@@ -68,7 +68,7 @@ namespace G8M_AccesoDatos
             conn.Open();
 
             adapter.Fill(dts, table_name);
-            //dtgAgencies.DataSource = dts.Tables[table_name];
+            //dtgAgencies.DataSource = dts.Tables[table_name]; //-> datagridview
 
             conn.Close();
 
@@ -77,38 +77,42 @@ namespace G8M_AccesoDatos
 
         public DataSet PortarPerConsulta(string consulta)
         {
+            Connectar();
 
-            //no sé si hace falta crear un nuevo dataset
-            DataSet dtsRegistres = new DataSet();
-            string dataset_name = "";
+            SqlDataAdapter adapter;
 
-            
+            string query = consulta;
+            adapter = new SqlDataAdapter(query, conn);
 
-            return PortarPerConsulta(consulta, dataset_name);
+            conn.Open();
+
+            adapter.Fill(dts, table_name);
+            //dtgAgencies.DataSource = dts.Tables[table_name]; //-> datagridview
+
+            conn.Close();
+
+            return PortarPerConsulta(consulta, dts);
         }
 
         public DataSet PortarPerConsulta(string consulta, string dataset_name)
         {
             //aquí tampoco sé si hace falta
-            DataSet dtsRegistres = new DataSet();
+            Connectar();
 
             return dtsRegistres;
         }
 
         public void Actualitzar(string table_name)
         {
-            //esborrar
-            //modificar
-            //insertar
-       
-            string stringconnection = connectionString();
-
-            conn.Open();
-
             SqlDataAdapter adapter;
             adapter = new SqlDataAdapter(query, conn);
             SqlCommandBuilder cmdBuilder;
             cmdBuilder = new SqlCommandBuilder(adapter);
+
+            Connectar();
+
+            conn.Open();
+
 
             if (dts.HasChanges())
             {
@@ -123,20 +127,14 @@ namespace G8M_AccesoDatos
         //i l’executarà directament sobre BBDD.
 
         public void Executa(string consulta)
-        { 
+        {
+
+            string query = "INSERT INTO Agencies(CodeAgencie, DescAgency) VALUES('"+ valor1 + "','" + valor2 + "')";
 
             conn.Open();
-
-            SqlDataAdapter adapter;
-            adapter = new SqlDataAdapter(query, conn);
-            SqlCommandBuilder cmdBuilder;
-            cmdBuilder = new SqlCommandBuilder(adapter);
-
-            if (dts.HasChanges())
-            {
-                int result = adapter.Update(dts.Tables[0]);
-            }
-
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int registresAfectats = cmd.ExecuteNonQuery();
+            cmd.Dispose();
             conn.Close();
         }
 
@@ -149,7 +147,11 @@ namespace G8M_AccesoDatos
         */
         public void GeneraConsultaCerca(string tablename, Dictionary<string, string> nomvalorcamps)
         {
-
+            string query = "select count(*) from"+ tablename;
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int numAlumnes = (int)cmd.ExecuteScalar();
+            cmd.Dispose();
         }
 
         /*
