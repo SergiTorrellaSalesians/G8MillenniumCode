@@ -32,6 +32,7 @@
 			this.btn_topbarExit = new System.Windows.Forms.Button();
 			this.btn_topbarMinimize = new System.Windows.Forms.Button();
 			this.txt_topbarTitle = new System.Windows.Forms.Label();
+			this.line = new System.Windows.Forms.Panel();
 			this.topbar.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -39,6 +40,7 @@
 			// 
 			this.topbar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
 			this.topbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+			this.topbar.Controls.Add(this.line);
 			this.topbar.Controls.Add(this.btn_topbarExit);
 			this.topbar.Controls.Add(this.btn_topbarMinimize);
 			this.topbar.Controls.Add(this.txt_topbarTitle);
@@ -95,6 +97,15 @@
 			this.txt_topbarTitle.TabIndex = 1;
 			this.txt_topbarTitle.Text = "TEMPLATE";
 			// 
+			// line
+			// 
+			this.line.BackColor = System.Drawing.Color.White;
+			this.line.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.line.Location = new System.Drawing.Point(0, 38);
+			this.line.Name = "line";
+			this.line.Size = new System.Drawing.Size(336, 1);
+			this.line.TabIndex = 2;
+			// 
 			// frm_Template
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -119,5 +130,6 @@
 		private System.Windows.Forms.Label txt_topbarTitle;
 		private System.Windows.Forms.Button btn_topbarMinimize;
 		private System.Windows.Forms.Button btn_topbarExit;
+		private System.Windows.Forms.Panel line;
 	}
 }

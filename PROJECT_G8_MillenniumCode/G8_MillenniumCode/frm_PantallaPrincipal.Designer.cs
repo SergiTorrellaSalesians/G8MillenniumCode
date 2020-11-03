@@ -34,14 +34,16 @@
 			// 
 			// formShowPanel
 			// 
+			this.formShowPanel.AutoSize = true;
 			this.formShowPanel.BackColor = System.Drawing.Color.Transparent;
-			this.formShowPanel.Location = new System.Drawing.Point(155, 50);
+			this.formShowPanel.Location = new System.Drawing.Point(169, 39);
 			this.formShowPanel.Name = "formShowPanel";
-			this.formShowPanel.Size = new System.Drawing.Size(631, 302);
+			this.formShowPanel.Size = new System.Drawing.Size(629, 325);
 			this.formShowPanel.TabIndex = 3;
 			// 
 			// MenuPanel
 			// 
+			this.MenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
 			this.MenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
 			this.MenuPanel.Location = new System.Drawing.Point(0, 39);
 			this.MenuPanel.Name = "MenuPanel";
@@ -50,6 +52,8 @@
 			// 
 			// frm_PantallaPrincipal
 			// 
+			this.AutoSize = true;
+			this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
 			this.ClientSize = new System.Drawing.Size(798, 364);
 			this.Controls.Add(this.MenuPanel);
 			this.Controls.Add(this.formShowPanel);
@@ -59,6 +63,7 @@
 			this.Controls.SetChildIndex(this.formShowPanel, 0);
 			this.Controls.SetChildIndex(this.MenuPanel, 0);
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 

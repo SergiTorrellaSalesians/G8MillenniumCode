@@ -31,12 +31,10 @@ namespace G8M_AccesoDatos
                 section.SectionInformation.ProtectSection("DataProtectionConfigurationProvider");
             }
             conf.Save();
-
         }
 
         public string connectionString()
         {
-            //LAPTOP-45H9O8I4
             String hostname = System.Environment.MachineName;
 
             string connectString = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
