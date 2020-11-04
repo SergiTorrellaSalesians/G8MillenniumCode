@@ -35,7 +35,6 @@ namespace G8M_AccesoDatos
 
         public string connectionString()
         {
-            String hostname = System.Environment.MachineName;
 
             string connectString = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(connectString);
