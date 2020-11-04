@@ -57,8 +57,6 @@ namespace G8M_AccesoDatos
             Connectar();
 
             SqlDataAdapter adapter;
-            string stringconnection = connectionString();
-            SqlConnection conn = new SqlConnection(stringconnection);
             
             string query = "select * from " + table_name;
             adapter = new SqlDataAdapter(query, conn);
@@ -81,23 +79,36 @@ namespace G8M_AccesoDatos
 
             string query = consulta;
             adapter = new SqlDataAdapter(query, conn);
+            DataSet dataset_portarperconsulta = new DataSet();
 
             conn.Open();
 
-            adapter.Fill(dts, table_name);
+            adapter.Fill(dataset_portarperconsulta);
             //dtgAgencies.DataSource = dts.Tables[table_name]; //-> datagridview
 
             conn.Close();
 
-            return PortarPerConsulta(consulta);
+            return dataset_portarperconsulta;
         }
 
         public DataSet PortarPerConsulta(string consulta, string dataset_name)
         {
-            //aquí tampoco sé si hace falta
             Connectar();
 
-            return dtsRegistres;
+            SqlDataAdapter adapter;
+
+            string query = consulta;
+            adapter = new SqlDataAdapter(query, conn);
+            DataSet dataset_portarperconsulta = new DataSet();
+
+            conn.Open();
+
+            adapter.Fill(dataset_portarperconsulta, dataset_name);
+            //dtgAgencies.DataSource = dts.Tables[table_name]; //-> datagridview
+
+            conn.Close();
+
+            return dataset_portarperconsulta;
         }
 
         public void Actualitzar(string table_name)
@@ -114,7 +125,7 @@ namespace G8M_AccesoDatos
 
             if (dts.HasChanges())
             {
-                int result = adapter.Update(dts.Tables[0]);
+                int result = adapter.Update(dts.Tables[table_name]);
             }
 
             conn.Close();
@@ -126,10 +137,14 @@ namespace G8M_AccesoDatos
 
         public void Executa(string consulta)
         {
-
-            string query = "INSERT INTO Agencies(CodeAgencie, DescAgency) VALUES('"+ valor1 + "','" + valor2 + "')";
+            string valor1, valor2;
+            valor1 = "";
+            valor2 = "";
+            //string query = "INSERT INTO Agencies(CodeAgencie, DescAgency) VALUES('"+ valor1 + "','" + valor2 + "')";
+            string query = consulta;
 
             conn.Open();
+
             SqlCommand cmd = new SqlCommand(query, conn);
             int registresAfectats = cmd.ExecuteNonQuery();
             cmd.Dispose();
