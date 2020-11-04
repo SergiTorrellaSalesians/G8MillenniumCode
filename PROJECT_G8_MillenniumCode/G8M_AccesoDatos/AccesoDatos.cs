@@ -34,13 +34,7 @@ namespace G8M_AccesoDatos
             ConnectionStringsSection section = conf.GetSection("connectionStrings")
             as ConnectionStringsSection;
 
-            if (!section.SectionInformation.IsProtected)
-            {
-                section.SectionInformation.ProtectSection("DataProtectionConfigurationProvider");
-            }
-            conf.Save();
         }
-
         public string connectionString()
         {
             //String hostname = System.Environment.MachineName; //Coge el nombre del ordenador
