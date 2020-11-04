@@ -1,6 +1,6 @@
 ﻿namespace G8_MillenniumCode
 {
-	partial class frm_AccesoBBDD
+	partial class frm_BaseTablaSimple
 	{
 		/// <summary>
 		/// Required designer variable.

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace G8_MillenniumCode
 {
-	public partial class frm_AccesoBBDD : Form
+	public partial class frm_BaseTablaSimple : Form
 	{
-		public frm_AccesoBBDD()
+		public frm_BaseTablaSimple()
 		{
 			InitializeComponent();
 		}

@@ -19,7 +19,7 @@ namespace G8_MillenniumCode
 
 		private void frm_PantallaPrincipal_Load(object sender, EventArgs e)
 		{
-			frm_AccesoBBDD frm1 = new frm_AccesoBBDD();
+			frm_BaseTablaSimple frm1 = new frm_BaseTablaSimple();
 			createButton("CLEAR", null);
 			createButton("ACCESO", frm1);
 			createButton("EXAMPLE 1", frm1);

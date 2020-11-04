@@ -137,9 +137,9 @@ namespace G8M_AccesoDatos
 
         public void Executa(string consulta)
         {
-            string valor1, valor2;
-            valor1 = "";
-            valor2 = "";
+            //string valor1, valor2;
+            //valor1 = "";
+            //valor2 = "";
             //string query = "INSERT INTO Agencies(CodeAgencie, DescAgency) VALUES('"+ valor1 + "','" + valor2 + "')";
             string query = consulta;
 

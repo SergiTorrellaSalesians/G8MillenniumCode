@@ -64,11 +64,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm_AccesoBBDD.cs">
+    <Compile Include="frm_BaseTablaSimple.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_AccesoBBDD.Designer.cs">
-      <DependentUpon>frm_AccesoBBDD.cs</DependentUpon>
+    <Compile Include="frm_BaseTablaSimple.Designer.cs">
+      <DependentUpon>frm_BaseTablaSimple.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_UserLogin.cs">
       <SubType>Form</SubType>
@@ -95,8 +95,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SecureCoreDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frm_AccesoBBDD.resx">
-      <DependentUpon>frm_AccesoBBDD.cs</DependentUpon>
+    <EmbeddedResource Include="frm_BaseTablaSimple.resx">
+      <DependentUpon>frm_BaseTablaSimple.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_PantallaPrincipal.resx">
       <DependentUpon>frm_PantallaPrincipal.cs</DependentUpon>
