@@ -22,7 +22,7 @@ namespace G8_MillenniumCode
 
 		}
 
-		private void frm_BaseTablaSimple_Load(object sender, EventArgs e)
+		private void frm_BaseTablaSimple_Load_1(object sender, EventArgs e)
 		{
 			ad_lib = new AccesoDatos();
 
@@ -37,12 +37,5 @@ namespace G8_MillenniumCode
 		{
 			
 		}
-
-        private void frm_BaseTablaSimple_Load(object sender, EventArgs e)
-        {
-			G8M_AccesoDatos.AccesoDatos accesoDatos = new G8M_AccesoDatos.AccesoDatos();
-
-			
-        }
-    }
+	}
 }
