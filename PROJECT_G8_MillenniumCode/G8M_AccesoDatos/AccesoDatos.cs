@@ -22,17 +22,8 @@ namespace G8M_AccesoDatos
 
         public AccesoDatos()
         {
-            Configuration conf = ConfigurationManager.OpenExeConfiguration("App.exe");
-            ConnectionStringsSection section = conf.GetSection("connectionStrings")
-            as ConnectionStringsSection;
 
-            if (!section.SectionInformation.IsProtected)
-            {
-                section.SectionInformation.ProtectSection("DataProtectionConfigurationProvider");
-            }
-            conf.Save();
         }
-
         public string connectionString()
         {
 

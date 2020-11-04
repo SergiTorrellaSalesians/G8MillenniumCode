@@ -57,7 +57,7 @@ namespace G8M_LibreriaControles
             }
             else if (_InputSelection == InputType.Code) //REGEX
             {
-                string pattern = "^[A-Z]{4}-\\d{3}\\/[13579][AEIOU]$";
+                string pattern = "^[A-Z]{4}-\\d{3}/[13579][AEIOU]$";
                 string input = ((TextBox)sender).Text.Trim();
                 //Match m = Regex.Match(input, pattern);
 
