@@ -38,4 +38,5 @@ C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_Mi
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\obj\Debug\G8_MillenniumCode.frm_splash.resources
 C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\bin\Debug\G8M_AccesoDatos.dll
 C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\bin\Debug\G8M_AccesoDatos.pdb
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\obj\Debug\G8_MillenniumCode.frm_AccesoBBDD.resources
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\bin\Debug\G8M_AccesoDatos.dll.config
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\obj\Debug\G8_MillenniumCode.frm_BaseTablaSimple.resources

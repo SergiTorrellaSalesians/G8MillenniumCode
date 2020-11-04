@@ -28,20 +28,15 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
 			this.lbl_codi = new System.Windows.Forms.Label();
 			this.lbl_agencia = new System.Windows.Forms.Label();
 			this.txt_agencia = new G8M_LibreriaControles.SWTextbox();
 			this.txt_codi = new G8M_LibreriaControles.SWTextbox();
 			this.btn_actualitzar = new System.Windows.Forms.Button();
 			this.btn_value = new System.Windows.Forms.Button();
-			this.dgv_BBDDdata = new System.Windows.Forms.DataGridView();
-			this.secureCoreDataSet = new G8_MillenniumCode.SecureCoreDataSet();
-			this.secureCoreDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.dtg_BBDDdata = new System.Windows.Forms.DataGridView();
 			this.richtxt_dataset = new System.Windows.Forms.RichTextBox();
-			((System.ComponentModel.ISupportInitialize)(this.dgv_BBDDdata)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSet)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSetBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dtg_BBDDdata)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// lbl_codi
@@ -76,6 +71,7 @@
 			this.txt_agencia.Name = "txt_agencia";
 			this.txt_agencia.Size = new System.Drawing.Size(100, 20);
 			this.txt_agencia.TabIndex = 1;
+			this.txt_agencia.Tag = "descAgency";
 			// 
 			// txt_codi
 			// 
@@ -103,26 +99,18 @@
 			this.btn_value.TabIndex = 5;
 			this.btn_value.Text = "Value DataSet";
 			this.btn_value.UseVisualStyleBackColor = true;
+			this.btn_value.Click += new System.EventHandler(this.btn_value_Click);
 			// 
-			// dgv_BBDDdata
+			// dtg_BBDDdata
 			// 
-			this.dgv_BBDDdata.AutoGenerateColumns = false;
-			this.dgv_BBDDdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgv_BBDDdata.DataSource = this.secureCoreDataSetBindingSource;
-			this.dgv_BBDDdata.Location = new System.Drawing.Point(12, 113);
-			this.dgv_BBDDdata.Name = "dgv_BBDDdata";
-			this.dgv_BBDDdata.Size = new System.Drawing.Size(557, 150);
-			this.dgv_BBDDdata.TabIndex = 6;
-			// 
-			// secureCoreDataSet
-			// 
-			this.secureCoreDataSet.DataSetName = "SecureCoreDataSet";
-			this.secureCoreDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-			// 
-			// secureCoreDataSetBindingSource
-			// 
-			this.secureCoreDataSetBindingSource.DataSource = this.secureCoreDataSet;
-			this.secureCoreDataSetBindingSource.Position = 0;
+			this.dtg_BBDDdata.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.dtg_BBDDdata.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+			this.dtg_BBDDdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dtg_BBDDdata.GridColor = System.Drawing.Color.Yellow;
+			this.dtg_BBDDdata.Location = new System.Drawing.Point(12, 113);
+			this.dtg_BBDDdata.Name = "dtg_BBDDdata";
+			this.dtg_BBDDdata.Size = new System.Drawing.Size(557, 150);
+			this.dtg_BBDDdata.TabIndex = 6;
 			// 
 			// richtxt_dataset
 			// 
@@ -132,14 +120,14 @@
 			this.richtxt_dataset.TabIndex = 7;
 			this.richtxt_dataset.Text = "";
 			// 
-			// frm_AccesoBBDD
+			// frm_BaseTablaSimple
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = global::G8_MillenniumCode.Properties.Resources.istockphoto_606667670_612x612;
 			this.ClientSize = new System.Drawing.Size(596, 496);
 			this.Controls.Add(this.richtxt_dataset);
-			this.Controls.Add(this.dgv_BBDDdata);
+			this.Controls.Add(this.dtg_BBDDdata);
 			this.Controls.Add(this.btn_value);
 			this.Controls.Add(this.btn_actualitzar);
 			this.Controls.Add(this.lbl_agencia);
@@ -147,11 +135,10 @@
 			this.Controls.Add(this.txt_agencia);
 			this.Controls.Add(this.txt_codi);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Name = "frm_AccesoBBDD";
+			this.Name = "frm_BaseTablaSimple";
 			this.Text = "frm_AccesoBBDD";
-			((System.ComponentModel.ISupportInitialize)(this.dgv_BBDDdata)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSet)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSetBindingSource)).EndInit();
+			this.Load += new System.EventHandler(this.frm_BaseTablaSimple_Load);
+			((System.ComponentModel.ISupportInitialize)(this.dtg_BBDDdata)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -165,9 +152,7 @@
 		private System.Windows.Forms.Label lbl_agencia;
 		private System.Windows.Forms.Button btn_actualitzar;
 		private System.Windows.Forms.Button btn_value;
-		private System.Windows.Forms.DataGridView dgv_BBDDdata;
-		private System.Windows.Forms.BindingSource secureCoreDataSetBindingSource;
-		private SecureCoreDataSet secureCoreDataSet;
+		private System.Windows.Forms.DataGridView dtg_BBDDdata;
 		private System.Windows.Forms.RichTextBox richtxt_dataset;
 	}
 }

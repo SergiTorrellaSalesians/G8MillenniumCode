@@ -16,13 +16,21 @@ namespace G8M_AccesoDatos
 
         private SqlConnection conn;
         private string query;
-        DataSet dts;
+        DataSet dts = new DataSet();
 
         #endregion
 
-        public AccesoDatos()
+        public void EncriptarConnectionString()
         {
-            Configuration conf = ConfigurationManager.OpenExeConfiguration("App.exe");
+            #if DEBUG
+                string applicationName = Environment.GetCommandLineArgs()[0];
+            #else
+                string applicationName = Environment.GetCommandLineArgs()[0]+ ".exe";
+            #endif
+
+            string exePath = System.IO.Path.Combine(Environment.CurrentDirectory, applicationName);
+            Configuration conf = ConfigurationManager.OpenExeConfiguration(exePath);
+
             ConnectionStringsSection section = conf.GetSection("connectionStrings")
             as ConnectionStringsSection;
 
@@ -35,9 +43,8 @@ namespace G8M_AccesoDatos
 
         public string connectionString()
         {
-            String hostname = System.Environment.MachineName;
-
-            string connectString = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
+            //String hostname = System.Environment.MachineName; //Coge el nombre del ordenador
+            string connectString = ConfigurationManager.ConnectionStrings["G8_MillenniumCode.Properties.Settings.SecureCoreConnectionString"].ToString();
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(connectString);
 
             return connectString;
@@ -46,9 +53,10 @@ namespace G8M_AccesoDatos
         public void Connectar()
         {
             //Crear conexión
-            SqlConnection conn;
+            //SqlConnection conn;
             string cnx;
             cnx = connectionString();
+            //cnx = "Data Source=DESKTOP-3TIAVU5\\SQLEXPRESS;Initial Catalog=SecureCore;Integrated Security=True";//
             conn = new SqlConnection(cnx);
         }
 
