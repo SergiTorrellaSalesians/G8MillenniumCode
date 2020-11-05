@@ -32,11 +32,6 @@
 			this.lbl_agencia = new System.Windows.Forms.Label();
 			this.txt_agencia = new G8M_LibreriaControles.SWTextbox();
 			this.txt_codi = new G8M_LibreriaControles.SWTextbox();
-			this.btn_actualitzar = new System.Windows.Forms.Button();
-			this.btn_value = new System.Windows.Forms.Button();
-			this.dtg_BBDDdata = new System.Windows.Forms.DataGridView();
-			this.richtxt_dataset = new System.Windows.Forms.RichTextBox();
-			((System.ComponentModel.ISupportInitialize)(this.dtg_BBDDdata)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// lbl_codi
@@ -82,63 +77,26 @@
 			this.txt_codi.Size = new System.Drawing.Size(100, 20);
 			this.txt_codi.TabIndex = 0;
 			// 
-			// btn_actualitzar
-			// 
-			this.btn_actualitzar.Location = new System.Drawing.Point(349, 269);
-			this.btn_actualitzar.Name = "btn_actualitzar";
-			this.btn_actualitzar.Size = new System.Drawing.Size(107, 23);
-			this.btn_actualitzar.TabIndex = 4;
-			this.btn_actualitzar.Text = "Actualitzar";
-			this.btn_actualitzar.UseVisualStyleBackColor = true;
-			// 
-			// btn_value
-			// 
-			this.btn_value.Location = new System.Drawing.Point(462, 269);
-			this.btn_value.Name = "btn_value";
-			this.btn_value.Size = new System.Drawing.Size(107, 23);
-			this.btn_value.TabIndex = 5;
-			this.btn_value.Text = "Value DataSet";
-			this.btn_value.UseVisualStyleBackColor = true;
-			this.btn_value.Click += new System.EventHandler(this.btn_value_Click);
-			// 
-			// dtg_BBDDdata
-			// 
-			this.dtg_BBDDdata.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-			this.dtg_BBDDdata.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-			this.dtg_BBDDdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dtg_BBDDdata.GridColor = System.Drawing.Color.Yellow;
-			this.dtg_BBDDdata.Location = new System.Drawing.Point(12, 113);
-			this.dtg_BBDDdata.Name = "dtg_BBDDdata";
-			this.dtg_BBDDdata.Size = new System.Drawing.Size(557, 150);
-			this.dtg_BBDDdata.TabIndex = 6;
-			// 
-			// richtxt_dataset
-			// 
-			this.richtxt_dataset.Location = new System.Drawing.Point(12, 317);
-			this.richtxt_dataset.Name = "richtxt_dataset";
-			this.richtxt_dataset.Size = new System.Drawing.Size(557, 167);
-			this.richtxt_dataset.TabIndex = 7;
-			this.richtxt_dataset.Text = "";
-			// 
 			// frm_BaseTablaSimple
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = global::G8_MillenniumCode.Properties.Resources.istockphoto_606667670_612x612;
-			this.ClientSize = new System.Drawing.Size(596, 496);
-			this.Controls.Add(this.richtxt_dataset);
-			this.Controls.Add(this.dtg_BBDDdata);
-			this.Controls.Add(this.btn_value);
-			this.Controls.Add(this.btn_actualitzar);
+			this.ClientSize = new System.Drawing.Size(643, 517);
 			this.Controls.Add(this.lbl_agencia);
 			this.Controls.Add(this.lbl_codi);
 			this.Controls.Add(this.txt_agencia);
 			this.Controls.Add(this.txt_codi);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "frm_BaseTablaSimple";
 			this.Text = "frm_AccesoBBDD";
-			this.Load += new System.EventHandler(this.frm_BaseTablaSimple_Load_1);
-			((System.ComponentModel.ISupportInitialize)(this.dtg_BBDDdata)).EndInit();
+			this.Load += new System.EventHandler(this.frm_BaseTablaSimple_Load);
+			this.Controls.SetChildIndex(this.btn_actualitzar, 0);
+			this.Controls.SetChildIndex(this.btn_value, 0);
+			this.Controls.SetChildIndex(this.richtxt_dataset, 0);
+			this.Controls.SetChildIndex(this.txt_codi, 0);
+			this.Controls.SetChildIndex(this.txt_agencia, 0);
+			this.Controls.SetChildIndex(this.lbl_codi, 0);
+			this.Controls.SetChildIndex(this.lbl_agencia, 0);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -150,9 +108,5 @@
 		private G8M_LibreriaControles.SWTextbox txt_agencia;
 		private System.Windows.Forms.Label lbl_codi;
 		private System.Windows.Forms.Label lbl_agencia;
-		private System.Windows.Forms.Button btn_actualitzar;
-		private System.Windows.Forms.Button btn_value;
-		private System.Windows.Forms.DataGridView dtg_BBDDdata;
-		private System.Windows.Forms.RichTextBox richtxt_dataset;
 	}
 }

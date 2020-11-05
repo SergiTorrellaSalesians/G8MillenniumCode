@@ -12,17 +12,16 @@ using G8M_AccesoDatos;
 
 namespace G8_MillenniumCode
 {
-	public partial class frm_BaseTablaSimple : Form
+	public partial class frm_BaseTablaSimple : G8M_FormBase.frm_InsideTemplate
 	{
 		G8M_AccesoDatos.AccesoDatos ad_lib;
 
 		public frm_BaseTablaSimple()
 		{
 			InitializeComponent();
-
 		}
 
-		private void frm_BaseTablaSimple_Load_1(object sender, EventArgs e)
+		private void frm_BaseTablaSimple_Load(object sender, EventArgs e)
 		{
 			ad_lib = new AccesoDatos();
 
