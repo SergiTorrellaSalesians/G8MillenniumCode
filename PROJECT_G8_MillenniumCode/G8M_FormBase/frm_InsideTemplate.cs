@@ -13,9 +13,6 @@ namespace G8M_FormBase
 {
 	public partial class frm_InsideTemplate : Form
 	{
-		G8M_AccesoDatos.AccesoDatos ad_lib;
-		public string nomTaula = "Agencies";
-
 		public frm_InsideTemplate()
 		{
 			InitializeComponent();
@@ -23,18 +20,23 @@ namespace G8M_FormBase
 
 		private void frm_InsideTemplate_Load(object sender, EventArgs e)
 		{
-			ad_lib = new AccesoDatos();
+			/*
+				G8M_AccesoDatos.AccesoDatos ad_lib;
+				string nomTaula = "Agencies";
 
-			DataSet dtsAgencias = ad_lib.PortarTaula(nomTaula);
-			dtg_BBDDdata.DataSource = dtsAgencias.Tables[0];
+				ad_lib = new AccesoDatos();
 
-			foreach (Control ctrl in this.Controls) {
-				if (ctrl is TextBox)
-				{
-					ctrl.DataBindings.Clear();
-					ctrl.DataBindings.Add("Text", dtsAgencias.Tables[0], ctrl.Tag.ToString());
+				DataSet dtsAgencias = ad_lib.PortarTaula(nomTaula);
+				dtg_BBDDdata.DataSource = dtsAgencias.Tables[0];
+
+				foreach (Control ctrl in this.Controls) {
+					if (ctrl is TextBox)
+					{
+						ctrl.DataBindings.Clear();
+						ctrl.DataBindings.Add("Text", dtsAgencias.Tables[0], ctrl.Tag.ToString());
+					}
 				}
-			}
+			*/
 		}
 	}
 }

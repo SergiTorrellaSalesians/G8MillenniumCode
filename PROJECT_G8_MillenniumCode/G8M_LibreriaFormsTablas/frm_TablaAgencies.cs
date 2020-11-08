@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace G8M_LibreriaFormsTablas
 {
-	public partial class frm_TablaAgencies : Form
+	public partial class frm_TablaAgencies : G8M_FormBase.frm_InsideTemplate
 	{
 		public frm_TablaAgencies()
 		{
