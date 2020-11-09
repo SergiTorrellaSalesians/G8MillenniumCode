@@ -70,6 +70,12 @@
     <Compile Include="frm_BaseTablaSimple.Designer.cs">
       <DependentUpon>frm_BaseTablaSimple.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_SWcombobox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SWcombobox.Designer.cs">
+      <DependentUpon>frm_SWcombobox.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_UserLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_PantallaPrincipal.resx">
       <DependentUpon>frm_PantallaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SWcombobox.resx">
+      <DependentUpon>frm_SWcombobox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_UserLogin.resx">
       <DependentUpon>frm_UserLogin.cs</DependentUpon>

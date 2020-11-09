@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace G8_MillenniumCode
+namespace G8M_TableTemplate
 {
-	public partial class frm_BaseTablaSimple : Form
-	{
-		public frm_BaseTablaSimple()
-		{
-			InitializeComponent();
-		}
-
-        private void frm_BaseTablaSimple_Load(object sender, EventArgs e)
+    public partial class frm_TableTemplate : Form
+    {
+        public frm_TableTemplate()
         {
-
+            InitializeComponent();
         }
     }
 }

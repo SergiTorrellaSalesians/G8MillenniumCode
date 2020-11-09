@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace G8_MillenniumCode
 {
-	public partial class frm_BaseTablaSimple : Form
-	{
-		public frm_BaseTablaSimple()
-		{
-			InitializeComponent();
-		}
+    public partial class frm_SWcombobox : G8M_FormBase.frm_Template
+    {
+        public frm_SWcombobox()
+        {
+            InitializeComponent();
+        }
 
-        private void frm_BaseTablaSimple_Load(object sender, EventArgs e)
+        private void frm_SWcombobox_Load(object sender, EventArgs e)
         {
 
         }
