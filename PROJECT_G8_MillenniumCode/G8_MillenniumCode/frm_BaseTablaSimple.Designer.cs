@@ -28,143 +28,77 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.components = new System.ComponentModel.Container();
-            this.lbl_codi = new System.Windows.Forms.Label();
-            this.lbl_agencia = new System.Windows.Forms.Label();
-            this.txt_agencia = new G8M_LibreriaControles.SWTextbox();
-            this.txt_codi = new G8M_LibreriaControles.SWTextbox();
-            this.btn_actualitzar = new System.Windows.Forms.Button();
-            this.btn_value = new System.Windows.Forms.Button();
-            this.dgv_BBDDdata = new System.Windows.Forms.DataGridView();
-            this.secureCoreDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.secureCoreDataSet = new G8_MillenniumCode.SecureCoreDataSet();
-            this.richtxt_dataset = new System.Windows.Forms.RichTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_BBDDdata)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSet)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // lbl_codi
-            // 
-            this.lbl_codi.AutoSize = true;
-            this.lbl_codi.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_codi.Font = new System.Drawing.Font("SimSun-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_codi.ForeColor = System.Drawing.Color.White;
-            this.lbl_codi.Location = new System.Drawing.Point(60, 32);
-            this.lbl_codi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_codi.Name = "lbl_codi";
-            this.lbl_codi.Size = new System.Drawing.Size(64, 20);
-            this.lbl_codi.TabIndex = 2;
-            this.lbl_codi.Text = "Codi:";
-            // 
-            // lbl_agencia
-            // 
-            this.lbl_agencia.AutoSize = true;
-            this.lbl_agencia.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_agencia.Font = new System.Drawing.Font("SimSun-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_agencia.ForeColor = System.Drawing.Color.White;
-            this.lbl_agencia.Location = new System.Drawing.Point(24, 76);
-            this.lbl_agencia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_agencia.Name = "lbl_agencia";
-            this.lbl_agencia.Size = new System.Drawing.Size(97, 20);
-            this.lbl_agencia.TabIndex = 3;
-            this.lbl_agencia.Text = "Agencia:";
-            // 
-            // txt_agencia
-            // 
-            this.txt_agencia.AllowEmptyText = G8M_LibreriaControles.SWTextbox.EmptyTextbox.Empty;
-            this.txt_agencia.InputTextType = G8M_LibreriaControles.SWTextbox.InputType.Text;
-            this.txt_agencia.Location = new System.Drawing.Point(139, 76);
-            this.txt_agencia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txt_agencia.Name = "txt_agencia";
-            this.txt_agencia.Size = new System.Drawing.Size(132, 22);
-            this.txt_agencia.TabIndex = 1;
-            // 
-            // txt_codi
-            // 
-            this.txt_codi.AllowEmptyText = G8M_LibreriaControles.SWTextbox.EmptyTextbox.Empty;
-            this.txt_codi.InputTextType = G8M_LibreriaControles.SWTextbox.InputType.Text;
-            this.txt_codi.Location = new System.Drawing.Point(139, 32);
-            this.txt_codi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txt_codi.Name = "txt_codi";
-            this.txt_codi.Size = new System.Drawing.Size(132, 22);
-            this.txt_codi.TabIndex = 0;
-            // 
-            // btn_actualitzar
-            // 
-            this.btn_actualitzar.Location = new System.Drawing.Point(465, 331);
-            this.btn_actualitzar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_actualitzar.Name = "btn_actualitzar";
-            this.btn_actualitzar.Size = new System.Drawing.Size(143, 28);
-            this.btn_actualitzar.TabIndex = 4;
-            this.btn_actualitzar.Text = "Actualitzar";
-            this.btn_actualitzar.UseVisualStyleBackColor = true;
-            // 
-            // btn_value
-            // 
-            this.btn_value.Location = new System.Drawing.Point(616, 331);
-            this.btn_value.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_value.Name = "btn_value";
-            this.btn_value.Size = new System.Drawing.Size(143, 28);
-            this.btn_value.TabIndex = 5;
-            this.btn_value.Text = "Value DataSet";
-            this.btn_value.UseVisualStyleBackColor = true;
-            // 
-            // dgv_BBDDdata
-            // 
-            this.dgv_BBDDdata.AutoGenerateColumns = false;
-            this.dgv_BBDDdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_BBDDdata.DataSource = this.secureCoreDataSetBindingSource;
-            this.dgv_BBDDdata.Location = new System.Drawing.Point(16, 139);
-            this.dgv_BBDDdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dgv_BBDDdata.Name = "dgv_BBDDdata";
-            this.dgv_BBDDdata.RowHeadersWidth = 51;
-            this.dgv_BBDDdata.Size = new System.Drawing.Size(743, 185);
-            this.dgv_BBDDdata.TabIndex = 6;
-            // 
-            // secureCoreDataSetBindingSource
-            // 
-            this.secureCoreDataSetBindingSource.DataSource = this.secureCoreDataSet;
-            this.secureCoreDataSetBindingSource.Position = 0;
-            // 
-            // secureCoreDataSet
-            // 
-            this.secureCoreDataSet.DataSetName = "SecureCoreDataSet";
-            this.secureCoreDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // richtxt_dataset
-            // 
-            this.richtxt_dataset.Location = new System.Drawing.Point(16, 390);
-            this.richtxt_dataset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.richtxt_dataset.Name = "richtxt_dataset";
-            this.richtxt_dataset.Size = new System.Drawing.Size(741, 205);
-            this.richtxt_dataset.TabIndex = 7;
-            this.richtxt_dataset.Text = "";
-            // 
-            // frm_BaseTablaSimple
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::G8_MillenniumCode.Properties.Resources.istockphoto_606667670_612x612;
-            this.ClientSize = new System.Drawing.Size(795, 610);
-            this.Controls.Add(this.richtxt_dataset);
-            this.Controls.Add(this.dgv_BBDDdata);
-            this.Controls.Add(this.btn_value);
-            this.Controls.Add(this.btn_actualitzar);
-            this.Controls.Add(this.lbl_agencia);
-            this.Controls.Add(this.lbl_codi);
-            this.Controls.Add(this.txt_agencia);
-            this.Controls.Add(this.txt_codi);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "frm_BaseTablaSimple";
-            this.Text = "frm_AccesoBBDD";
-            this.Load += new System.EventHandler(this.frm_BaseTablaSimple_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_BBDDdata)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSet)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+			this.lbl_codi = new System.Windows.Forms.Label();
+			this.lbl_agencia = new System.Windows.Forms.Label();
+			this.txt_agencia = new G8M_LibreriaControles.SWTextbox();
+			this.txt_codi = new G8M_LibreriaControles.SWTextbox();
+			this.SuspendLayout();
+			// 
+			// lbl_codi
+			// 
+			this.lbl_codi.AutoSize = true;
+			this.lbl_codi.BackColor = System.Drawing.Color.Transparent;
+			this.lbl_codi.Font = new System.Drawing.Font("SimSun-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_codi.ForeColor = System.Drawing.Color.White;
+			this.lbl_codi.Location = new System.Drawing.Point(45, 26);
+			this.lbl_codi.Name = "lbl_codi";
+			this.lbl_codi.Size = new System.Drawing.Size(53, 16);
+			this.lbl_codi.TabIndex = 2;
+			this.lbl_codi.Text = "Codi:";
+			// 
+			// lbl_agencia
+			// 
+			this.lbl_agencia.AutoSize = true;
+			this.lbl_agencia.BackColor = System.Drawing.Color.Transparent;
+			this.lbl_agencia.Font = new System.Drawing.Font("SimSun-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_agencia.ForeColor = System.Drawing.Color.White;
+			this.lbl_agencia.Location = new System.Drawing.Point(18, 62);
+			this.lbl_agencia.Name = "lbl_agencia";
+			this.lbl_agencia.Size = new System.Drawing.Size(80, 16);
+			this.lbl_agencia.TabIndex = 3;
+			this.lbl_agencia.Text = "Agencia:";
+			// 
+			// txt_agencia
+			// 
+			this.txt_agencia.AllowEmptyText = G8M_LibreriaControles.SWTextbox.EmptyTextbox.Empty;
+			this.txt_agencia.InputTextType = G8M_LibreriaControles.SWTextbox.InputType.Text;
+			this.txt_agencia.Location = new System.Drawing.Point(104, 62);
+			this.txt_agencia.Name = "txt_agencia";
+			this.txt_agencia.Size = new System.Drawing.Size(100, 20);
+			this.txt_agencia.TabIndex = 1;
+			this.txt_agencia.Tag = "descAgency";
+			// 
+			// txt_codi
+			// 
+			this.txt_codi.AllowEmptyText = G8M_LibreriaControles.SWTextbox.EmptyTextbox.Empty;
+			this.txt_codi.InputTextType = G8M_LibreriaControles.SWTextbox.InputType.Text;
+			this.txt_codi.Location = new System.Drawing.Point(104, 26);
+			this.txt_codi.Name = "txt_codi";
+			this.txt_codi.Size = new System.Drawing.Size(100, 20);
+			this.txt_codi.TabIndex = 0;
+			// 
+			// frm_BaseTablaSimple
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackgroundImage = global::G8_MillenniumCode.Properties.Resources.istockphoto_606667670_612x612;
+			this.ClientSize = new System.Drawing.Size(643, 517);
+			this.Controls.Add(this.lbl_agencia);
+			this.Controls.Add(this.lbl_codi);
+			this.Controls.Add(this.txt_agencia);
+			this.Controls.Add(this.txt_codi);
+			this.Name = "frm_BaseTablaSimple";
+			this.Text = "frm_AccesoBBDD";
+			this.Load += new System.EventHandler(this.frm_BaseTablaSimple_Load);
+			this.Controls.SetChildIndex(this.btn_actualitzar, 0);
+			this.Controls.SetChildIndex(this.btn_value, 0);
+			this.Controls.SetChildIndex(this.richtxt_dataset, 0);
+			this.Controls.SetChildIndex(this.txt_codi, 0);
+			this.Controls.SetChildIndex(this.txt_agencia, 0);
+			this.Controls.SetChildIndex(this.lbl_codi, 0);
+			this.Controls.SetChildIndex(this.lbl_agencia, 0);
+			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
@@ -174,11 +108,5 @@
 		private G8M_LibreriaControles.SWTextbox txt_agencia;
 		private System.Windows.Forms.Label lbl_codi;
 		private System.Windows.Forms.Label lbl_agencia;
-		private System.Windows.Forms.Button btn_actualitzar;
-		private System.Windows.Forms.Button btn_value;
-		private System.Windows.Forms.DataGridView dgv_BBDDdata;
-		private System.Windows.Forms.BindingSource secureCoreDataSetBindingSource;
-		private SecureCoreDataSet secureCoreDataSet;
-		private System.Windows.Forms.RichTextBox richtxt_dataset;
 	}
 }

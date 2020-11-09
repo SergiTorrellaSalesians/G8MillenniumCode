@@ -36,9 +36,9 @@
 			// 
 			this.formShowPanel.AutoSize = true;
 			this.formShowPanel.BackColor = System.Drawing.Color.Transparent;
-			this.formShowPanel.Location = new System.Drawing.Point(169, 39);
+			this.formShowPanel.Location = new System.Drawing.Point(155, 39);
 			this.formShowPanel.Name = "formShowPanel";
-			this.formShowPanel.Size = new System.Drawing.Size(629, 325);
+			this.formShowPanel.Size = new System.Drawing.Size(643, 325);
 			this.formShowPanel.TabIndex = 3;
 			// 
 			// MenuPanel

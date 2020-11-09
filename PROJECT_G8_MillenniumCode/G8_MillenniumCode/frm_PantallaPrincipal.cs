@@ -60,5 +60,5 @@ namespace G8_MillenniumCode
 			}
 			btn.Click += btn_fnc;
 		}
-	}
+    }
 }

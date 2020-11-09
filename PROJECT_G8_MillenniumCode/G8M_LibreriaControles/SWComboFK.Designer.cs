@@ -1,6 +1,6 @@
 ﻿namespace G8M_LibreriaControles
 {
-    partial class SWTextbox
+    partial class SWComboFK
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbx_combofk = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // cbx_combofk
             // 
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 0;
+            this.cbx_combofk.FormattingEnabled = true;
+            this.cbx_combofk.Location = new System.Drawing.Point(0, 0);
+            this.cbx_combofk.Name = "cbx_combofk";
+            this.cbx_combofk.Size = new System.Drawing.Size(121, 21);
+            this.cbx_combofk.TabIndex = 0;
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cbx_combofk;
     }
 }

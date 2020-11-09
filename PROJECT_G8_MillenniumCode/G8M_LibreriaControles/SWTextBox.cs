@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+
 namespace G8M_LibreriaControles
 {
     public partial class SWTextbox : TextBox
@@ -57,7 +58,7 @@ namespace G8M_LibreriaControles
             }
             else if (_InputSelection == InputType.Code) //REGEX
             {
-                string pattern = "^[A-Z]{4}-\\d{3}\\/[13579][AEIOU]$";
+                string pattern = "^[A-Z]{4}-\\d{3}/[13579][AEIOU]$";
                 string input = ((TextBox)sender).Text.Trim();
                 //Match m = Regex.Match(input, pattern);
 
@@ -142,11 +143,6 @@ namespace G8M_LibreriaControles
                 }
 
             }
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         //SI CAMPO PUEDE ESTAR VACÍO O NO//
