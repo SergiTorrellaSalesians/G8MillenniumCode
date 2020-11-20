@@ -22,6 +22,9 @@ namespace G8M_FormBase
 
 		private void frm_InsideTemplate_Load(object sender, EventArgs e)
 		{
+			if(DesignMode)
+				return;
+
 			G8M_AccesoDatos.AccesoDatos ad_lib;
 
 			ad_lib = new AccesoDatos();
