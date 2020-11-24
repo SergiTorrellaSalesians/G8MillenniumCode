@@ -54,7 +54,6 @@ namespace G8_MillenniumCode
 				Form reflectedForm = (Form)dllBD;
 
 				//LLamar a modificar el nomTaula del InsideTemplate como parametro al crear el botón
-
 				reflectedForm.TopLevel = false;
 				reflectedForm.AutoScroll = true;
 				this.formShowPanel.Controls.Add(reflectedForm);

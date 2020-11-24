@@ -8,12 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using G8M_AccesoDatos;
+using G8M_LibreriaControles;
 
 namespace G8M_FormBase
 {
 	public partial class frm_InsideTemplate : Form
 	{
-		public string nomTaula = "Agencies";
+		public string nomTaula;
+		public string _nomTaula {
+			get { return nomTaula; }
+			set { nomTaula = value; }
+		}
 
 		public frm_InsideTemplate()
 		{
@@ -29,14 +34,21 @@ namespace G8M_FormBase
 
 			ad_lib = new AccesoDatos();
 
-			DataSet dtsAgencias = ad_lib.PortarTaula(nomTaula);
-			dtg_BBDDdata.DataSource = dtsAgencias.Tables[0];
+			//Pasar nom de la taula com parametre al form a l'hora d'afegir els textbox
+			DataSet dtsTabla = ad_lib.PortarTaula(nomTaula);
+			dtg_BBDDdata.DataSource = dtsTabla.Tables[0];
 
 			foreach (Control ctrl in this.Controls) {
 				if (ctrl is TextBox)
 				{
+					SWTextbox SWctrl = (SWTextbox)ctrl;
+					SWctrl.DataBindings.Clear();
+					SWctrl.DataBindings.Add("Text", dtsTabla.Tables[0], SWctrl._TableBind);
+				}
+				else if (ctrl is ComboBox)
+				{
 					ctrl.DataBindings.Clear();
-					ctrl.DataBindings.Add("Text", dtsAgencias.Tables[0], ctrl.Tag.ToString());
+					//ctrl.DataBindings.Add("SelectedValue", dtsAgencias.Tables[0], ctrl.Tag.ToString());
 				}
 			}
 		}
