@@ -47,8 +47,18 @@ namespace G8M_FormBase
 				}
 				else if (ctrl is ComboBox)
 				{
-					ctrl.DataBindings.Clear();
-					//ctrl.DataBindings.Add("SelectedValue", dtsAgencias.Tables[0], ctrl.Tag.ToString());
+					SWComboFK SWctrl = (SWComboFK)ctrl;
+					DataSet dtsForeign = ad_lib.PortarTaula(SWctrl._ForeignTable);
+
+					SWctrl.DataBindings.Clear();
+					//ADD FOREIGN TABLE OPTIONS
+					foreach (DataRow row in dtsForeign.Tables[1].Rows)
+					{
+						SWctrl.Items.Add(row["idUserRank"].ToString());
+						//DataSource?
+					}
+					//SHOW SELECTED ITEM
+					SWctrl.DataBindings.Add("SelectedItem", dtsTabla.Tables[0], SWctrl._TableBind);
 				}
 			}
 		}

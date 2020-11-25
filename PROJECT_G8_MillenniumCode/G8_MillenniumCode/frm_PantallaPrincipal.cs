@@ -23,13 +23,8 @@ namespace G8_MillenniumCode
 		private void frm_PantallaPrincipal_Load(object sender, EventArgs e)
 		{
 			createButton("CLEAR", null);
-			createButton("TABLA SIMPLE", "frm_TablaAgencies");
-			createButton("EXAMPLE 1", "frm_TablaAgencies");
-			createButton("EXAMPLE 2", "frm_TablaAgencies");
-			createButton("EXAMPLE 3", "frm_TablaAgencies");
-			createButton("EXAMPLE 4", "frm_TablaAgencies");
-			createButton("EXAMPLE 5", "frm_TablaAgencies");
-			createButton("EXAMPLE 6", "frm_TablaAgencies");
+			createButton("AGENCIES", "frm_TablaAgencies");
+			createButton("USERS", "frm_TablaUsers");
 
 			MenuPanel.LoadMenu();
 		}
