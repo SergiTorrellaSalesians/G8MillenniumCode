@@ -16,5 +16,7 @@ namespace G8M_LibreriaFormsTablas
         {
             InitializeComponent();
         }
+
+
     }
 }
