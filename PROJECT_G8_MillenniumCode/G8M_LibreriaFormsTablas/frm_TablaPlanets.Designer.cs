@@ -119,7 +119,7 @@
             // 
             // swTextbox3
             // 
-            this.swTextbox3._TableBind = "parsercs";
+            this.swTextbox3._TableBind = "parsecs";
             this.swTextbox3.AllowEmptyField = G8M_LibreriaControles.SWTextbox.EmptyField.WithText;
             this.swTextbox3.AllowEmptyText = G8M_LibreriaControles.SWTextbox.EmptyTextbox.Empty;
             this.swTextbox3.InputTextType = G8M_LibreriaControles.SWTextbox.InputType.Text;
@@ -130,20 +130,24 @@
             // 
             // swComboFK1
             // 
+            this.swComboFK1._Display_Member = "CodeSector";
             this.swComboFK1._ForeignTable = "Sectors";
-            this.swComboFK1._TableBind = "DescSector";
+            this.swComboFK1._TableBind = "idSector";
+            this.swComboFK1._Value_Member = "idSector";
             this.swComboFK1.FormattingEnabled = true;
-            this.swComboFK1.Location = new System.Drawing.Point(83, 91);
+            this.swComboFK1.Location = new System.Drawing.Point(82, 88);
             this.swComboFK1.Name = "swComboFK1";
             this.swComboFK1.Size = new System.Drawing.Size(121, 21);
             this.swComboFK1.TabIndex = 20;
             // 
             // swComboFK2
             // 
+            this.swComboFK2._Display_Member = "DescFiliations";
             this.swComboFK2._ForeignTable = "Filiations";
-            this.swComboFK2._TableBind = "DescFiliations";
+            this.swComboFK2._TableBind = "idFiliation";
+            this.swComboFK2._Value_Member = "idFiliation";
             this.swComboFK2.FormattingEnabled = true;
-            this.swComboFK2.Location = new System.Drawing.Point(346, 24);
+            this.swComboFK2.Location = new System.Drawing.Point(343, 24);
             this.swComboFK2.Name = "swComboFK2";
             this.swComboFK2.Size = new System.Drawing.Size(121, 21);
             this.swComboFK2.TabIndex = 21;
@@ -166,9 +170,6 @@
             this.Controls.Add(this.label1);
             this.Name = "frm_TablaPlanets";
             this.Text = "frm_TablaPlanets";
-            this.Controls.SetChildIndex(this.btn_actualitzar, 0);
-            this.Controls.SetChildIndex(this.btn_value, 0);
-            this.Controls.SetChildIndex(this.richtxt_dataset, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.label3, 0);
@@ -177,6 +178,9 @@
             this.Controls.SetChildIndex(this.swTextbox1, 0);
             this.Controls.SetChildIndex(this.swTextbox2, 0);
             this.Controls.SetChildIndex(this.swTextbox3, 0);
+            this.Controls.SetChildIndex(this.btn_actualitzar, 0);
+            this.Controls.SetChildIndex(this.btn_value, 0);
+            this.Controls.SetChildIndex(this.richtxt_dataset, 0);
             this.Controls.SetChildIndex(this.swComboFK1, 0);
             this.Controls.SetChildIndex(this.swComboFK2, 0);
             this.ResumeLayout(false);

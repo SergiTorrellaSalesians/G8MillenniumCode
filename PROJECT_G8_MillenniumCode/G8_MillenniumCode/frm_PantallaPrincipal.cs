@@ -25,6 +25,8 @@ namespace G8_MillenniumCode
 			createButton("CLEAR", null);
 			createButton("AGENCIES", "frm_TablaAgencies");
 			createButton("USERS", "frm_TablaUsers");
+			createButton("SPECIES", "frm_TablaSpecies");
+			createButton("PLANETS", "frm_TablaPlanets");
 
 			MenuPanel.LoadMenu();
 		}

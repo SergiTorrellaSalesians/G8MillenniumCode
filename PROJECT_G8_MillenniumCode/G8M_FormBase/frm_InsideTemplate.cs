@@ -55,8 +55,8 @@ namespace G8M_FormBase
 
 					SWctrl.DataBindings.Clear();
 					SWctrl.DataSource = dtsForeign.Tables[0];
-					SWctrl.DisplayMember = "DescRank";
-					SWctrl.ValueMember = "idUserRank";
+					SWctrl.DisplayMember = SWctrl._Display_Member;
+					SWctrl.ValueMember = SWctrl._Value_Member;
 
 					SWctrl.DataBindings.Add("SelectedValue", dtsTabla.Tables[0], SWctrl._TableBind);
 					SWctrl.Validated += new System.EventHandler(this.ValidarComboBox);

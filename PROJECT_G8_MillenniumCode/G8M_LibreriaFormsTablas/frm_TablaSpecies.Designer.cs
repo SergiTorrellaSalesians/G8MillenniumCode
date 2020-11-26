@@ -70,7 +70,7 @@ namespace G8M_LibreriaFormsTablas
             // 
             // tbx_desSpecie
             // 
-            this.tbx_desSpecie._TableBind = "DesSpecie";
+            this.tbx_desSpecie._TableBind = "DescSpecie";
             this.tbx_desSpecie.AllowEmptyField = G8M_LibreriaControles.SWTextbox.EmptyField.WithText;
             this.tbx_desSpecie.AllowEmptyText = G8M_LibreriaControles.SWTextbox.EmptyTextbox.Empty;
             this.tbx_desSpecie.InputTextType = G8M_LibreriaControles.SWTextbox.InputType.Text;

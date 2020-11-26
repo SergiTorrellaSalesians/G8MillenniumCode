@@ -18,10 +18,26 @@ namespace G8M_LibreriaControles
             set { TableBind = value; }
         }
         private string ForeignTable;
-        public string _ForeignTable {
+        public string _ForeignTable {   
             get { return ForeignTable; }
             set { ForeignTable = value; }
         }
+
+        private string Display_Member;
+        public string _Display_Member
+        {
+            get { return Display_Member; }
+            set { Display_Member = value; }
+        }
+
+        private string Value_Member;
+        public string _Value_Member
+        {
+            get { return Value_Member; }
+            set { Value_Member = value; }
+        }
+
+
 
         public SWComboFK()
         {
