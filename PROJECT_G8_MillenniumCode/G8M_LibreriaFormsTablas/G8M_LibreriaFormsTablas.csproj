@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_TablaPlanets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TablaPlanets.Designer.cs">
+      <DependentUpon>frm_TablaPlanets.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_TablaSpecies.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_TablaPlanets.resx">
+      <DependentUpon>frm_TablaPlanets.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_TablaSpecies.resx">
       <DependentUpon>frm_TablaSpecies.cs</DependentUpon>
     </EmbeddedResource>
