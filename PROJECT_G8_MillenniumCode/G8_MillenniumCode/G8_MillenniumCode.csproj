@@ -64,12 +64,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm_BaseTablaSimple.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_BaseTablaSimple.Designer.cs">
-      <DependentUpon>frm_BaseTablaSimple.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_UserLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,9 +89,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SecureCoreDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frm_BaseTablaSimple.resx">
-      <DependentUpon>frm_BaseTablaSimple.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_PantallaPrincipal.resx">
       <DependentUpon>frm_PantallaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +153,10 @@
     <ProjectReference Include="..\G8M_LibreriaControles\G8M_LibreriaControles.csproj">
       <Project>{E4EE86A8-0F48-49FF-84B1-00E29CD07BEF}</Project>
       <Name>G8M_LibreriaControles</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\G8M_LibreriaFormsTablas\G8M_LibreriaFormsTablas.csproj">
+      <Project>{47a1c0ea-26ac-48e9-b4e3-d2ea85fb167f}</Project>
+      <Name>G8M_LibreriaFormsTablas</Name>
     </ProjectReference>
     <ProjectReference Include="..\G8M_LibreriaUsuario\G8M_LibreriaUsuario.csproj">
       <Project>{66cf8fc2-3464-4e92-987c-a5183ec51407}</Project>

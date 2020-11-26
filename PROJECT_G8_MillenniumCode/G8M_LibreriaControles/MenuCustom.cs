@@ -23,7 +23,7 @@ namespace G8M_LibreriaControles
 			btn.Name = "BTNmenu_" + tabName;
 			btn.Text = tabName.ToUpper();
 			btn.TabStop = false;
-			btn.Dock = DockStyle.Bottom;
+			btn.Dock = DockStyle.Top;
 			btn.FlatStyle = FlatStyle.Flat;
 			btn.ForeColor = Color.White;
 			btn.Font = new Font("SimSun-ExtB", 14.25f, FontStyle.Bold);

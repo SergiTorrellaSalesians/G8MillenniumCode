@@ -80,5 +80,11 @@
   <ItemGroup>
     <None Include="Resources\Reverse LOGO.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\G8M_AccesoDatos\G8M_AccesoDatos.csproj">
+      <Project>{fe562eb4-7a92-4649-8e28-6784b88e0046}</Project>
+      <Name>G8M_AccesoDatos</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
