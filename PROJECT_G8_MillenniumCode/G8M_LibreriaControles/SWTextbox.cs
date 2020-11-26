@@ -46,6 +46,37 @@ namespace G8M_LibreriaControles
             Date
         }
 
+        private EmptyTextbox _InputSelection2;
+        public EmptyTextbox AllowEmptyText
+        {
+            set { _InputSelection2 = value; }
+            get { return _InputSelection2; }
+        }
+        public enum EmptyTextbox
+        {
+            [Description("Allow empty textbox")]
+            Empty,
+            [Description("Not allow empty textbox")]
+            MandatoryText
+
+        }
+
+
+
+        bool notext = false;
+        private EmptyField _InputSelection3;
+        public EmptyField AllowEmptyField
+        {
+            set { _InputSelection3 = value; }
+            get { return _InputSelection3; }
+        }
+        public enum EmptyField
+        {
+            [Description("Texto Obligatorio")]
+            WithText,
+            [Description("Text No Required")]
+            NoTextNeeded
+        }
         string FTextC;
         private void ORTextBox_TextChanged(object sender, EventArgs e)
         {
@@ -79,11 +110,21 @@ namespace G8M_LibreriaControles
 
                 Regexp(pattern, input);
             }
-            /////VALIDACION INPUT ES EL TIPO CORRECTO////
-            ///
 
-            ///SI HAY CAMBIOS EN EL CONTENIDO DEL TEXTBOX, MODIFICAR SELECCIÓN DEL COMBOX ASOCIADO
-            ///
+            if (_InputSelection3 == EmptyField.WithText)
+            {
+                notext = false;
+            }
+            else
+            {
+                notext = true;
+            }
+
+            if (notext == false)
+            {
+                //QUE EL .TEXT NO ESTÉ VACÍO :):):):):):)
+
+            }
         }
 
 
@@ -120,22 +161,7 @@ namespace G8M_LibreriaControles
 
         //SI CAMPO PUEDE ESTAR VACÍO O NO//
 
-        private EmptyTextbox _InputSelection2;
-        public EmptyTextbox AllowEmptyText
-        {
-            set { _InputSelection2 = value; }
-            get { return _InputSelection2; }
-        }
-        public enum EmptyTextbox
-        {
-            [Description("Allow empty textbox")]
-            Empty,
-            [Description("Not allow empty textbox")]
-            MandatoryText
-
-        }
-
-        private void ORTextBox_Focus(object sender, EventArgs e)
+private void ORTextBox_Focus(object sender, EventArgs e)
         {
             if (_InputSelection2 == EmptyTextbox.Empty)
             {
