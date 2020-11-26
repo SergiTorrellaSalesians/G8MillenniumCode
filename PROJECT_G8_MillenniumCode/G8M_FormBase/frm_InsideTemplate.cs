@@ -44,23 +44,31 @@ namespace G8M_FormBase
 					SWTextbox SWctrl = (SWTextbox)ctrl;
 					SWctrl.DataBindings.Clear();
 					SWctrl.DataBindings.Add("Text", dtsTabla.Tables[0], SWctrl._TableBind);
+					SWctrl.Validated += new System.EventHandler(this.ValidarTextBox);
+
 				}
 				else if (ctrl is ComboBox)
 				{
 					SWComboFK SWctrl = (SWComboFK)ctrl;
-					DataSet dtsForeign = ad_lib.PortarTaula(SWctrl._ForeignTable);
+					DataSet dtsForeign = new DataSet();
+					dtsForeign = ad_lib.PortarTaula(SWctrl._ForeignTable);
 
 					SWctrl.DataBindings.Clear();
-					//ADD FOREIGN TABLE OPTIONS
-					foreach (DataRow row in dtsForeign.Tables[1].Rows)
-					{
-						SWctrl.Items.Add(row["idUserRank"].ToString());
-						//DataSource?
-					}
-					//SHOW SELECTED ITEM
-					SWctrl.DataBindings.Add("SelectedItem", dtsTabla.Tables[0], SWctrl._TableBind);
+					SWctrl.DataSource = dtsForeign.Tables[0];
+					SWctrl.DisplayMember = "DescRank";
+					SWctrl.ValueMember = "idUserRank";
+
+					SWctrl.DataBindings.Add("SelectedValue", dtsTabla.Tables[0], SWctrl._TableBind);
+					SWctrl.Validated += new System.EventHandler(this.ValidarComboBox);
+
 				}
 			}
+		}
+		private void ValidarTextBox(object sender, EventArgs e) {
+			((TextBox)sender).DataBindings[0].BindingManagerBase.EndCurrentEdit();
+		}
+		private void ValidarComboBox(object sender, EventArgs e) {
+			((ComboBox)sender).DataBindings[0].BindingManagerBase.EndCurrentEdit();
 		}
 	}
 }
