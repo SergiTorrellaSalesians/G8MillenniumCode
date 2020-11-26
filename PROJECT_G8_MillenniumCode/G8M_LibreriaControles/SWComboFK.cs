@@ -12,11 +12,25 @@ namespace G8M_LibreriaControles
 {
     public partial class SWComboFK : ComboBox
     {
+        private string TableBind;
+        public string _TableBind {
+            get { return TableBind; }
+            set { TableBind = value; }
+        }
+        private string ForeignTable;
+        public string _ForeignTable {
+            get { return ForeignTable; }
+            set { ForeignTable = value; }
+        }
+
         public SWComboFK()
         {
             InitializeComponent();
         }
 
+		private void cbx_combofk_SelectedIndexChanged(object sender, EventArgs e)
+		{
 
-    }
+		}
+	}
 }

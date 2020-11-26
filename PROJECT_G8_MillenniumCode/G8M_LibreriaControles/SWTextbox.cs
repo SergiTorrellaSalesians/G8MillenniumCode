@@ -13,6 +13,12 @@ namespace G8M_LibreriaControles
 {
     public partial class SWTextbox : TextBox
     {
+        private string TableBind;
+        public string _TableBind {
+            get { return TableBind; }
+            set { TableBind = value; }
+        }
+
         public SWTextbox()
         {
             InitializeComponent();
@@ -145,11 +151,16 @@ namespace G8M_LibreriaControles
             }
         }
 
-        //SI CAMPO PUEDE ESTAR VACÍO O NO//
+		private void textBox1_TextChanged(object sender, EventArgs e)
+		{
 
-        //CAMBIOS + COMBOBOX//
+		}
+
+		//SI CAMPO PUEDE ESTAR VACÍO O NO//
+
+		//CAMBIOS + COMBOBOX//
 
 
 
-    }
+	}
 }

@@ -86,6 +86,7 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "frm_InsideTemplate";
 			this.Text = "frm_InsideTemplate";
+			this.Load += new System.EventHandler(this.frm_InsideTemplate_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dtg_BBDDdata)).EndInit();
 			this.ResumeLayout(false);
 
