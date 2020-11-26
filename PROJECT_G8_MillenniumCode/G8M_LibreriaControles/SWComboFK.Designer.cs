@@ -28,17 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cbx_combofk = new System.Windows.Forms.ComboBox();
-            this.SuspendLayout();
-            // 
-            // cbx_combofk
-            // 
-            this.cbx_combofk.FormattingEnabled = true;
-            this.cbx_combofk.Location = new System.Drawing.Point(0, 0);
-            this.cbx_combofk.Name = "cbx_combofk";
-            this.cbx_combofk.Size = new System.Drawing.Size(121, 21);
-            this.cbx_combofk.TabIndex = 0;
-            this.ResumeLayout(false);
+			this.cbx_combofk = new System.Windows.Forms.ComboBox();
+			this.SuspendLayout();
+			// 
+			// cbx_combofk
+			// 
+			this.cbx_combofk.FormattingEnabled = true;
+			this.cbx_combofk.Location = new System.Drawing.Point(0, 0);
+			this.cbx_combofk.Name = "cbx_combofk";
+			this.cbx_combofk.Size = new System.Drawing.Size(121, 21);
+			this.cbx_combofk.TabIndex = 0;
+			this.cbx_combofk.SelectedIndexChanged += new System.EventHandler(this.cbx_combofk_SelectedIndexChanged);
+			this.ResumeLayout(false);
 
         }
 

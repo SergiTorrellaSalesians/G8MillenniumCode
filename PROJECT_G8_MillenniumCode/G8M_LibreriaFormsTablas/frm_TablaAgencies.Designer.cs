@@ -36,13 +36,14 @@
 			// 
 			// txt_codi
 			// 
+			this.txt_codi._TableBind = "CodeAgency";
 			this.txt_codi.AllowEmptyText = G8M_LibreriaControles.SWTextbox.EmptyTextbox.Empty;
 			this.txt_codi.InputTextType = G8M_LibreriaControles.SWTextbox.InputType.Text;
 			this.txt_codi.Location = new System.Drawing.Point(79, 24);
 			this.txt_codi.Name = "txt_codi";
 			this.txt_codi.Size = new System.Drawing.Size(100, 20);
 			this.txt_codi.TabIndex = 10;
-			this.txt_codi.Tag = "CodeAgency";
+			this.txt_codi.Tag = "";
 			// 
 			// label1
 			// 
@@ -57,13 +58,14 @@
 			// 
 			// txt_agency
 			// 
+			this.txt_agency._TableBind = "DescAgency";
 			this.txt_agency.AllowEmptyText = G8M_LibreriaControles.SWTextbox.EmptyTextbox.Empty;
 			this.txt_agency.InputTextType = G8M_LibreriaControles.SWTextbox.InputType.Text;
 			this.txt_agency.Location = new System.Drawing.Point(79, 50);
 			this.txt_agency.Name = "txt_agency";
 			this.txt_agency.Size = new System.Drawing.Size(100, 20);
 			this.txt_agency.TabIndex = 12;
-			this.txt_agency.Tag = "DescAgency";
+			this.txt_agency.Tag = "";
 			// 
 			// label2
 			// 
@@ -78,6 +80,7 @@
 			// 
 			// frm_TablaAgencies
 			// 
+			this._nomTaula = "Agencies";
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(643, 518);

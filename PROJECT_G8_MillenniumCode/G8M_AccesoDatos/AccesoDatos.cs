@@ -16,7 +16,7 @@ namespace G8M_AccesoDatos
 
         private SqlConnection conn;
         private string query;
-        DataSet dts = new DataSet();
+        DataSet dts;
 
         #endregion
 
@@ -56,6 +56,8 @@ namespace G8M_AccesoDatos
 
         public DataSet PortarTaula(string table_name)
         {
+            dts = new DataSet();
+
             Connectar();
 
             SqlDataAdapter adapter;
@@ -115,6 +117,8 @@ namespace G8M_AccesoDatos
 
         public void Actualitzar(string table_name)
         {
+            dts = new DataSet();
+
             SqlDataAdapter adapter;
             adapter = new SqlDataAdapter(query, conn);
             SqlCommandBuilder cmdBuilder;
