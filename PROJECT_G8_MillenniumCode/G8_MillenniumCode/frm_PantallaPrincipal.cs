@@ -13,8 +13,6 @@ namespace G8_MillenniumCode
 {
 	public partial class frm_PantallaPrincipal : G8M_FormBase.frm_Template
 	{
-		string proyectoLibForms = "G8M_LibreriaFormsTablas";
-
 		public frm_PantallaPrincipal()
 		{
 			InitializeComponent();
@@ -22,16 +20,16 @@ namespace G8_MillenniumCode
 
 		private void frm_PantallaPrincipal_Load(object sender, EventArgs e)
 		{
-			createButton("CLEAR", null);
-			createButton("AGENCIES", "frm_TablaAgencies");
-			createButton("USERS", "frm_TablaUsers");
-			createButton("SPECIES", "frm_TablaSpecies");
-			createButton("PLANETS", "frm_TablaPlanets");
+			createButton("CLEAR", null, null); //
+			createButton("AGENCIES", "G8M_LibreriaFormsTablas", "frm_TablaAgencies");
+			createButton("USERS", "G8M_LibreriaFormsTablas", "frm_TablaUsers");
+			createButton("SPECIES", "G8M_LibreriaFormsTablas", "frm_TablaSpecies");
+			createButton("PLANETS", "G8M_LibreriaFormsTablas", "frm_TablaPlanets");
 
 			MenuPanel.LoadMenu();
 		}
 
-		void createButton(string btnName, string classe){
+		void createButton(string btnName, string lib, string classe){
 			Button btn = new Button();
 			MenuPanel.LoadTab(btnName, btn);
 
@@ -45,8 +43,8 @@ namespace G8_MillenniumCode
 					return;
 
 				//Reflection de un formulario (clase) por string
-				Assembly ensamblat = Assembly.LoadFrom(proyectoLibForms + ".dll");
-				Type tipus = ensamblat.GetType(proyectoLibForms + "." + classe);
+				Assembly ensamblat = Assembly.LoadFrom(lib + ".dll");
+				Type tipus = ensamblat.GetType(lib + "." + classe);
 				Object dllBD = Activator.CreateInstance(tipus);
 				Form reflectedForm = (Form)dllBD;
 

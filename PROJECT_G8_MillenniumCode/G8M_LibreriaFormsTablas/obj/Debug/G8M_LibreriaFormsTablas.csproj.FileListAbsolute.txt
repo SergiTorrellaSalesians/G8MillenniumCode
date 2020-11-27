@@ -34,3 +34,5 @@ C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_L
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaFormsTablas\obj\Debug\G8M_LibreriaFormsTablas.pdb
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaFormsTablas\obj\Debug\G8M_LibreriaFormsTablas.frm_TablaSpecies.resources
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaFormsTablas\obj\Debug\G8M_LibreriaFormsTablas.frm_TablaPlanets.resources
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaFormsTablas\obj\Debug\G8M_LibreriaFormsTablas.frm_TablaPlanets.resources
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaFormsTablas\obj\Debug\G8M_LibreriaFormsTablas.frm_TablaSpecies.resources
