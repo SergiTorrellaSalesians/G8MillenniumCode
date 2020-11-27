@@ -16,5 +16,8 @@ C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_T
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TablaSpecies\obj\Debug\G8M_TablaSpecies.csproj.GenerateResource.cache
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TablaSpecies\obj\Debug\G8M_TablaSpecies.csproj.CoreCompileInputs.cache
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TablaSpecies\obj\Debug\G8M_TablaSpecies.csproj.CopyComplete
-C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TablaSpecies\obj\Debug\G8M_TablaSpecies.exe
-C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TablaSpecies\obj\Debug\G8M_TablaSpecies.pdb
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\Species.exe.config
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\Species.exe
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\Species.pdb
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TablaSpecies\obj\Debug\Species.exe
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TablaSpecies\obj\Debug\Species.pdb

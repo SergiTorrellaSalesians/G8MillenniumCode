@@ -16,5 +16,8 @@ C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_T
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TablaPlanets\obj\Debug\G8M_TablaPlanets.csproj.GenerateResource.cache
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TablaPlanets\obj\Debug\G8M_TablaPlanets.csproj.CoreCompileInputs.cache
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TablaPlanets\obj\Debug\G8M_TablaPlanets.csproj.CopyComplete
-C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TablaPlanets\obj\Debug\G8M_TablaPlanets.exe
-C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TablaPlanets\obj\Debug\G8M_TablaPlanets.pdb
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\Planets.exe.config
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\Planets.exe
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\Planets.pdb
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TablaPlanets\obj\Debug\Planets.exe
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TablaPlanets\obj\Debug\Planets.pdb

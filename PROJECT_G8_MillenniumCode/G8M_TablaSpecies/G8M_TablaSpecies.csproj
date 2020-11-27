@@ -7,7 +7,7 @@
     <ProjectGuid>{7B02273D-06E9-43F3-B0B3-8A941A21A606}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>G8M_TablaSpecies</RootNamespace>
-    <AssemblyName>G8M_TablaSpecies</AssemblyName>
+    <AssemblyName>Species</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\DLL\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>

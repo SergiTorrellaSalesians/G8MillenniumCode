@@ -7,7 +7,7 @@
     <ProjectGuid>{3E63ED0F-3540-4488-83CC-C77C89195E9C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>G8M_TablaUsers</RootNamespace>
-    <AssemblyName>G8M_TablaUsers</AssemblyName>
+    <AssemblyName>Users</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\DLL\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
