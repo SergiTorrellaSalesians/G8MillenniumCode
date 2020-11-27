@@ -33,7 +33,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\DLL\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -154,9 +154,9 @@
       <Project>{E4EE86A8-0F48-49FF-84B1-00E29CD07BEF}</Project>
       <Name>G8M_LibreriaControles</Name>
     </ProjectReference>
-    <ProjectReference Include="..\G8M_LibreriaFormsTablas\G8M_LibreriaFormsTablas.csproj">
+    <ProjectReference Include="..\G8M_LibreriaFormsTablas\G8M_FORMULARIOS_LINKADOS_X_CAMBIAR.csproj">
       <Project>{47a1c0ea-26ac-48e9-b4e3-d2ea85fb167f}</Project>
-      <Name>G8M_LibreriaFormsTablas</Name>
+      <Name>G8M_FORMULARIOS_LINKADOS_X_CAMBIAR</Name>
     </ProjectReference>
     <ProjectReference Include="..\G8M_LibreriaUsuario\G8M_LibreriaUsuario.csproj">
       <Project>{66cf8fc2-3464-4e92-987c-a5183ec51407}</Project>

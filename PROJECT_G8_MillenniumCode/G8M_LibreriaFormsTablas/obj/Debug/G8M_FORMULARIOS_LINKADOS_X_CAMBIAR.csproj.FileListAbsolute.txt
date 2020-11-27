@@ -1,0 +1,12 @@
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\Agencies.dll
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\Agencies.pdb
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaFormsTablas\obj\Debug\G8M_FORMULARIOS_LINKADOS_X_CAMBIAR.csprojAssemblyReference.cache
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaFormsTablas\obj\Debug\G8M_LibreriaFormsTablas.frm_TablaPlanets.resources
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaFormsTablas\obj\Debug\G8M_LibreriaFormsTablas.frm_TablaSpecies.resources
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaFormsTablas\obj\Debug\G8M_LibreriaFormsTablas.frm_TablaUsers.resources
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaFormsTablas\obj\Debug\G8M_LibreriaFormsTablas.frm_TablaAgencies.resources
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaFormsTablas\obj\Debug\G8M_FORMULARIOS_LINKADOS_X_CAMBIAR.csproj.GenerateResource.cache
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaFormsTablas\obj\Debug\G8M_FORMULARIOS_LINKADOS_X_CAMBIAR.csproj.CoreCompileInputs.cache
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaFormsTablas\obj\Debug\G8M_FORMULARIOS_LINKADOS_X_CAMBIAR.csproj.CopyComplete
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaFormsTablas\obj\Debug\Agencies.dll
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaFormsTablas\obj\Debug\Agencies.pdb
