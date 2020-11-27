@@ -41,6 +41,8 @@ namespace G8M_AccesoDatos
             string connectString = ConfigurationManager.ConnectionStrings["G8_MillenniumCode.Properties.Settings.SecureCoreConnectionString"].ToString();
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(connectString);
 
+            connectString = "Data Source = " + Environment.MachineName.ToString() + connectString.Substring(connectString.IndexOf('\\')); //Manually set computer name
+
             return connectString;
         }
 

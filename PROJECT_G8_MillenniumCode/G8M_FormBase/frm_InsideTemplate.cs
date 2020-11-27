@@ -31,7 +31,6 @@ namespace G8M_FormBase
 				return;
 
 			G8M_AccesoDatos.AccesoDatos ad_lib;
-
 			ad_lib = new AccesoDatos();
 
 			//Pasar nom de la taula com parametre al form a l'hora d'afegir els textbox
