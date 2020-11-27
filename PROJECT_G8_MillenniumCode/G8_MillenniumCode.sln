@@ -13,7 +13,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G8M_LibreriaControles", "G8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G8M_AccesoDatos", "G8M_AccesoDatos\G8M_AccesoDatos.csproj", "{FE562EB4-7A92-4649-8E28-6784B88E0046}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G8M_LibreriaFormsTablas", "G8M_LibreriaFormsTablas\G8M_LibreriaFormsTablas.csproj", "{47A1C0EA-26AC-48E9-B4E3-D2EA85FB167F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G8M_TablaAgencies", "G8M_LibreriaFormsTablas\G8M_TablaAgencies.csproj", "{47A1C0EA-26AC-48E9-B4E3-D2EA85FB167F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G8M_TablaPlanets", "G8M_TablaPlanets\G8M_TablaPlanets.csproj", "{088BCF2A-96E8-4EC1-81EC-528B7BB25CAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G8M_TablaSpecies", "G8M_TablaSpecies\G8M_TablaSpecies.csproj", "{7B02273D-06E9-43F3-B0B3-8A941A21A606}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G8M_TablaUsers", "G8M_TablaUsers\G8M_TablaUsers.csproj", "{3E63ED0F-3540-4488-83CC-C77C89195E9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,18 @@ Global
 		{47A1C0EA-26AC-48E9-B4E3-D2EA85FB167F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47A1C0EA-26AC-48E9-B4E3-D2EA85FB167F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47A1C0EA-26AC-48E9-B4E3-D2EA85FB167F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088BCF2A-96E8-4EC1-81EC-528B7BB25CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088BCF2A-96E8-4EC1-81EC-528B7BB25CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088BCF2A-96E8-4EC1-81EC-528B7BB25CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088BCF2A-96E8-4EC1-81EC-528B7BB25CAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B02273D-06E9-43F3-B0B3-8A941A21A606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B02273D-06E9-43F3-B0B3-8A941A21A606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B02273D-06E9-43F3-B0B3-8A941A21A606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B02273D-06E9-43F3-B0B3-8A941A21A606}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E63ED0F-3540-4488-83CC-C77C89195E9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E63ED0F-3540-4488-83CC-C77C89195E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E63ED0F-3540-4488-83CC-C77C89195E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E63ED0F-3540-4488-83CC-C77C89195E9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
