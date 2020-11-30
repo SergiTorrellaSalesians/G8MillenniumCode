@@ -14,6 +14,7 @@ namespace G8M_LibreriaUsuario
 		{
 			String usuari = "PROVA";
 			String pass = "12345";
+			//Implementar si coinciden las credenciales con la BBDD
 
 			bool valid = (input_username == usuari && input_password == pass);
 			return valid;
