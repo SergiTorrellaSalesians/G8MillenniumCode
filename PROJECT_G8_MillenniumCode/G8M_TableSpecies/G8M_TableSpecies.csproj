@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>G8M_TableSpecies</RootNamespace>
-    <AssemblyName>Species</AssemblyName>
+    <AssemblyName>G8M_TableSpecies</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm_TableSpecies.cs">
+    <Compile Include="frm_tableSpecies.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_TableSpecies.Designer.cs">
-      <DependentUpon>frm_TableSpecies.cs</DependentUpon>
+    <Compile Include="frm_tableSpecies.Designer.cs">
+      <DependentUpon>frm_tableSpecies.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -70,8 +70,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frm_TableSpecies.resx">
-      <DependentUpon>frm_TableSpecies.cs</DependentUpon>
+    <EmbeddedResource Include="frm_tableSpecies.resx">
+      <DependentUpon>frm_tableSpecies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

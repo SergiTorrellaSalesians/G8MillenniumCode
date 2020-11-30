@@ -146,6 +146,10 @@
       <Project>{fe562eb4-7a92-4649-8e28-6784b88e0046}</Project>
       <Name>G8M_AccesoDatos</Name>
     </ProjectReference>
+    <ProjectReference Include="..\G8M_Agencies\G8M_TableAgencies.csproj">
+      <Project>{975afcbc-b615-4322-a98a-62db8a44c0f8}</Project>
+      <Name>G8M_TableAgencies</Name>
+    </ProjectReference>
     <ProjectReference Include="..\G8M_FormBase\G8M_FormBase.csproj">
       <Project>{f4633fea-bc70-4823-bf39-03bdb0e42018}</Project>
       <Name>G8M_FormBase</Name>
@@ -154,13 +158,21 @@
       <Project>{E4EE86A8-0F48-49FF-84B1-00E29CD07BEF}</Project>
       <Name>G8M_LibreriaControles</Name>
     </ProjectReference>
-    <ProjectReference Include="..\G8M_LibreriaFormsTablas\G8M_FORMULARIOS_LINKADOS_X_CAMBIAR.csproj">
-      <Project>{47a1c0ea-26ac-48e9-b4e3-d2ea85fb167f}</Project>
-      <Name>G8M_FORMULARIOS_LINKADOS_X_CAMBIAR</Name>
-    </ProjectReference>
     <ProjectReference Include="..\G8M_LibreriaUsuario\G8M_LibreriaUsuario.csproj">
       <Project>{66cf8fc2-3464-4e92-987c-a5183ec51407}</Project>
       <Name>G8M_LibreriaUsuario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\G8M_Planets\G8M_TablePlanets.csproj">
+      <Project>{285045d4-ab6b-4670-b441-2a73943ef482}</Project>
+      <Name>G8M_TablePlanets</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\G8M_TableSpecies\G8M_TableSpecies.csproj">
+      <Project>{ef546d3e-fbef-459f-af46-f70552d7c99d}</Project>
+      <Name>G8M_TableSpecies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\G8M_TableUsers\G8M_TableUsers.csproj">
+      <Project>{470df3c4-7015-4b94-afe5-0ea71b04bcad}</Project>
+      <Name>G8M_TableUsers</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

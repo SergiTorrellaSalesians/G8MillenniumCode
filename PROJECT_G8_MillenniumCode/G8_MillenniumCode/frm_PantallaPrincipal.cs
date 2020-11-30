@@ -21,10 +21,10 @@ namespace G8_MillenniumCode
 		private void frm_PantallaPrincipal_Load(object sender, EventArgs e)
 		{
 			createButton("CLEAR", null, null); //
-			createButton("AGENCIES", "G8M_LibreriaFormsTablas", "frm_TablaAgencies");
-			createButton("USERS", "G8M_LibreriaFormsTablas", "frm_TablaUsers");
-			createButton("SPECIES", "G8M_LibreriaFormsTablas", "frm_TablaSpecies");
-			createButton("PLANETS", "G8M_LibreriaFormsTablas", "frm_TablaPlanets");
+			createButton("AGENCIES", "G8M_TableAgencies", "frm_tableAgencies");
+			createButton("USERS", "G8M_TableUsers", "frm_tableUsers");
+			createButton("SPECIES", "G8M_TableSpecies", "frm_tableSpecies");
+			createButton("PLANETS", "G8M_TablePlanets", "frm_tablePlanets");
 
 			MenuPanel.LoadMenu();
 		}

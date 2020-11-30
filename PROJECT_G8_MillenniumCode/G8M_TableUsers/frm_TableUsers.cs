@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace G8M_TableUsers
 {
-    public partial class frm_TableUsers : G8M_FormBase.frm_InsideTemplate
+    public partial class frm_tableUsers : G8M_FormBase.frm_InsideTemplate
     {
-        public frm_TableUsers()
+        public frm_tableUsers()
         {
             InitializeComponent();
         }

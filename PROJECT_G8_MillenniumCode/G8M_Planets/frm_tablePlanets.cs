@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace G8M_Planets
+namespace G8M_TablePlanets
 {
-    public partial class frm_TablaPLanets : G8M_FormBase.frm_InsideTemplate
+    public partial class frm_tablePlanets : G8M_FormBase.frm_InsideTemplate
     {
-        public frm_TablaPLanets()
+        public frm_tablePlanets()
         {
             InitializeComponent();
         }

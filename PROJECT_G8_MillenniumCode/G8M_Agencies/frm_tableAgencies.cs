@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace G8M_Agencies
+namespace G8M_TableAgencies
 {
-    public partial class frm_tablaAgencies : G8M_FormBase.frm_InsideTemplate
+    public partial class frm_tableAgencies : G8M_FormBase.frm_InsideTemplate
     {
-        public frm_tablaAgencies()
+        public frm_tableAgencies()
         {
             InitializeComponent();
         }

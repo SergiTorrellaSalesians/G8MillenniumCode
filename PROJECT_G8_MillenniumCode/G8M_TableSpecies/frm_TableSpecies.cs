@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace G8M_TableSpecies
 {
-    public partial class frm_TableSpecies : G8M_FormBase.frm_InsideTemplate
+    public partial class frm_tableSpecies : G8M_FormBase.frm_InsideTemplate
     {
-        public frm_TableSpecies()
+        public frm_tableSpecies()
         {
             InitializeComponent();
         }
