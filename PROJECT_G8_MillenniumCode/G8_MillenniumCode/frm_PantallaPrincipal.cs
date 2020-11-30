@@ -8,11 +8,14 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Reflection;
+using G8M_LibreriaUsuario;
 
 namespace G8_MillenniumCode
 {
 	public partial class frm_PantallaPrincipal : G8M_FormBase.frm_Template
 	{
+		G8M_LibreriaUsuario.Metodos met = new Metodos();
+
 		public frm_PantallaPrincipal()
 		{
 			InitializeComponent();
@@ -20,6 +23,8 @@ namespace G8_MillenniumCode
 
 		private void frm_PantallaPrincipal_Load(object sender, EventArgs e)
 		{
+			MessageBox.Show((met.USER_ID).ToString()); //
+
 			createButton("CLEAR", null, null); //
 			createButton("AGENCIES", "G8M_TableAgencies", "frm_tableAgencies");
 			createButton("USERS", "G8M_TableUsers", "frm_tableUsers");
