@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
+using System.Data;
 using System.Diagnostics;
 using G8M_AccesoDatos;
 
@@ -12,18 +13,26 @@ namespace G8M_LibreriaUsuario
 	public class Metodos
 	{
 		public int USER_ID;
-		G8M_AccesoDatos.AccesoDatos ad_lib;
+		DataSet dtsTabla;
+
+		public void ConnectData(){
+			G8M_AccesoDatos.AccesoDatos ad_lib;
+			ad_lib = new AccesoDatos();
+			DataSet dtsTabla = ad_lib.PortarTaula("Users");
+		}
 
 		public bool ValidacioLogin(String input_username, String input_password)
 		{
-			String usuari = "PROVA";
-			String pass = "12345";
-			//Implementar si coinciden las credenciales con la BBDD
-			
-			bool valid = (input_username == usuari && input_password == pass);
+			bool valid = false;
 
-			if(valid)
-				ad_lib = new AccesoDatos();
+			foreach (DataRow dr in dtsTabla.Tables[0].Rows) {
+				if(dr["Login"].ToString() == input_username
+				&& dr["Password"].ToString() == input_password)
+				{
+					valid = true;
+					USER_ID = int.Parse(dr["idUser"].ToString());
+				}
+			}
 
 			//Devolver UserID del usuario y el password
 

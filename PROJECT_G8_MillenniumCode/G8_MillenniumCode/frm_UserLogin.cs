@@ -15,15 +15,23 @@ namespace G8_MillenniumCode
 	public partial class frm_UserLogin : G8M_FormBase.frm_Template
 	{
 		int timerCount = 0;
+		G8M_LibreriaUsuario.Metodos met;
+
 		public frm_UserLogin()
 		{
 			InitializeComponent();
+		}
+
+		private void frm_UserLogin_Load(object sender, EventArgs e)
+		{
 			lbl_msg.Text = "";
+
+			G8M_LibreriaUsuario.Metodos met = new Metodos();
+			met.ConnectData();
 		}
 
 		private void tbn_validaciousuari_Click(object sender, EventArgs e)
 		{
-			G8M_LibreriaUsuario.Metodos met = new Metodos();
 			bool validar = met.ValidacioLogin(tbx_username.Text, tbx_password.Text);
 
 			if (!validar)
