@@ -68,7 +68,7 @@
 			this.tbx_username.Name = "tbx_username";
 			this.tbx_username.Size = new System.Drawing.Size(153, 20);
 			this.tbx_username.TabIndex = 4;
-			this.tbx_username.Text = "PROVA";
+			this.tbx_username.Text = "1";
 			this.tbx_username.TextChanged += new System.EventHandler(this.tbx_username_TextChanged);
 			// 
 			// tbx_password
@@ -78,7 +78,7 @@
 			this.tbx_password.PasswordChar = '*';
 			this.tbx_password.Size = new System.Drawing.Size(153, 20);
 			this.tbx_password.TabIndex = 5;
-			this.tbx_password.Text = "12345";
+			this.tbx_password.Text = "1";
 			this.tbx_password.TextChanged += new System.EventHandler(this.tbx_password_TextChanged);
 			// 
 			// tbn_validaciousuari

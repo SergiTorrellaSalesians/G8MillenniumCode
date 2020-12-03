@@ -8,14 +8,17 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using G8M_LibreriaUsuario;
+using System.Data.SqlClient;
+using System.Globalization;
+using System.Configuration;
+using G8M_AccesoDatos;
 
 namespace G8_MillenniumCode
 {
 	public partial class frm_UserLogin : G8M_FormBase.frm_Template
 	{
 		int timerCount = 0;
-		G8M_LibreriaUsuario.Metodos met;
+		int Login_USER_ID;
 
 		public frm_UserLogin()
 		{
@@ -25,14 +28,11 @@ namespace G8_MillenniumCode
 		private void frm_UserLogin_Load(object sender, EventArgs e)
 		{
 			lbl_msg.Text = "";
-
-			G8M_LibreriaUsuario.Metodos met = new Metodos();
-			met.ConnectData();
 		}
 
 		private void tbn_validaciousuari_Click(object sender, EventArgs e)
 		{
-			bool validar = met.ValidacioLogin(tbx_username.Text, tbx_password.Text);
+			bool validar = ValidacioLogin(tbx_username.Text, tbx_password.Text);
 
 			if (!validar)
 			{
@@ -46,6 +46,32 @@ namespace G8_MillenniumCode
 
 				TimerForm.Enabled = true;
 			}
+		}
+		private bool ValidacioLogin(String input_username, String input_password)
+		{
+			bool valid = false;
+
+			G8M_AccesoDatos.AccesoDatos ad_lib;
+			ad_lib = new AccesoDatos();
+			ad_lib.Connectar();
+
+			String query = "SELECT * FROM Users WHERE Login = '" + input_username + "' and Password = '" + input_password + "'";
+			SqlDataAdapter adapterLocal = new SqlDataAdapter(query, ad_lib.conn);
+
+			DataSet dts = new DataSet();
+			ad_lib.conn.Open();
+			adapterLocal.Fill(dts);
+			ad_lib.conn.Close();
+
+			if (dts.Tables[0].Rows.Count > 0) {
+				if(dts.Tables[0].Rows.Count > 1)
+					MessageBox.Show("CAUTION: User is duplicated");
+
+				valid = true;
+				Login_USER_ID = Int32.Parse(dts.Tables[0].Rows[0]["idUser"].ToString());
+			}
+
+			return valid;
 		}
 
 		private void tbx_username_TextChanged(object sender, EventArgs e)
@@ -65,9 +91,11 @@ namespace G8_MillenniumCode
 			if(timerCount >= 3)
 			{
 				frm_PantallaPrincipal new_frm = new frm_PantallaPrincipal();
+				new_frm.USER_ID = Login_USER_ID;
 				new_frm.Show();
 				this.Hide();
 				TimerForm.Enabled = false;
+				timerCount = 0;
 			}
 		}
 	}

@@ -158,10 +158,6 @@
       <Project>{E4EE86A8-0F48-49FF-84B1-00E29CD07BEF}</Project>
       <Name>G8M_LibreriaControles</Name>
     </ProjectReference>
-    <ProjectReference Include="..\G8M_LibreriaUsuario\G8M_LibreriaUsuario.csproj">
-      <Project>{66cf8fc2-3464-4e92-987c-a5183ec51407}</Project>
-      <Name>G8M_LibreriaUsuario</Name>
-    </ProjectReference>
     <ProjectReference Include="..\G8M_Planets\G8M_TablePlanets.csproj">
       <Project>{285045d4-ab6b-4670-b441-2a73943ef482}</Project>
       <Name>G8M_TablePlanets</Name>

@@ -64,10 +64,6 @@
       <Project>{e4ee86a8-0f48-49ff-84b1-00e29cd07bef}</Project>
       <Name>G8M_LibreriaControles</Name>
     </ProjectReference>
-    <ProjectReference Include="..\G8M_LibreriaUsuario\G8M_LibreriaUsuario.csproj">
-      <Project>{66cf8fc2-3464-4e92-987c-a5183ec51407}</Project>
-      <Name>G8M_LibreriaUsuario</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frm_tableAgencies.resx">

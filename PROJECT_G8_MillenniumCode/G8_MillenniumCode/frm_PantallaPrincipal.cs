@@ -8,13 +8,14 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Reflection;
-using G8M_LibreriaUsuario;
+using G8M_AccesoDatos;
 
 namespace G8_MillenniumCode
 {
 	public partial class frm_PantallaPrincipal : G8M_FormBase.frm_Template
 	{
-		G8M_LibreriaUsuario.Metodos met = new Metodos();
+		public int USER_ID;
+		G8M_AccesoDatos.AccesoDatos ad_lib;
 
 		public frm_PantallaPrincipal()
 		{
@@ -23,7 +24,16 @@ namespace G8_MillenniumCode
 
 		private void frm_PantallaPrincipal_Load(object sender, EventArgs e)
 		{
-			MessageBox.Show((met.USER_ID).ToString()); //
+			ad_lib = new AccesoDatos();
+
+			txt_codeUser.Text = "CODE: " + ad_lib.GetTableData("CodeUser",
+				"SELECT * FROM Users WHERE idUser = " + USER_ID).ToString();
+			txt_userName.Text = "USER: " + ad_lib.GetTableData("UserName",
+				"SELECT * FROM Users WHERE idUser = " + USER_ID).ToString();
+			int idRank = Int32.Parse(ad_lib.GetTableData("idUserRank",
+				"SELECT * FROM Users WHERE idUser = " + USER_ID).ToString());
+			txt_idUserRank.Text = "RANK: " + ad_lib.GetTableData("DescRank",
+				"SELECT * FROM UserRanks WHERE idUserRank = " + idRank).ToString();
 
 			createButton("CLEAR", null, null); //
 			createButton("AGENCIES", "G8M_TableAgencies", "frm_tableAgencies");
@@ -64,5 +74,5 @@ namespace G8_MillenniumCode
 
 			btn.Click += btn_fnc;
 		}
-    }
+	}
 }

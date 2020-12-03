@@ -14,9 +14,9 @@ namespace G8M_AccesoDatos
     {
         #region variables globals
 
-        private SqlConnection conn;
+        public SqlConnection conn;
         private string query;
-        DataSet dts;
+        public DataSet dts;
 
         #endregion
 
@@ -168,7 +168,7 @@ namespace G8M_AccesoDatos
         */
         public void GeneraConsultaCerca(string tablename, Dictionary<string, string> nomvalorcamps)
         {
-            string query = "select count(*) from"+ tablename;
+            string query = "select count(*) from" + tablename;
             conn.Open();
             SqlCommand cmd = new SqlCommand(query, conn);
             int numAlumnes = (int)cmd.ExecuteScalar();
@@ -186,6 +186,21 @@ namespace G8M_AccesoDatos
         public void Actualitza()
         {
 
+        }
+
+        public string GetTableData(string nomCamp, string query)
+        {
+            Connectar();
+
+            SqlDataAdapter adapterLocal = new SqlDataAdapter(query, conn);
+
+            DataSet dts = new DataSet();
+
+            conn.Open();
+            adapterLocal.Fill(dts);
+            conn.Close();
+
+            return dts.Tables[0].Rows[0][nomCamp].ToString();
         }
     }
 }
