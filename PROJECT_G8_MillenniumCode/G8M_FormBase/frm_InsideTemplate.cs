@@ -14,6 +14,9 @@ namespace G8M_FormBase
 {
 	public partial class frm_InsideTemplate : Form
 	{
+		G8M_AccesoDatos.AccesoDatos ad_lib;
+		DataSet dtsTabla;
+
 		public string nomTaula;
 		public string _nomTaula {
 			get { return nomTaula; }
@@ -30,11 +33,10 @@ namespace G8M_FormBase
 			if(DesignMode)
 				return;
 
-			G8M_AccesoDatos.AccesoDatos ad_lib;
 			ad_lib = new AccesoDatos();
 
 			//Pasar nom de la taula com parametre al form a l'hora d'afegir els textbox
-			DataSet dtsTabla = ad_lib.PortarTaula(nomTaula);
+			dtsTabla = ad_lib.PortarTaula(nomTaula);
 			dtg_BBDDdata.DataSource = dtsTabla.Tables[0];
 
 			foreach (Control ctrl in this.Controls) {
@@ -68,6 +70,12 @@ namespace G8M_FormBase
 		}
 		private void ValidarComboBox(object sender, EventArgs e) {
 			((ComboBox)sender).DataBindings[0].BindingManagerBase.EndCurrentEdit();
+		}
+
+		private void btn_actualitzar_Click(object sender, EventArgs e)
+		{
+			if(ad_lib.Actualitzar(dtsTabla, nomTaula))
+				MessageBox.Show("DataBase successfully updated");
 		}
 	}
 }

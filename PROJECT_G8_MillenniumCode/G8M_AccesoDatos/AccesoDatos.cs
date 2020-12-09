@@ -12,13 +12,8 @@ namespace G8M_AccesoDatos
 {
     public class AccesoDatos
     {
-        #region variables globals
-
         public SqlConnection conn;
-        private string query;
         public DataSet dts;
-
-        #endregion
 
         public void EncriptarConnectionString()
         {
@@ -117,26 +112,29 @@ namespace G8M_AccesoDatos
             return dataset_portarperconsulta;
         }
 
-        public void Actualitzar(string table_name)
+        public bool Actualitzar(DataSet dts, string bbdd_tablename)
         {
-            dts = new DataSet();
+            bool correct = false;
 
+            Connectar();
+            conn.Open();
+
+            string query = "select * from " + bbdd_tablename;
             SqlDataAdapter adapter;
             adapter = new SqlDataAdapter(query, conn);
             SqlCommandBuilder cmdBuilder;
             cmdBuilder = new SqlCommandBuilder(adapter);
 
-            Connectar();
-
-            conn.Open();
-
 
             if (dts.HasChanges())
             {
-                int result = adapter.Update(dts.Tables[table_name]);
+                int result = adapter.Update(dts.Tables[0]);
+                correct = true;
             }
 
             conn.Close();
+
+            return correct;
         }
 
         //Hi haurà una funció Executa que rebrà una consulta de modificació, 
@@ -182,11 +180,6 @@ namespace G8M_AccesoDatos
         funció del base i a continuació modificar el registre acabat de modificar per tal de
         modificar la fotografia o el document adjunt.
         */
-
-        public void Actualitza()
-        {
-
-        }
 
         public string GetTableData(string nomCamp, string query)
         {

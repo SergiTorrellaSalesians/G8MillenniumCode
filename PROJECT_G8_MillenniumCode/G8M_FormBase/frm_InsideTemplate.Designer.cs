@@ -43,6 +43,7 @@
 			this.btn_actualitzar.TabIndex = 5;
 			this.btn_actualitzar.Text = "Actualitzar";
 			this.btn_actualitzar.UseVisualStyleBackColor = true;
+			this.btn_actualitzar.Click += new System.EventHandler(this.btn_actualitzar_Click);
 			// 
 			// dtg_BBDDdata
 			// 

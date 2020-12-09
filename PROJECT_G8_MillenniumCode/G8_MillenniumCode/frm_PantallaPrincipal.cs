@@ -36,13 +36,20 @@ namespace G8_MillenniumCode
 				"SELECT * FROM UserRanks WHERE idUserRank = " + idRank).ToString();
 
 			createButton("CLEAR", null, null); //
-			createButton("BUSCADOR", "G8M_PantallaBuscador", "frm_buscador");
 
-			createButton("AGENCIES", "G8M_TableAgencies", "frm_tableAgencies");
-			createButton("USERS", "G8M_TableUsers", "frm_tableUsers");
-			createButton("SPECIES", "G8M_TableSpecies", "frm_tableSpecies");
-			createButton("PLANETS", "G8M_TablePlanets", "frm_tablePlanets");
-			createButton("USER CATEGORIES", "G8M_TableUserCategories", "frm_TableUserCategories");
+			DataSet dtsTablaDeTablas = ad_lib.PortarTaula("MenuOptions");
+			foreach (DataRow dr in dtsTablaDeTablas.Tables[0].Rows) {
+				if(Int32.Parse(dr["nivellAcces"].ToString()) >= idRank) {
+					createButton(dr["nomOpcio"].ToString().Trim(), dr["ensamblat"].ToString().Trim(), dr["classe"].ToString().Trim());
+				}
+			}
+					
+			//createButton("BUSCADOR", "G8M_PantallaBuscador", "frm_buscador");
+			//createButton("AGENCIES", "G8M_TableAgencies", "frm_tableAgencies");
+			//createButton("USERS", "G8M_TableUsers", "frm_tableUsers");
+			//createButton("SPECIES", "G8M_TableSpecies", "frm_tableSpecies");
+			//createButton("PLANETS", "G8M_TablePlanets", "frm_tablePlanets");
+			//createButton("USER CATEGORIES", "G8M_TableUserCategories", "frm_TableUserCategories");
 
 			MenuPanel.LoadMenu();
 		}
