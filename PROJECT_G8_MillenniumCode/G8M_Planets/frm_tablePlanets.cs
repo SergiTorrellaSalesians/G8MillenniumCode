@@ -16,5 +16,10 @@ namespace G8M_TablePlanets
         {
             InitializeComponent();
         }
+
+        private void frm_tablePlanets_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
