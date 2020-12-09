@@ -142,5 +142,9 @@ namespace G8M_TableUsers
         private G8M_LibreriaControles.SWTextbox txt_password;
         private System.Windows.Forms.Label label1;
         private G8M_LibreriaControles.SWTextbox txt_username;
+        private G8M_LibreriaControles.SWComboFK swComboFK4;
+        private G8M_LibreriaControles.SWComboFK swComboFK3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
