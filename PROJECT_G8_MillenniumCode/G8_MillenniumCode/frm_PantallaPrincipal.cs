@@ -42,6 +42,7 @@ namespace G8_MillenniumCode
 			createButton("USERS", "G8M_TableUsers", "frm_tableUsers");
 			createButton("SPECIES", "G8M_TableSpecies", "frm_tableSpecies");
 			createButton("PLANETS", "G8M_TablePlanets", "frm_tablePlanets");
+			createButton("USER CATEGORIES", "G8M_TableUserCategories", "frm_TableUserCategories");
 
 			MenuPanel.LoadMenu();
 		}
@@ -61,6 +62,8 @@ namespace G8_MillenniumCode
 
 				//Reflection de un formulario (clase) por string
 				Assembly ensamblat = Assembly.LoadFrom(lib + ".dll");
+
+				//classe = classe.Substring(classe.IndexOf("."));
 				Type tipus = ensamblat.GetType(lib + "." + classe);
 				Object dllBD = Activator.CreateInstance(tipus);
 				Form reflectedForm = (Form)dllBD;
