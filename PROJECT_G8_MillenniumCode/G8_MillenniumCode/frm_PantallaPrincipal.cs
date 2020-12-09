@@ -36,6 +36,8 @@ namespace G8_MillenniumCode
 				"SELECT * FROM UserRanks WHERE idUserRank = " + idRank).ToString();
 
 			createButton("CLEAR", null, null); //
+			createButton("BUSCADOR", "G8M_PantallaBuscador", "frm_buscador");
+
 			createButton("AGENCIES", "G8M_TableAgencies", "frm_tableAgencies");
 			createButton("USERS", "G8M_TableUsers", "frm_tableUsers");
 			createButton("SPECIES", "G8M_TableSpecies", "frm_tableSpecies");
