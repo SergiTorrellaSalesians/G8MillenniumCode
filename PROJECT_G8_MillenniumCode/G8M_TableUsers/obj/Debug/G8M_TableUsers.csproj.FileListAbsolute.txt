@@ -16,3 +16,12 @@ C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_T
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.csproj.CopyComplete
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.dll
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.pdb
+D:\Proyectos\github\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_TableUsers.dll
+D:\Proyectos\github\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_TableUsers.pdb
+D:\Proyectos\github\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.csprojAssemblyReference.cache
+D:\Proyectos\github\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.frm_tableUsers.resources
+D:\Proyectos\github\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.csproj.GenerateResource.cache
+D:\Proyectos\github\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.csproj.CoreCompileInputs.cache
+D:\Proyectos\github\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.csproj.CopyComplete
+D:\Proyectos\github\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.dll
+D:\Proyectos\github\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.pdb
