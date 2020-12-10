@@ -17,6 +17,14 @@ namespace G8M_TableUsers
         {
             InitializeComponent();
         }
+
+        private void CarregaDades()
+        {
+        }
+        private void frm_tableUsers_Load(object sender, EventArgs e)
+        {
+
+        }
         //public byte[] imageToByteArray(Image i)
         //{
         //    using (var ms = new MemoryStream())

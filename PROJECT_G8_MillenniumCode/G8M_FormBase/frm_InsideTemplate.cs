@@ -17,6 +17,17 @@ namespace G8M_FormBase
 		G8M_AccesoDatos.AccesoDatos ad_lib;
 		DataSet dtsTabla;
 
+		UsersEntities db;
+		List<User> users;
+
+		private void CarregaDades()
+		{
+			db = new UsersEntities();
+
+			users = db.Users.ToList();
+			dtg_BBDDdata.DataSource = users;
+		}
+
 		public string nomTaula;
 		public string _nomTaula {
 			get { return nomTaula; }
@@ -30,7 +41,7 @@ namespace G8M_FormBase
 
 		private void frm_InsideTemplate_Load(object sender, EventArgs e)
 		{
-			if(DesignMode)
+			if(DesignMode || nomTaula == "")
 				return;
 
 			ad_lib = new AccesoDatos();
@@ -74,8 +85,14 @@ namespace G8M_FormBase
 
 		private void btn_actualitzar_Click(object sender, EventArgs e)
 		{
-			if(ad_lib.Actualitzar(dtsTabla, nomTaula))
-				MessageBox.Show("DataBase successfully updated");
+			if (nomTaula == "") { //EntityFramework
+				db.SaveChanges();
+			}
+			else { //DataSet
+				bool success = ad_lib.Actualitzar(dtsTabla, nomTaula);
+				if(success)
+					MessageBox.Show("DataBase successfully updated");
+			}
 		}
 	}
 }
