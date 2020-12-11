@@ -1,0 +1,15 @@
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\bin\Debug\G8_RepteEntityFramework.exe.config
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\bin\Debug\G8_RepteEntityFramework.exe
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\bin\Debug\G8_RepteEntityFramework.pdb
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\bin\Debug\EntityFramework.dll
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\bin\Debug\EntityFramework.xml
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\obj\Debug\G8_RepteEntityFramework.csprojAssemblyReference.cache
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\obj\Debug\G8_RepteEntityFramework.frm_repte.resources
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\obj\Debug\G8_RepteEntityFramework.Properties.Resources.resources
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\obj\Debug\G8_RepteEntityFramework.csproj.GenerateResource.cache
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\obj\Debug\G8_RepteEntityFramework.csproj.CoreCompileInputs.cache
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\obj\Debug\G8_RepteEntityFramework.csproj.CopyComplete
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\obj\Debug\G8_RepteEntityFramework.exe
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\obj\Debug\G8_RepteEntityFramework.pdb
