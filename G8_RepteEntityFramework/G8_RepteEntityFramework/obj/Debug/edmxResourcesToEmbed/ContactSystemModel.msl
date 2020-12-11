@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ContactSystemModelStoreContainer" CdmEntityContainer="ContactSystemEntities">
+    <EntitySetMapping Name="ContactSystems">
+      <EntityTypeMapping TypeName="ContactSystemModel.ContactSystem">
+        <MappingFragment StoreEntitySet="ContactSystem">
+          <ScalarProperty Name="IdSystem" ColumnName="IdSystem" />
+          <ScalarProperty Name="IdContact" ColumnName="IdContact" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SystemValue" ColumnName="SystemValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

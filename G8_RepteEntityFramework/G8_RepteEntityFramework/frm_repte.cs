@@ -55,7 +55,7 @@ namespace G8_RepteEntityFramework
         private void frm_repte_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'secureCoreDataSet.NewContact' Puede moverla o quitarla según sea necesario.
-            this.newContactTableAdapter.Fill(this.secureCoreDataSet.NewContact);
+            //this.newContactTableAdapter.Fill(this.secureCoreDataSet.NewContact);
 			CarregaDades();
 
         }

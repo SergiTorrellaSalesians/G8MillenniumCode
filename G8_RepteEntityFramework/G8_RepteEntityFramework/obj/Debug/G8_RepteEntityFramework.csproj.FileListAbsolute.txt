@@ -13,3 +13,4 @@ C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_Rept
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\obj\Debug\G8_RepteEntityFramework.csproj.CopyComplete
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\obj\Debug\G8_RepteEntityFramework.exe
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\obj\Debug\G8_RepteEntityFramework.pdb
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\G8_RepteEntityFramework\G8_RepteEntityFramework\obj\Debug\G8_RepteEntityFramework.frm_contactsystem.resources
