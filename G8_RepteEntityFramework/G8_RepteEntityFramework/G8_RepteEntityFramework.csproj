@@ -55,6 +55,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContactSystem.cs">
+      <DependentUpon>ContactSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContactSystemModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactSystemModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContactSystemModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContactSystemModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactSystemModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_contactsystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_contactsystem.Designer.cs">
+      <DependentUpon>frm_contactsystem.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_repte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +110,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SecureCoreDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frm_contactsystem.resx">
+      <DependentUpon>frm_contactsystem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_repte.resx">
       <DependentUpon>frm_repte.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +129,13 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>NewContactModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="ContactSystemModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ContactSystemModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ContactSystemModel.edmx.diagram">
+      <DependentUpon>ContactSystemModel.edmx</DependentUpon>
+    </None>
     <None Include="NewContactModel.edmx.diagram">
       <DependentUpon>NewContactModel.edmx</DependentUpon>
     </None>
@@ -131,6 +165,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ContactSystemModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ContactSystemModel.edmx</DependentUpon>
+      <LastGenOutput>ContactSystemModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ContactSystemModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ContactSystemModel.edmx</DependentUpon>
+      <LastGenOutput>ContactSystemModel.cs</LastGenOutput>
+    </Content>
     <Content Include="NewContactModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>NewContactModel.Context.cs</LastGenOutput>
