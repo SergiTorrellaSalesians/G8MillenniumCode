@@ -34,8 +34,12 @@
 			this.txt_codeUser = new System.Windows.Forms.Label();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.MenuPanel = new G8M_LibreriaControles.MenuCustom();
+			this.label1 = new System.Windows.Forms.Label();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.lowPanel = new System.Windows.Forms.Panel();
 			this.formShowPanel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// formShowPanel
@@ -101,14 +105,50 @@
 			this.MenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
 			this.MenuPanel.Location = new System.Drawing.Point(0, 39);
 			this.MenuPanel.Name = "MenuPanel";
-			this.MenuPanel.Size = new System.Drawing.Size(149, 333);
+			this.MenuPanel.Size = new System.Drawing.Size(149, 359);
 			this.MenuPanel.TabIndex = 0;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+			this.label1.Font = new System.Drawing.Font("SimSun-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.Color.Yellow;
+			this.label1.Location = new System.Drawing.Point(181, 12);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(62, 16);
+			this.label1.TabIndex = 4;
+			this.label1.Text = "USUARI";
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+			this.pictureBox1.Image = global::G8_MillenniumCode.Properties.Resources.output_onlinepngtools;
+			this.pictureBox1.Location = new System.Drawing.Point(150, 5);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox1.TabIndex = 5;
+			this.pictureBox1.TabStop = false;
+			// 
+			// lowPanel
+			// 
+			this.lowPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+			this.lowPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.lowPanel.ForeColor = System.Drawing.Color.White;
+			this.lowPanel.Location = new System.Drawing.Point(149, 379);
+			this.lowPanel.Name = "lowPanel";
+			this.lowPanel.Size = new System.Drawing.Size(316, 19);
+			this.lowPanel.TabIndex = 6;
 			// 
 			// frm_PantallaPrincipal
 			// 
 			this.AutoSize = true;
 			this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.ClientSize = new System.Drawing.Size(465, 372);
+			this.ClientSize = new System.Drawing.Size(465, 398);
+			this.Controls.Add(this.lowPanel);
+			this.Controls.Add(this.pictureBox1);
+			this.Controls.Add(this.label1);
 			this.Controls.Add(this.MenuPanel);
 			this.Controls.Add(this.formShowPanel);
 			this.Name = "frm_PantallaPrincipal";
@@ -116,9 +156,13 @@
 			this.Load += new System.EventHandler(this.frm_PantallaPrincipal_Load);
 			this.Controls.SetChildIndex(this.formShowPanel, 0);
 			this.Controls.SetChildIndex(this.MenuPanel, 0);
+			this.Controls.SetChildIndex(this.label1, 0);
+			this.Controls.SetChildIndex(this.pictureBox1, 0);
+			this.Controls.SetChildIndex(this.lowPanel, 0);
 			this.formShowPanel.ResumeLayout(false);
 			this.formShowPanel.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -132,5 +176,8 @@
 		private System.Windows.Forms.Label txt_codeUser;
 		private System.Windows.Forms.Label txt_userName;
 		private System.Windows.Forms.Label txt_idUserRank;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.Panel lowPanel;
 	}
 }
