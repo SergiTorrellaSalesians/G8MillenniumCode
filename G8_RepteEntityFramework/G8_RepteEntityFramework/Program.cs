@@ -16,7 +16,7 @@ namespace G8_RepteEntityFramework
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new frm_contactsystem());
+			Application.Run(new frm_repte());
 		}
 	}
 }
