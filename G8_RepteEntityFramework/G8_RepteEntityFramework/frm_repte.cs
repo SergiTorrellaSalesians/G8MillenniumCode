@@ -76,7 +76,7 @@ namespace G8_RepteEntityFramework
 
 			db.SaveChanges();
         }
-
+		//
         private void btn_newproduct_Click(object sender, EventArgs e)
         {
 			EsNou = true;
