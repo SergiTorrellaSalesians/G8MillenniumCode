@@ -2,7 +2,7 @@
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="UsersModelStoreContainer" CdmEntityContainer="UsersEntities">
     <EntitySetMapping Name="Users">
-      <EntityTypeMapping TypeName="UsersModel.User">
+      <EntityTypeMapping TypeName="UsersModel.Users">
         <MappingFragment StoreEntitySet="Users">
           <ScalarProperty Name="idUser" ColumnName="idUser" />
           <ScalarProperty Name="CodeUser" ColumnName="CodeUser" />

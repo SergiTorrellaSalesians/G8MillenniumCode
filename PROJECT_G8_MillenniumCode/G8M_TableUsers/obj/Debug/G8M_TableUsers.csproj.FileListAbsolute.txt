@@ -1,3 +1,4 @@
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_TableUsers.dll.config
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_TableUsers.dll
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_TableUsers.pdb
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.csprojAssemblyReference.cache
@@ -7,13 +8,3 @@ C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_T
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.csproj.CopyComplete
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.dll
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.pdb
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_TableUsers.dll
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_TableUsers.pdb
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.csprojAssemblyReference.cache
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.frm_tableUsers.resources
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.csproj.GenerateResource.cache
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.csproj.CoreCompileInputs.cache
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.csproj.CopyComplete
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.dll
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableUsers\obj\Debug\G8M_TableUsers.pdb
-C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_TableUsers.dll.config
