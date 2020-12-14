@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -54,15 +55,18 @@ namespace G8_RepteEntityFramework
 		}
         private void frm_repte_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'secureCoreDataSet.NewContact' Puede moverla o quitarla según sea necesario.
-            this.newContactTableAdapter.Fill(this.secureCoreDataSet.NewContact);
-			CarregaDades();
+			string projDir = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
+			string text = System.IO.File.ReadAllText(projDir + "\\DadesClients.edi");
+			//MessageBox.Show(text); //
 
+			// TODO: esta línea de código carga datos en la tabla 'secureCoreDataSet.NewContact' Puede moverla o quitarla según sea necesario.
+			//this.newContactTableAdapter.Fill(this.secureCoreDataSet.NewContact);
+			CarregaDades();
         }
 
         private void btn_update_Click(object sender, EventArgs e)
         {
-            if (EsNou)
+			if (EsNou)
             {
 				NewContact newcont = new NewContact
 				{
