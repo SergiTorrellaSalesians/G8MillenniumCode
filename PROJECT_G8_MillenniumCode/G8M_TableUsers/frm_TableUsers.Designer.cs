@@ -38,7 +38,19 @@ namespace G8M_TableUsers
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.tbx_username = new G8M_LibreriaControles.SWTextbox();
+            this.tbx_code = new G8M_LibreriaControles.SWTextbox();
+            this.tbx_login = new G8M_LibreriaControles.SWTextbox();
+            this.tbx_password = new G8M_LibreriaControles.SWTextbox();
             this.SuspendLayout();
+            // 
+            // btn_actualitzar
+            // 
+            this.btn_actualitzar.Click += new System.EventHandler(this.btn_actualitzar_Click);
+            // 
+            // btn_value
+            // 
+            this.btn_value.Click += new System.EventHandler(this.btn_value_Click);
             // 
             // label3
             // 
@@ -139,12 +151,64 @@ namespace G8M_TableUsers
             this.label11.TabIndex = 32;
             this.label11.Text = "Photo:";
             // 
+            // tbx_username
+            // 
+            this.tbx_username._TableBind = null;
+            this.tbx_username.AllowEmptyField = G8M_LibreriaControles.SWTextbox.EmptyField.WithText;
+            this.tbx_username.AllowEmptyText = G8M_LibreriaControles.SWTextbox.EmptyTextbox.Empty;
+            this.tbx_username.InputTextType = G8M_LibreriaControles.SWTextbox.InputType.Text;
+            this.tbx_username.Location = new System.Drawing.Point(92, 18);
+            this.tbx_username.Name = "tbx_username";
+            this.tbx_username.Size = new System.Drawing.Size(100, 20);
+            this.tbx_username.TabIndex = 33;
+            this.tbx_username.Tag = "UserName";
+            // 
+            // tbx_code
+            // 
+            this.tbx_code._TableBind = null;
+            this.tbx_code.AllowEmptyField = G8M_LibreriaControles.SWTextbox.EmptyField.WithText;
+            this.tbx_code.AllowEmptyText = G8M_LibreriaControles.SWTextbox.EmptyTextbox.Empty;
+            this.tbx_code.InputTextType = G8M_LibreriaControles.SWTextbox.InputType.Text;
+            this.tbx_code.Location = new System.Drawing.Point(69, 48);
+            this.tbx_code.Name = "tbx_code";
+            this.tbx_code.Size = new System.Drawing.Size(100, 20);
+            this.tbx_code.TabIndex = 34;
+            this.tbx_code.Tag = "CodeUser";
+            // 
+            // tbx_login
+            // 
+            this.tbx_login._TableBind = null;
+            this.tbx_login.AllowEmptyField = G8M_LibreriaControles.SWTextbox.EmptyField.WithText;
+            this.tbx_login.AllowEmptyText = G8M_LibreriaControles.SWTextbox.EmptyTextbox.Empty;
+            this.tbx_login.InputTextType = G8M_LibreriaControles.SWTextbox.InputType.Text;
+            this.tbx_login.Location = new System.Drawing.Point(71, 79);
+            this.tbx_login.Name = "tbx_login";
+            this.tbx_login.Size = new System.Drawing.Size(100, 20);
+            this.tbx_login.TabIndex = 35;
+            this.tbx_login.Tag = "Login";
+            // 
+            // tbx_password
+            // 
+            this.tbx_password._TableBind = null;
+            this.tbx_password.AllowEmptyField = G8M_LibreriaControles.SWTextbox.EmptyField.WithText;
+            this.tbx_password.AllowEmptyText = G8M_LibreriaControles.SWTextbox.EmptyTextbox.Empty;
+            this.tbx_password.InputTextType = G8M_LibreriaControles.SWTextbox.InputType.Text;
+            this.tbx_password.Location = new System.Drawing.Point(92, 110);
+            this.tbx_password.Name = "tbx_password";
+            this.tbx_password.Size = new System.Drawing.Size(100, 20);
+            this.tbx_password.TabIndex = 36;
+            this.tbx_password.Tag = "Password";
+            // 
             // frm_tableUsers
             // 
-            this._nomTaula = "Users";
+            this._nomTaula = "";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(642, 517);
+            this.Controls.Add(this.tbx_password);
+            this.Controls.Add(this.tbx_login);
+            this.Controls.Add(this.tbx_code);
+            this.Controls.Add(this.tbx_username);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -169,6 +233,10 @@ namespace G8M_TableUsers
             this.Controls.SetChildIndex(this.label9, 0);
             this.Controls.SetChildIndex(this.label10, 0);
             this.Controls.SetChildIndex(this.label11, 0);
+            this.Controls.SetChildIndex(this.tbx_username, 0);
+            this.Controls.SetChildIndex(this.tbx_code, 0);
+            this.Controls.SetChildIndex(this.tbx_login, 0);
+            this.Controls.SetChildIndex(this.tbx_password, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,5 +257,9 @@ namespace G8M_TableUsers
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private G8M_LibreriaControles.SWTextbox tbx_username;
+        private G8M_LibreriaControles.SWTextbox tbx_code;
+        private G8M_LibreriaControles.SWTextbox tbx_login;
+        private G8M_LibreriaControles.SWTextbox tbx_password;
     }
 }

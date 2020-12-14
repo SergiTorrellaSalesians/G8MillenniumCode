@@ -17,17 +17,6 @@ namespace G8M_FormBase
 		G8M_AccesoDatos.AccesoDatos ad_lib;
 		DataSet dtsTabla;
 
-		UsersEntities db;
-		List<User> users;
-
-		private void CarregaDades()
-		{
-			db = new UsersEntities();
-
-			users = db.Users.ToList();
-			dtg_BBDDdata.DataSource = users;
-		}
-
 		public string nomTaula;
 		public string _nomTaula {
 			get { return nomTaula; }
@@ -86,7 +75,6 @@ namespace G8M_FormBase
 		private void btn_actualitzar_Click(object sender, EventArgs e)
 		{
 			if (nomTaula == "") { //EntityFramework
-				db.SaveChanges();
 			}
 			else { //DataSet
 				bool success = ad_lib.Actualitzar(dtsTabla, nomTaula);
