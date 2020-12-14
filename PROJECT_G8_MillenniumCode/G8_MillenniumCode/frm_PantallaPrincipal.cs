@@ -26,16 +26,13 @@ namespace G8_MillenniumCode
 		{
 			ad_lib = new AccesoDatos();
 
-			txt_codeUser.Text = "CODE: " + ad_lib.GetTableData("CodeUser",
-				"SELECT * FROM Users WHERE idUser = " + USER_ID).ToString();
-			txt_userName.Text = "USER: " + ad_lib.GetTableData("UserName",
+			string userLabel = "USER: " + ad_lib.GetTableData("UserName",
 				"SELECT * FROM Users WHERE idUser = " + USER_ID).ToString();
 			int idRank = Int32.Parse(ad_lib.GetTableData("idUserRank",
 				"SELECT * FROM Users WHERE idUser = " + USER_ID).ToString());
-			txt_idUserRank.Text = "RANK: " + ad_lib.GetTableData("DescRank",
+			userLabel += "   " + "RANK: " + ad_lib.GetTableData("DescRank",
 				"SELECT * FROM UserRanks WHERE idUserRank = " + idRank).ToString();
-
-			createButton("CLEAR", null, null); //
+			txt_topuser.Text = userLabel;
 
 			DataSet dtsTablaDeTablas = ad_lib.PortarTaula("MenuOptions");
 			foreach (DataRow dr in dtsTablaDeTablas.Tables[0].Rows) {
@@ -43,13 +40,6 @@ namespace G8_MillenniumCode
 					createButton(dr["nomOpcio"].ToString().Trim(), dr["ensamblat"].ToString().Trim(), dr["classe"].ToString().Trim());
 				}
 			}
-					
-			//createButton("BUSCADOR", "G8M_PantallaBuscador", "frm_buscador");
-			//createButton("AGENCIES", "G8M_TableAgencies", "frm_tableAgencies");
-			//createButton("USERS", "G8M_TableUsers", "frm_tableUsers");
-			//createButton("SPECIES", "G8M_TableSpecies", "frm_tableSpecies");
-			//createButton("PLANETS", "G8M_TablePlanets", "frm_tablePlanets");
-			//createButton("USER CATEGORIES", "G8M_TableUserCategories", "frm_TableUserCategories");
 
 			MenuPanel.LoadMenu();
 		}
@@ -85,6 +75,11 @@ namespace G8_MillenniumCode
 			}
 
 			btn.Click += btn_fnc;
+		}
+
+		private void txt_topuser_Click(object sender, EventArgs e){userClick();}private void pic_user_Click(object sender, EventArgs e){userClick();}
+		void userClick(){
+			MessageBox.Show("Mostra usuari");
 		}
 	}
 }

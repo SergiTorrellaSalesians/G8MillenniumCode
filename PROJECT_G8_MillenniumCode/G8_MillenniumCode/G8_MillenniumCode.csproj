@@ -220,5 +220,11 @@
   <ItemGroup>
     <None Include="Resources\output-onlinepngtools.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blank-profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blank-profile1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
