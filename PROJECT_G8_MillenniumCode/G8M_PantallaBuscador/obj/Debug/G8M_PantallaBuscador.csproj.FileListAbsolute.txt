@@ -34,6 +34,5 @@ C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_P
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_PantallaBuscador\bin\Debug\EntityFramework.dll
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_PantallaBuscador\bin\Debug\G8M_FormBase.dll.config
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_PantallaBuscador\bin\Debug\EntityFramework.xml
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_PantallaBuscador\bin\Debug\EntityFramework.dll
 C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_PantallaBuscador\bin\Debug\G8M_FormBase.dll.config
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_PantallaBuscador\bin\Debug\EntityFramework.xml
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_PantallaBuscador\obj\Debug\G8M_PantallaBuscador.csprojAssemblyReference.cache

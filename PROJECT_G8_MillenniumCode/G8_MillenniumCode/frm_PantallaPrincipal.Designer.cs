@@ -29,13 +29,10 @@
 		private void InitializeComponent()
 		{
 			this.formShowPanel = new System.Windows.Forms.Panel();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.MenuPanel = new G8M_LibreriaControles.MenuCustom();
 			this.lowPanel = new System.Windows.Forms.Panel();
-			this.pic_user = new System.Windows.Forms.PictureBox();
 			this.txt_topuser = new System.Windows.Forms.Label();
-			this.formShowPanel.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			this.pic_user = new System.Windows.Forms.PictureBox();
 			this.lowPanel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pic_user)).BeginInit();
 			this.SuspendLayout();
@@ -44,30 +41,18 @@
 			// 
 			this.formShowPanel.AutoSize = true;
 			this.formShowPanel.BackColor = System.Drawing.Color.Transparent;
-			this.formShowPanel.Controls.Add(this.pictureBox2);
 			this.formShowPanel.Location = new System.Drawing.Point(152, 39);
 			this.formShowPanel.Name = "formShowPanel";
-			this.formShowPanel.Size = new System.Drawing.Size(310, 338);
+			this.formShowPanel.Size = new System.Drawing.Size(449, 338);
 			this.formShowPanel.TabIndex = 3;
-			// 
-			// pictureBox2
-			// 
-			this.pictureBox2.BackgroundImage = global::G8_MillenniumCode.Properties.Resources.noms;
-			this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.pictureBox2.Location = new System.Drawing.Point(3, 99);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(298, 126);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox2.TabIndex = 5;
-			this.pictureBox2.TabStop = false;
 			// 
 			// MenuPanel
 			// 
 			this.MenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
 			this.MenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
-			this.MenuPanel.Location = new System.Drawing.Point(0, 0);
+			this.MenuPanel.Location = new System.Drawing.Point(0, 39);
 			this.MenuPanel.Name = "MenuPanel";
-			this.MenuPanel.Size = new System.Drawing.Size(149, 398);
+			this.MenuPanel.Size = new System.Drawing.Size(149, 359);
 			this.MenuPanel.TabIndex = 0;
 			// 
 			// lowPanel
@@ -79,20 +64,8 @@
 			this.lowPanel.ForeColor = System.Drawing.Color.White;
 			this.lowPanel.Location = new System.Drawing.Point(149, 379);
 			this.lowPanel.Name = "lowPanel";
-			this.lowPanel.Size = new System.Drawing.Size(316, 19);
+			this.lowPanel.Size = new System.Drawing.Size(452, 19);
 			this.lowPanel.TabIndex = 6;
-			// 
-			// pic_user
-			// 
-			this.pic_user.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-			this.pic_user.Image = global::G8_MillenniumCode.Properties.Resources.Blank_profile;
-			this.pic_user.Location = new System.Drawing.Point(-1, 0);
-			this.pic_user.Name = "pic_user";
-			this.pic_user.Size = new System.Drawing.Size(21, 19);
-			this.pic_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pic_user.TabIndex = 8;
-			this.pic_user.TabStop = false;
-			this.pic_user.Click += new System.EventHandler(this.pic_user_Click);
 			// 
 			// txt_topuser
 			// 
@@ -107,11 +80,23 @@
 			this.txt_topuser.Text = "USUARI";
 			this.txt_topuser.Click += new System.EventHandler(this.txt_topuser_Click);
 			// 
+			// pic_user
+			// 
+			this.pic_user.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+			this.pic_user.Image = global::G8_MillenniumCode.Properties.Resources.Blank_profile;
+			this.pic_user.Location = new System.Drawing.Point(-1, 0);
+			this.pic_user.Name = "pic_user";
+			this.pic_user.Size = new System.Drawing.Size(21, 19);
+			this.pic_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pic_user.TabIndex = 8;
+			this.pic_user.TabStop = false;
+			this.pic_user.Click += new System.EventHandler(this.pic_user_Click);
+			// 
 			// frm_PantallaPrincipal
 			// 
 			this.AutoSize = true;
 			this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.ClientSize = new System.Drawing.Size(465, 398);
+			this.ClientSize = new System.Drawing.Size(601, 398);
 			this.Controls.Add(this.lowPanel);
 			this.Controls.Add(this.MenuPanel);
 			this.Controls.Add(this.formShowPanel);
@@ -121,8 +106,6 @@
 			this.Controls.SetChildIndex(this.formShowPanel, 0);
 			this.Controls.SetChildIndex(this.MenuPanel, 0);
 			this.Controls.SetChildIndex(this.lowPanel, 0);
-			this.formShowPanel.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.lowPanel.ResumeLayout(false);
 			this.lowPanel.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pic_user)).EndInit();
@@ -135,7 +118,6 @@
 
 		private System.Windows.Forms.Panel formShowPanel;
 		private G8M_LibreriaControles.MenuCustom MenuPanel;
-		private System.Windows.Forms.PictureBox pictureBox2;
 		private System.Windows.Forms.Panel lowPanel;
 		private System.Windows.Forms.PictureBox pic_user;
 		private System.Windows.Forms.Label txt_topuser;

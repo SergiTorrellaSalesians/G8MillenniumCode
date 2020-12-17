@@ -82,6 +82,12 @@
       <DependentUpon>cr_useridentification.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="frm_pantallaInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_pantallaInicio.Designer.cs">
+      <DependentUpon>frm_pantallaInicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_UserLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     <EmbeddedResource Include="cr_useridentification.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>cr_useridentification.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_pantallaInicio.resx">
+      <DependentUpon>frm_pantallaInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_PantallaPrincipal.resx">
       <DependentUpon>frm_PantallaPrincipal.cs</DependentUpon>
@@ -196,6 +205,10 @@
     <ProjectReference Include="..\G8M_TableUsers\G8M_TableUsers.csproj">
       <Project>{470df3c4-7015-4b94-afe5-0ea71b04bcad}</Project>
       <Name>G8M_TableUsers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\G8M_UserCategories\G8M_TableUserCategories.csproj">
+      <Project>{9e8293fc-2715-4e40-bf17-fac0b39e7c11}</Project>
+      <Name>G8M_TableUserCategories</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

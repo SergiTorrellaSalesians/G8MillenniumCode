@@ -40,6 +40,13 @@ namespace G8_MillenniumCode
 					createButton(dr["nomOpcio"].ToString().Trim(), dr["ensamblat"].ToString().Trim(), dr["classe"].ToString().Trim());
 				}
 			}
+			createButton("MAIN", null, "frm_pantallaInicio");
+			Form newForm = new frm_pantallaInicio();
+			newForm.TopLevel = false;
+			newForm.AutoScroll = true;
+			this.formShowPanel.Controls.Add(newForm);
+			newForm.FormBorderStyle = FormBorderStyle.None;
+			newForm.Show();
 
 			MenuPanel.LoadMenu();
 		}
@@ -54,24 +61,25 @@ namespace G8_MillenniumCode
 				//MessageBox.Show(btn.Name.ToString());
 				this.formShowPanel.Controls.Clear();
 
-				if(classe == null)
-					return;
+				Form newForm;
+				if (lib != null){
+					//Reflection de un formulario (clase) por string
+					Assembly ensamblat = Assembly.LoadFrom(lib + ".dll");
 
-				//Reflection de un formulario (clase) por string
-				Assembly ensamblat = Assembly.LoadFrom(lib + ".dll");
-
-				//classe = classe.Substring(classe.IndexOf("."));
-				Type tipus = ensamblat.GetType(lib + "." + classe);
-				Object dllBD = Activator.CreateInstance(tipus);
-				Form reflectedForm = (Form)dllBD;
-
+					//classe = classe.Substring(classe.IndexOf("."));
+					Type tipus = ensamblat.GetType(lib + "." + classe);
+					Object dllBD = Activator.CreateInstance(tipus);
+					newForm = (Form)dllBD;
+				}else{
+					newForm = new frm_pantallaInicio();
+				}
 				//LLamar a modificar el nomTaula del InsideTemplate como parametro al crear el botón
-				reflectedForm.TopLevel = false;
-				reflectedForm.AutoScroll = true;
-				this.formShowPanel.Controls.Add(reflectedForm);
-				reflectedForm.FormBorderStyle = FormBorderStyle.None;
+				newForm.TopLevel = false;
+				newForm.AutoScroll = true;
+				this.formShowPanel.Controls.Add(newForm);
+				newForm.FormBorderStyle = FormBorderStyle.None;
 
-				reflectedForm.Show();
+				newForm.Show();
 			}
 
 			btn.Click += btn_fnc;
