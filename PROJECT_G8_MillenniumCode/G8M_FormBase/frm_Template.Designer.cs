@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
 			this.topbar = new System.Windows.Forms.Panel();
+			this.line = new System.Windows.Forms.Panel();
 			this.btn_topbarExit = new System.Windows.Forms.Button();
 			this.btn_topbarMinimize = new System.Windows.Forms.Button();
 			this.txt_topbarTitle = new System.Windows.Forms.Label();
-			this.line = new System.Windows.Forms.Panel();
 			this.topbar.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -52,6 +52,15 @@
 			this.topbar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topbar_MouseDown);
 			this.topbar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.topbar_MouseMove);
 			this.topbar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.topbar_MouseUp);
+			// 
+			// line
+			// 
+			this.line.BackColor = System.Drawing.Color.White;
+			this.line.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.line.Location = new System.Drawing.Point(0, 38);
+			this.line.Name = "line";
+			this.line.Size = new System.Drawing.Size(336, 1);
+			this.line.TabIndex = 2;
 			// 
 			// btn_topbarExit
 			// 
@@ -88,23 +97,15 @@
 			// txt_topbarTitle
 			// 
 			this.txt_topbarTitle.AutoSize = true;
+			this.txt_topbarTitle.CausesValidation = false;
 			this.txt_topbarTitle.Font = new System.Drawing.Font("SimSun-ExtB", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txt_topbarTitle.ForeColor = System.Drawing.Color.Yellow;
-			this.txt_topbarTitle.Location = new System.Drawing.Point(10, 8);
+			this.txt_topbarTitle.Location = new System.Drawing.Point(1, 8);
 			this.txt_topbarTitle.Name = "txt_topbarTitle";
 			this.txt_topbarTitle.Size = new System.Drawing.Size(114, 24);
 			this.txt_topbarTitle.TabIndex = 1;
 			this.txt_topbarTitle.Text = "TEMPLATE";
-			// 
-			// line
-			// 
-			this.line.BackColor = System.Drawing.Color.White;
-			this.line.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.line.Location = new System.Drawing.Point(0, 38);
-			this.line.Name = "line";
-			this.line.Size = new System.Drawing.Size(336, 1);
-			this.line.TabIndex = 2;
 			// 
 			// frm_Template
 			// 

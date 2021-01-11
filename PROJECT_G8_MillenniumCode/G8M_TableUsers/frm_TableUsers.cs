@@ -9,12 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace G8M_TableUsers
 {
     public partial class frm_tableUsers : G8M_FormBase.frm_InsideTemplate
     {
         UsersEntities db;
-        List<Users> userlist;
+        List<User> userlist;
         bool EsNou = false;
 
         public frm_tableUsers()
@@ -81,7 +82,7 @@ namespace G8M_TableUsers
         {
             if (EsNou)
             {
-                Users ctcsys = new Users
+                User ctcsys = new User
                 {
                     //idContact = int.Parse(tbx_idcontact.Text),
                     CodeUser = tbx_code.Text,

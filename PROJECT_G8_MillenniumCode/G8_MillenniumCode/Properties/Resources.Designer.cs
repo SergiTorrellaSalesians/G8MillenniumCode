@@ -63,6 +63,26 @@ namespace G8_MillenniumCode.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Blank_profile {
+            get {
+                object obj = ResourceManager.GetObject("Blank-profile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blank_profile1 {
+            get {
+                object obj = ResourceManager.GetObject("Blank-profile1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap istockphoto_606667670_612x612 {
             get {
                 object obj = ResourceManager.GetObject("istockphoto-606667670-612x612", resourceCulture);

@@ -68,6 +68,9 @@ namespace G8_RepteEntityFramework
 
 			CarregaDades();
 
+			// TODO: esta línea de código carga datos en la tabla 'secureCoreDataSet.NewContact' Puede moverla o quitarla según sea necesario.
+			//this.newContactTableAdapter.Fill(this.secureCoreDataSet.NewContact);
+			CarregaDades();
         }
 
         private void btn_update_Click(object sender, EventArgs e)

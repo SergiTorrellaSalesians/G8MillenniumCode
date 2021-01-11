@@ -67,10 +67,6 @@
       <Project>{e4ee86a8-0f48-49ff-84b1-00e29cd07bef}</Project>
       <Name>G8M_LibreriaControles</Name>
     </ProjectReference>
-    <ProjectReference Include="..\G8_MillenniumCode\G8_MillenniumCode.csproj">
-      <Project>{15947912-29b2-435d-aca1-e6b5551398fa}</Project>
-      <Name>G8_MillenniumCode</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frm_TableUserCategories.resx">
