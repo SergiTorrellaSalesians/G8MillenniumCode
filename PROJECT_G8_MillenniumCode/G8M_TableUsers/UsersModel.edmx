@@ -28,7 +28,7 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="UsersModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="Users">
+        <EntityType Name="User">
           <Key>
             <PropertyRef Name="idUser" />
           </Key>
@@ -44,7 +44,7 @@
           <Property Name="idSpecie" Type="Int32" />
         </EntityType>
         <EntityContainer Name="UsersEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Users" EntityType="Self.Users" />
+          <EntitySet Name="Users" EntityType="Self.User" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -53,7 +53,7 @@
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="UsersModelStoreContainer" CdmEntityContainer="UsersEntities">
           <EntitySetMapping Name="Users">
-            <EntityTypeMapping TypeName="UsersModel.Users">
+            <EntityTypeMapping TypeName="UsersModel.User">
               <MappingFragment StoreEntitySet="Users">
                 <ScalarProperty Name="idUser" ColumnName="idUser" />
                 <ScalarProperty Name="CodeUser" ColumnName="CodeUser" />
@@ -82,7 +82,7 @@
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />

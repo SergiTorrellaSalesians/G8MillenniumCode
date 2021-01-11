@@ -25,6 +25,6 @@ namespace G8M_TableUsers
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Users> Users { get; set; }
+        public virtual DbSet<User> Users { get; set; }
     }
 }
