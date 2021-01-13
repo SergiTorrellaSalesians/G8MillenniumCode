@@ -70,6 +70,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\SecureCoreDataSet.Designer.cs">
+      <DependentUpon>SecureCoreDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frm_InsideTemplate.resx">
@@ -86,6 +91,17 @@
   <ItemGroup>
     <None Include="App.Config" />
     <None Include="packages.config" />
+    <None Include="Properties\SecureCoreDataSet.xsc">
+      <DependentUpon>SecureCoreDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\SecureCoreDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SecureCoreDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\SecureCoreDataSet.xss">
+      <DependentUpon>SecureCoreDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\istockphoto-606667670-612x612.jpg" />
   </ItemGroup>
   <ItemGroup>
