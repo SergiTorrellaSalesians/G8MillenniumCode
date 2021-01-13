@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("G8M_edi")]
+[assembly: AssemblyTitle("G8M_ArchivosEDI")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HP Inc.")]
-[assembly: AssemblyProduct("G8M_edi")]
+[assembly: AssemblyProduct("G8M_ArchivosEDI")]
 [assembly: AssemblyCopyright("Copyright © HP Inc. 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("31450175-0272-4243-8550-4a9ed4835456")]
+[assembly: Guid("556c8698-272a-4da7-b55b-64692b0b76c9")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //
