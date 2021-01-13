@@ -25,6 +25,7 @@ C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_P
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_PantallaBuscador\bin\Debug\G8M_FormBase.pdb
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_PantallaBuscador\bin\Debug\G8M_FormBase.dll.config
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_PantallaBuscador\bin\Debug\G8M_LibreriaControles.pdb
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_PantallaBuscador\obj\Debug\G8M_PantallaBuscador.csprojAssemblyReference.cache
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_PantallaBuscador\obj\Debug\G8M_PantallaBuscador.frm_buscador.resources
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_PantallaBuscador\obj\Debug\G8M_PantallaBuscador.Properties.Resources.resources
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_PantallaBuscador\obj\Debug\G8M_PantallaBuscador.csproj.GenerateResource.cache
@@ -32,4 +33,3 @@ C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_P
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_PantallaBuscador\obj\Debug\G8M_PantallaBuscador.csproj.CopyComplete
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_PantallaBuscador\obj\Debug\G8M_PantallaBuscador.dll
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_PantallaBuscador\obj\Debug\G8M_PantallaBuscador.pdb
-C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_PantallaBuscador\obj\Debug\G8M_PantallaBuscador.csprojAssemblyReference.cache

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Configuration;
 using System.Net;
+using CrystalDecisions.CrystalReports.Engine;
 
 namespace G8M_ArchivosEDI
 {
@@ -88,7 +89,7 @@ namespace G8M_ArchivosEDI
         private void btn_download_Click(object sender, EventArgs e)
         {
             string finalpath = downloadserverpath + "RARROrderSample.edi";
-            string finaldownloadpath = downloadpath+ "RARROrderSample.edi";
+            string finaldownloadpath = downloadpath + "RARROrderSample.edi";
             //MessageBox.Show(finalpath);
 
             string inputfilepath = @"C:\Tractats\"+ "RARROrderSample.edi";
@@ -113,7 +114,176 @@ namespace G8M_ArchivosEDI
 
         private void frm_edis_Load(object sender, EventArgs e)
         {
+            //crviewer_planets escondido!!
+        }
 
+        //OpenFileDialog openFile = new OpenFileDialog();
+        string line = "";
+
+        private void btn_crystalreports_Click(object sender, EventArgs e)
+        {
+            //crviewer_planets show
+
+            string EDIFilepath = downloadpath+ "RARROrderSample.edi";
+
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
+                openFileDialog.Filter = "Edi files (*.edi)|*.edi" + "|" + "All files (*.*)|*.*";
+                openFileDialog.FilterIndex = 2;
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    filePath = openFileDialog.FileName;
+                    fileName = openFileDialog.SafeFileName;
+                    Stream fileStream = openFileDialog.OpenFile();
+
+                    using (StreamReader reader = new StreamReader(fileStream))
+                    {
+                        fileContent = reader.ReadToEnd();
+                    }
+
+                    String file = openFileDialog.FileName;
+                    StreamReader srContar = new StreamReader(file);
+                    int contador = 0;
+                    while (line != null)
+                    {
+                        line = srContar.ReadLine();
+                        contador++;
+                    }
+
+                    srContar.Close();
+
+                    //Segunda lectura para inicializar el array
+                    String line2 = "";
+
+                    StreamReader srGuardar = new StreamReader(file);
+                    int indexMatrix = 0;
+                    contador--;
+                    String[][] matrix = new string[contador][];
+
+                    while (line2 != null)
+                    {
+                        line2 = srGuardar.ReadLine();
+                        if (line2 != null)
+                        {
+                            String[] arrayCompleto = line2.Split('|');
+                            //Eliminar el ultimo elemento, que es un string vacio
+                            String[] segmentValue = arrayCompleto.Skip(0).Take(arrayCompleto.Length - 1).ToArray();
+                            matrix[indexMatrix] = segmentValue;
+                            indexMatrix++;
+                        }
+                    }
+                    srGuardar.Close();
+
+                    EDIModelEntities db = new EDIModelEntities();
+                    String lastCodeOrder = "";
+                    Order lastOrder = new Order();
+                    int lastOrdersDetailId = 0;
+                    OrdersDetail lastOrdersDetail = new OrdersDetail();
+                    String codePriority = "";
+                    OrderInfo lastOrderInfo = new OrderInfo();
+
+                    foreach (var array in matrix)
+                    {
+                        switch (array[0])
+                        {
+                            case "ORD":
+                                codePriority = array[2];
+                                Priority priority = db.Priorities.FirstOrDefault(p => p.CodePriority == codePriority);
+                                Order order = new Order
+                                {
+                                    codeOrder = array[1],
+                                    Priority = priority
+                                };
+                                lastCodeOrder = array[1];
+                                lastOrder = order;
+
+                                break;
+                            case "DTM":
+                                //Convertir a formato fecha
+                                String fecha = array[1];
+                                DateTime dateTime = DateTime.ParseExact(fecha, "yyyyMMdd", null);
+                                lastOrder.dateOrder = dateTime;
+                                break;
+                            case "NADMS":
+                                String codeAgency = array[2];
+                                Agency agency = db.Agencies.FirstOrDefault(a => a.CodeAgency == codeAgency);
+                                String codeOperationalArea = array[1];
+                                OperationalArea operationalArea = db.OperationalAreas.FirstOrDefault(o => o.CodeOperationalArea == codeOperationalArea);
+                                OrderInfo orderInfo = new OrderInfo
+                                {
+                                    Agency = agency,
+                                    OperationalArea = operationalArea
+                                };
+                                lastOrderInfo = orderInfo;
+                                break;
+                            case "NADMR":
+                                String codeFactory = array[1];
+                                Factory factory = db.Factories.FirstOrDefault(f => f.codeFactory == codeFactory);
+                                lastOrder.Factory = factory;
+                                //Ya tenemos el ultimo elemento necesario, añadimos Orders
+                                db.Orders.Add(lastOrder);
+
+                                lastOrderInfo.idOrder = lastOrder.idOrder;
+                                //Ya tenemos el ultimo elemento necesario, añadimos OrderInfo
+                                db.OrderInfoes.Add(lastOrderInfo);
+
+                                db.SaveChanges();
+                                break;
+                            case "LIN":
+                                lastOrder = db.Orders.FirstOrDefault(o => o.codeOrder == lastCodeOrder);
+                                String codePlanet = array[1];
+                                Planet planet = db.Planets.FirstOrDefault(p => p.CodePlanet == codePlanet);
+                                String codeReference = array[2];
+                                Reference reference = db.References.FirstOrDefault(r => r.codeReference == codeReference);
+                                OrdersDetail ordersDetail = new OrdersDetail
+                                {
+                                    Order = lastOrder,
+                                    Planet = planet,
+                                    Reference = reference
+                                };
+                                //db.OrdersDetail.Add(ordersDetail);
+                                lastOrdersDetail = ordersDetail;
+                                lastOrdersDetailId = ordersDetail.idOrderDetail;
+                                //db.SaveChanges();
+                                break;
+                            case "QTYLIN":
+                                //lastOrdersDetail = db.OrdersDetail.FirstOrDefault(o => o.idOrderDetail == lastOrdersDetailId);
+                                int cantidad = Convert.ToInt16(array[2]);
+                                if (array[1] == "61")
+                                {
+                                    cantidad *= -1;
+                                }
+                                lastOrdersDetail.Quantity = (short)cantidad;
+                                //db.SaveChanges();
+                                break;
+                            case "DTMLIN":
+                                String fechaDelivery = array[1];
+                                DateTime dateTimeDelivery = DateTime.ParseExact(fechaDelivery, "yyyyMMdd", null);
+                                lastOrdersDetail.DeliveryDate = dateTimeDelivery;
+                                db.OrdersDetails.Add(lastOrdersDetail);
+                                db.SaveChanges();
+                                break;
+                            default:
+                                Console.WriteLine("Default case");
+                                break;
+                        }
+                    }
+
+                    MessageBox.Show("EDI File Processed!");
+                }
+            }
+            
+        }
+
+        private void btn_showcrystalreports_Click(object sender, EventArgs e)
+        {
+            var cryRpt = new ReportDocument();
+            cryRpt.Load(@"C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_ArchivosEDI\EDI_to_crystalreports.rpt");
+            crviewer_planets.ReportSource = cryRpt;
+            crviewer_planets.Refresh();
         }
     }
 }
