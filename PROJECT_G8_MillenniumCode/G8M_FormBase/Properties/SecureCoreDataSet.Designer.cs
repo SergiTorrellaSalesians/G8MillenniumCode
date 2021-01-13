@@ -13443,7 +13443,7 @@ SELECT idAgency, CodeAgency, DescAgency FROM Agencies WHERE (idAgency = @idAgenc
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13814,7 +13814,7 @@ SELECT idDefinedRoute, idPlanetOri, idPlanetDest, idRoute, RouteMap FROM Defined
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -14229,7 +14229,7 @@ SELECT idFactory, codeFactory, DescFactory FROM Factories WHERE (idFactory = @id
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -14587,7 +14587,7 @@ SELECT idFiliation, CodeFiliation, DescFiliations FROM Filiations WHERE (idFilia
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -14952,7 +14952,7 @@ SELECT idMilitaryCamp, CodeCamp, DescCamp, idPlanet FROM MilitaryCamps WHERE (id
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -15337,7 +15337,7 @@ SELECT idOperationalArea, CodeOperationalArea, DescOperationalArea FROM Operatio
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -15699,7 +15699,7 @@ SELECT idOrderInfo, idOrder, idAgency, idOperationalArea FROM OrderInfo WHERE (i
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -16024,7 +16024,7 @@ SELECT idOrder, codeOrder, dateOrder, IdPriority, IdFactory FROM Orders WHERE (i
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -16410,7 +16410,7 @@ SELECT idOrderDetail, idOrder, idPlanet, idReference, Quantity, DeliveryDate FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -16854,7 +16854,7 @@ SELECT idPlanetRoute, idPlanet, idRoute FROM PlanetRoutes WHERE (idPlanetRoute =
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -17301,7 +17301,7 @@ SELECT idPlanet, CodePlanet, DescPlanet, idSector, long, lat, parsecs, idNatives
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -17991,7 +17991,7 @@ SELECT idPriority, CodePriority, DescPriority FROM Priority WHERE (idPriority = 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -18360,7 +18360,7 @@ SELECT idReference, codeReference, descReference, Photo, VideoExplode FROM [Refe
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -18778,7 +18778,7 @@ SELECT idRegion, CodeRegion, DescRegion, Remarks FROM Regions WHERE (idRegion = 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -19184,7 +19184,7 @@ SELECT idRoute, CodeRoute, DescRoute, idPlanetOr, idPlanetDest, idRouteType FROM
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -19635,7 +19635,7 @@ SELECT idRouteType, CodeRouteType, DescRouteType, Remarks FROM RouteTypes WHERE 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -20036,7 +20036,7 @@ SELECT idSector, CodeSector, DescSector, Remarks, idRegion FROM Sectors WHERE (i
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -20449,7 +20449,7 @@ SELECT idSpaceShipCategory, CodeSpaceShipCategory, DescSpaceShipCategory FROM Sp
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -20828,7 +20828,7 @@ SELECT idSpaceShip, idSpaceShipType, CodeSpaceShip, IPSpaceShip, PortSpaceShip, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -21284,7 +21284,7 @@ SELECT idSpaceShipType, CodeSpaceShipType, DescSpaceShipType, idFiliation, idSpa
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -21699,7 +21699,7 @@ SELECT idSpecie, CodeSpecie, DescSpecie FROM Species WHERE (idSpecie = @idSpecie
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -22063,7 +22063,7 @@ SELECT idUserCategory, CodeCategory, DescCategory, AccessLevel FROM UserCategori
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -22453,7 +22453,7 @@ SELECT idUserRank, CodeRank, DescRank FROM UserRanks WHERE (idUserRank = @idUser
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -22859,7 +22859,7 @@ SELECT idUser, CodeUser, UserName, Login, Password, idUserRank, idUserCategory, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
+            //this._connection.ConnectionString = global::G8M_FormBase.Properties.Settings.Default.SecureCoreConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
