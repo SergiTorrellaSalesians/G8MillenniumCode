@@ -12,7 +12,7 @@ namespace G8M_TableUsers
     using System;
     using System.Collections.Generic;
     
-    public partial class Users
+    public partial class User
     {
         public int idUser { get; set; }
         public string CodeUser { get; set; }
