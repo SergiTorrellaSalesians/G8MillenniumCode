@@ -1,6 +1,5 @@
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_TablePlanets.dll
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_TablePlanets.pdb
-C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_Planets\obj\Debug\G8M_TablePlanets.csprojAssemblyReference.cache
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_Planets\obj\Debug\G8M_TablePlanets.frm_tablePlanets.resources
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_Planets\obj\Debug\G8M_TablePlanets.csproj.GenerateResource.cache
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_Planets\obj\Debug\G8M_TablePlanets.csproj.CoreCompileInputs.cache
