@@ -111,6 +111,12 @@
       <DependentUpon>EDIConnectionsModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="prueba1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prueba1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reference.cs">
       <DependentUpon>EDIConnectionsModel.tt</DependentUpon>
     </Compile>
@@ -122,6 +128,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_edis.resx">
       <DependentUpon>frm_edis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prueba1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>prueba1.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

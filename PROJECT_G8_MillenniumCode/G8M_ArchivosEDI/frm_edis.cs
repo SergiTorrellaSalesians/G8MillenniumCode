@@ -110,17 +110,28 @@ namespace G8M_ArchivosEDI
 
                 string ftpfullpath = "ftp://" + ftphost + ftpfilepath;
 
-                using (WebClient request = new WebClient())
+                try
                 {
-                    request.Credentials = new NetworkCredential(user, password);
-                    byte[] fileData = request.DownloadData(ftpfullpath);
-
-                    using (FileStream file = File.Create(inputfilepath))
+                    using (WebClient request = new WebClient())
                     {
-                        file.Write(fileData, 0, fileData.Length);
-                        file.Close();
+                        request.Credentials = new NetworkCredential(user, password);
+                        byte[] fileData = request.DownloadData(ftpfullpath);
+
+                        using (FileStream file = File.Create(inputfilepath))
+                        {
+                            file.Write(fileData, 0, fileData.Length);
+                            file.Close();
+                        }
+                        MessageBox.Show("Download Complete");
                     }
-                    MessageBox.Show("Download Completed");
+                }
+                catch (WebException ex)
+                {
+                    //FtpWebResponse response = (FtpWebResponse)ex.Response;
+                    //if (response.StatusCode == FtpStatusCode.ActionNotTakenFileUnavailable)
+                    //{
+
+                    //}
                 }
             }
         }
