@@ -72,9 +72,9 @@ namespace G8M_ArchivosEDI
             this.crviewer_planets.ActiveViewIndex = -1;
             this.crviewer_planets.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crviewer_planets.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crviewer_planets.Location = new System.Drawing.Point(103, -9);
+            this.crviewer_planets.Location = new System.Drawing.Point(103, 12);
             this.crviewer_planets.Name = "crviewer_planets";
-            this.crviewer_planets.Size = new System.Drawing.Size(563, 290);
+            this.crviewer_planets.Size = new System.Drawing.Size(563, 269);
             this.crviewer_planets.TabIndex = 3;
             // 
             // btn_crystalreports
