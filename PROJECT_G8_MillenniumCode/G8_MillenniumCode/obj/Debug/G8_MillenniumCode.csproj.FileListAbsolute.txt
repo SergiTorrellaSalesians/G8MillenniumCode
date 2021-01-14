@@ -49,8 +49,8 @@ C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_Mi
 C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\obj\Debug\G8_MillenniumCode.csproj.CopyComplete
 C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\obj\Debug\G8_MillenniumCode.exe
 C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\obj\Debug\G8_MillenniumCode.pdb
-C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8_MillenniumCode.exe.config
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8_MillenniumCode.exe
+C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8_MillenniumCode.exe.config
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8_MillenniumCode.pdb
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\obj\Debug\G8_MillenniumCode.csprojAssemblyReference.cache
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\obj\Debug\G8_MillenniumCode.frm_pantallaInicio.resources

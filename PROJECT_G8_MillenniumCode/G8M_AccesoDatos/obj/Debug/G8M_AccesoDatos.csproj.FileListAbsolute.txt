@@ -1,11 +1,3 @@
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_AccesoDatos.dll.config
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_AccesoDatos.dll
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_AccesoDatos.pdb
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_AccesoDatos\obj\Debug\G8M_AccesoDatos.csprojAssemblyReference.cache
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_AccesoDatos\obj\Debug\G8M_AccesoDatos.csproj.CoreCompileInputs.cache
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_AccesoDatos\obj\Debug\G8M_AccesoDatos.csproj.CopyComplete
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_AccesoDatos\obj\Debug\G8M_AccesoDatos.dll
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_AccesoDatos\obj\Debug\G8M_AccesoDatos.pdb
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_AccesoDatos.dll.config
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_AccesoDatos.dll
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_AccesoDatos.pdb
@@ -14,3 +6,11 @@ C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_A
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_AccesoDatos\obj\Debug\G8M_AccesoDatos.csproj.CopyComplete
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_AccesoDatos\obj\Debug\G8M_AccesoDatos.dll
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_AccesoDatos\obj\Debug\G8M_AccesoDatos.pdb
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_AccesoDatos.dll.config
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_AccesoDatos.dll
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_AccesoDatos.pdb
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_AccesoDatos\obj\Debug\G8M_AccesoDatos.csprojAssemblyReference.cache
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_AccesoDatos\obj\Debug\G8M_AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_AccesoDatos\obj\Debug\G8M_AccesoDatos.csproj.CopyComplete
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_AccesoDatos\obj\Debug\G8M_AccesoDatos.dll
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_AccesoDatos\obj\Debug\G8M_AccesoDatos.pdb
