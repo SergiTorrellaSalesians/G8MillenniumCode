@@ -61,8 +61,6 @@ namespace G8M_LibreriaControles
 
         }
 
-
-
         bool notext = false;
         private EmptyField _InputSelection3;
         public EmptyField AllowEmptyField
@@ -97,7 +95,6 @@ namespace G8M_LibreriaControles
             {
                 string pattern = "^[A-Z]{4}-\\d{3}/[13579][AEIOU]$";
                 string input = ((TextBox)sender).Text.Trim();
-                //Match m = Regex.Match(input, pattern);
 
                 Regexp(pattern, input);
 
@@ -106,7 +103,6 @@ namespace G8M_LibreriaControles
             {
                 string pattern = "^([0-2][0-9]|(3)[0-1])(\\/)(((0)[1-9])|((1)[0-2]))(\\/)\\d{4}$";
                 string input = ((TextBox)sender).Text.Trim();
-                //Match m = Regex.Match(input, pattern);
 
                 Regexp(pattern, input);
             }
@@ -122,11 +118,10 @@ namespace G8M_LibreriaControles
 
             if (notext == false)
             {
-                //QUE EL .TEXT NO ESTÉ VACÍO :):):):):):)
+                //QUE EL .TEXT NO ESTÉ VACÍO 
 
             }
         }
-
 
         public void Regexp(string re, string tb)
         {
@@ -147,9 +142,7 @@ namespace G8M_LibreriaControles
         protected override void OnGotFocus(EventArgs e)
         {
             base.OnGotFocus(e);
-
             this.BackColor = Color.White;
-
         }
 
         protected override void OnLostFocus(EventArgs e)
@@ -160,7 +153,6 @@ namespace G8M_LibreriaControles
         //FORECOLOR
 
         //SI CAMPO PUEDE ESTAR VACÍO O NO//
-
 private void ORTextBox_Focus(object sender, EventArgs e)
         {
             if (_InputSelection2 == EmptyTextbox.Empty)
@@ -173,7 +165,6 @@ private void ORTextBox_Focus(object sender, EventArgs e)
                 {
                     MessageBox.Show("Enter an Input");
                 }
-
             }
         }
 
@@ -183,10 +174,6 @@ private void ORTextBox_Focus(object sender, EventArgs e)
 		}
 
 		//SI CAMPO PUEDE ESTAR VACÍO O NO//
-
-		//CAMBIOS + COMBOBOX//
-
-
 
 	}
 }

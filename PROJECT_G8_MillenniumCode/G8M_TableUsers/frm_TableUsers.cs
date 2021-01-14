@@ -45,9 +45,9 @@ namespace G8M_TableUsers
             tbx_username.Clear();
             tbx_username.DataBindings.Add("Text", userlist, tbx_username.Tag.ToString());
 
-            //hacer el binding de photo igual que el resto de controles
-            //IMPORTANTE: en la propiedad Tag del control (dentro del formulario) poner el nombre
-            //de la columna a la que quieres hacer el binding!!
+            //Hacer el Binding de photo igual que el resto de controles
+            //IMPORTANTE: en la propiedad Tag del control (dentro del formulario)
+            //poner el nombre de la columna a la que quieres hacer el binding.
         }
 
         private void frm_tableUsers_Load(object sender, EventArgs e)
@@ -84,7 +84,6 @@ namespace G8M_TableUsers
             {
                 User ctcsys = new User
                 {
-                    //idContact = int.Parse(tbx_idcontact.Text),
                     CodeUser = tbx_code.Text,
                     UserName = tbx_username.Text,
                     Login = tbx_login.Text,
@@ -96,6 +95,12 @@ namespace G8M_TableUsers
             }
 
             db.SaveChanges();
+        }
+
+        private void btn_usercard_Click(object sender, EventArgs e)
+        {
+            new frm_usercard().Show();
+
         }
         //public byte[] imageToByteArray(Image i)
         //{

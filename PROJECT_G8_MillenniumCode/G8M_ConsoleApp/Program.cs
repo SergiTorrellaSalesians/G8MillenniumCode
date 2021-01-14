@@ -24,12 +24,22 @@ namespace G8M_ConsoleApp
             string finalpath = serverpath + "RARROrderSample.edi";
             string downloadpath = localpath + "RARROrderSample.edi";
 
-            Console.WriteLine("...\n");
-            Console.WriteLine("...\n");
-            Console.WriteLine("...\n");
-            Console.WriteLine("...\n");
-            Console.WriteLine("...\n");
-            Console.WriteLine("...\n");
+            Console.WriteLine(@" ____  _____ ____  _     ____  _____   ____  ____  ____  _____");
+            Console.WriteLine(@"/ ___\/  __//   _\/ \ /\/  __\/  __/  /   _\/  _ \/  __\/  __/");
+            Console.WriteLine(@"|    \|  \  |  /  | | |||  \/||  \    |  /  | / \||  \/||  \  ");
+            Console.WriteLine(@"\___ ||  /_ |  \__| \_/||    /|  /_   |  \__| \_/||    /|  /_ ");
+            Console.WriteLine(@"\____/\____\\____/\____/\_/\_\\____\  \____/\____/\_/\_\\____\");
+            Console.WriteLine(@"                                                             ");
+            Console.WriteLine(@"            __              ");
+            Console.WriteLine(@"|\/|||  |  |_ |\ ||/  \|\/| ");
+            Console.WriteLine(@"|  |||__|__|__| \||\__/|  | ");
+            Console.WriteLine(@"       __ __  __  __        ");
+            Console.WriteLine(@"      /  /  \|  \|_         ");
+            Console.WriteLine(@"      \__\__/|__/|__        ");
+            Console.WriteLine(@"                            ");
+            Console.WriteLine(@"                            ");
+            Console.WriteLine(@"                            ");
+            Console.WriteLine(@"For more information /help");
 
             while (!quitNow)
             {
@@ -37,7 +47,9 @@ namespace G8M_ConsoleApp
                 switch (command)
                 {
                     case "/help":
-                        Console.WriteLine("This should be help.\n");
+                        Console.WriteLine("/search          Search for EDI files.");
+                        Console.WriteLine("/download        Download data.");
+                        Console.WriteLine("/quit            Exit console.");
                         break;
 
                     case "/search":
@@ -53,6 +65,7 @@ namespace G8M_ConsoleApp
 
                         Stream responseStream = response.GetResponseStream();
                         StreamReader reader = new StreamReader(responseStream);
+                        Console.WriteLine(@"Files found:");
                         Console.WriteLine(reader.ReadToEnd());
 
                         reader.Close();
@@ -61,6 +74,7 @@ namespace G8M_ConsoleApp
 
                     case "/download":
 
+                        Console.WriteLine(@"Reading files...");
                         FtpWebRequest downloadrequest = (FtpWebRequest)WebRequest.Create(string.Format("ftp://{0}/{1}", strServer, finalpath));
 
                         //Set proxy to null. Under current configuration if this option is not set then the proxy that is used will get an html response from the web content gateway (firewall monitoring system)
@@ -93,6 +107,7 @@ namespace G8M_ConsoleApp
                         break;
 
                     case "/quit":
+                        Console.WriteLine(@"Bye :)");
                         quitNow = true;
                         break;
 

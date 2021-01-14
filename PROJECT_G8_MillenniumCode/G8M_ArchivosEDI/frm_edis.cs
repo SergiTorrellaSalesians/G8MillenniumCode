@@ -27,7 +27,6 @@ namespace G8M_ArchivosEDI
         public string downloadserverpath = @"/home/g7/";
         public string downloadpath = @"C:/Tractats/";
         
-
         public frm_edis()
         {
             InitializeComponent();
@@ -89,7 +88,6 @@ namespace G8M_ArchivosEDI
                 requestStream.Write(fileContents, 0, fileContents.Length);
                 requestStream.Close();
 
-                //FtpWebResponse response = (FtpWebResponse)ftpRequest.GetResponse();
                 MessageBox.Show("File " + fileName + " uploaded successfully.");
             }
         }
@@ -98,10 +96,11 @@ namespace G8M_ArchivosEDI
         {
             ProcessStartInfo startInfo = new ProcessStartInfo(@"C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_ConsoleApp.exe");
 
-            startInfo.Arguments = "header.h"; // Your arguments
+            startInfo.Arguments = "header.h";
 
             Process.Start(startInfo);
 
+            //The following code downloads the EDI file from FTP Server using windows form
             //Process.Start(startInfo);
             //Process.Start(@"C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_ConsoleApp\G8M_ConsoleApp.exe");
             //if (fileName == "")
@@ -150,8 +149,7 @@ namespace G8M_ArchivosEDI
             //crviewer_planets escondido??
         }
 
-        //OpenFileDialog openFile = new OpenFileDialog();
-        string line = "";
+        string lines = "";
 
         private void btn_crystalreports_Click(object sender, EventArgs e)
         {
@@ -184,37 +182,35 @@ namespace G8M_ArchivosEDI
                         }
 
                         String file = openFileDialog.FileName;
-                        StreamReader srContar = new StreamReader(file);
-                        int contador = 0;
-                        while (line != null)
+                        StreamReader EDIreader = new StreamReader(file);
+                        int cont = 0;
+                        while (lines != null)
                         {
-                            line = srContar.ReadLine();
-                            contador++;
+                            lines = EDIreader.ReadLine();
+                            cont++;
                         }
 
-                        srContar.Close();
+                        EDIreader.Close();
 
-                        //Segunda lectura para inicializar el array
-                        String line2 = "";
+                        String currentLine = "";
 
-                        StreamReader srGuardar = new StreamReader(file);
-                        int indexMatrix = 0;
-                        contador--;
-                        String[][] matrix = new string[contador][];
+                        StreamReader saveString = new StreamReader(file);
+                        int index = 0;
+                        cont--;
+                        String[][] edifileMatrix = new string[cont][];
 
-                        while (line2 != null)
+                        while (currentLine != null)
                         {
-                            line2 = srGuardar.ReadLine();
-                            if (line2 != null)
+                            currentLine = saveString.ReadLine();
+                            if (currentLine != null)
                             {
-                                String[] arrayCompleto = line2.Split('|');
-                                //Eliminar el ultimo elemento, que es un string vacio
-                                String[] segmentValue = arrayCompleto.Skip(0).Take(arrayCompleto.Length - 1).ToArray();
-                                matrix[indexMatrix] = segmentValue;
-                                indexMatrix++;
+                                String[] edi = currentLine.Split('|');
+                                String[] ediBits = edi.Skip(0).Take(edi.Length - 1).ToArray();
+                                edifileMatrix[index] = ediBits;
+                                index++;
                             }
                         }
-                        srGuardar.Close();
+                        saveString.Close();
 
                         EDIModelEntities db = new EDIModelEntities();
                         String lastCodeOrder = "";
@@ -224,7 +220,7 @@ namespace G8M_ArchivosEDI
                         String codePriority = "";
                         OrderInfo lastOrderInfo = new OrderInfo();
 
-                        foreach (var array in matrix)
+                        foreach (var array in edifileMatrix)
                         {
                             switch (array[0])
                             {
@@ -238,12 +234,24 @@ namespace G8M_ArchivosEDI
                                     };
                                     lastCodeOrder = array[1];
                                     lastOrder = order;
-
                                     break;
                                 case "DTM":
-                                    String fecha = array[1];
-                                    DateTime dateTime = DateTime.ParseExact(fecha, "yyyyMMdd", null);
+                                    String date = array[1];
+                                    DateTime dateTime = DateTime.ParseExact(date, "yyyyMMdd", null);
                                     lastOrder.dateOrder = dateTime;
+                                    break;
+                                case "NADMR":
+                                    String codeFactory = array[1];
+                                    Factory factory = db.Factories.FirstOrDefault(f => f.codeFactory == codeFactory);
+                                    lastOrder.Factory = factory;
+
+                                    db.Orders.Add(lastOrder);
+
+                                    lastOrderInfo.idOrder = lastOrder.idOrder;
+
+                                    db.OrderInfoes.Add(lastOrderInfo);
+
+                                    db.SaveChanges();
                                     break;
                                 case "NADMS":
                                     String codeAgency = array[2];
@@ -257,17 +265,19 @@ namespace G8M_ArchivosEDI
                                     };
                                     lastOrderInfo = orderInfo;
                                     break;
-                                case "NADMR":
-                                    String codeFactory = array[1];
-                                    Factory factory = db.Factories.FirstOrDefault(f => f.codeFactory == codeFactory);
-                                    lastOrder.Factory = factory;
-
-                                    db.Orders.Add(lastOrder);
-
-                                    lastOrderInfo.idOrder = lastOrder.idOrder;
-
-                                    db.OrderInfoes.Add(lastOrderInfo);
-
+                                case "QTYLIN":
+                                    int quantities = Convert.ToInt16(array[2]);
+                                    if (array[1] == "61")
+                                    {
+                                        quantities *= -1;
+                                    }
+                                    lastOrdersDetail.Quantity = (short)quantities;
+                                    break;
+                                case "DTMLIN":
+                                    String fechaDelivery = array[1];
+                                    DateTime dateTimeDelivery = DateTime.ParseExact(fechaDelivery, "yyyyMMdd", null);
+                                    lastOrdersDetail.DeliveryDate = dateTimeDelivery;
+                                    db.OrdersDetails.Add(lastOrdersDetail);
                                     db.SaveChanges();
                                     break;
                                 case "LIN":
@@ -287,27 +297,11 @@ namespace G8M_ArchivosEDI
                                     lastOrdersDetailId = ordersDetail.idOrderDetail;
 
                                     break;
-                                case "QTYLIN":
-                                    int cantidad = Convert.ToInt16(array[2]);
-                                    if (array[1] == "61")
-                                    {
-                                        cantidad *= -1;
-                                    }
-                                    lastOrdersDetail.Quantity = (short)cantidad;
-                                    break;
-                                case "DTMLIN":
-                                    String fechaDelivery = array[1];
-                                    DateTime dateTimeDelivery = DateTime.ParseExact(fechaDelivery, "yyyyMMdd", null);
-                                    lastOrdersDetail.DeliveryDate = dateTimeDelivery;
-                                    db.OrdersDetails.Add(lastOrdersDetail);
-                                    db.SaveChanges();
-                                    break;
                                 default:
                                     Console.WriteLine("Default case");
                                     break;
                             }
                         }
-
                         MessageBox.Show("EDI File Processed Sucessfully");
                     }
                 }

@@ -17,28 +17,5 @@ namespace G8_MillenniumCode
 		{
 			InitializeComponent();
 		}
-
-		private void button1_Click(object sender, EventArgs e)
-		{
-            string fileContent = "";
-            string filePath = "";
-
-            using (OpenFileDialog openFileDialog = new OpenFileDialog()) {
-                openFileDialog.InitialDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-                openFileDialog.Filter = "Edi files (*.edi)|*.edi" +"|"+ "All files (*.*)|*.*";
-                openFileDialog.FilterIndex = 2;
-                openFileDialog.RestoreDirectory = true;
-
-                if (openFileDialog.ShowDialog() == DialogResult.OK) {
-                    filePath = openFileDialog.FileName;
-                    Stream fileStream = openFileDialog.OpenFile();
-
-                    using (StreamReader reader = new StreamReader(fileStream)) {
-                        fileContent = reader.ReadToEnd();
-                    }
-                    MessageBox.Show(fileContent, "FILE: " + filePath, MessageBoxButtons.OK);
-                }
-            }
-        }
 	}
 }

@@ -39,7 +39,7 @@ namespace G8M_ArchivosEDI
             // 
             // btn_selectfile
             // 
-            this.btn_selectfile.Location = new System.Drawing.Point(12, 70);
+            this.btn_selectfile.Location = new System.Drawing.Point(12, 136);
             this.btn_selectfile.Name = "btn_selectfile";
             this.btn_selectfile.Size = new System.Drawing.Size(75, 23);
             this.btn_selectfile.TabIndex = 0;
@@ -49,7 +49,7 @@ namespace G8M_ArchivosEDI
             // 
             // btn_uploadfile
             // 
-            this.btn_uploadfile.Location = new System.Drawing.Point(12, 99);
+            this.btn_uploadfile.Location = new System.Drawing.Point(12, 165);
             this.btn_uploadfile.Name = "btn_uploadfile";
             this.btn_uploadfile.Size = new System.Drawing.Size(75, 23);
             this.btn_uploadfile.TabIndex = 1;
@@ -59,7 +59,7 @@ namespace G8M_ArchivosEDI
             // 
             // btn_download
             // 
-            this.btn_download.Location = new System.Drawing.Point(12, 128);
+            this.btn_download.Location = new System.Drawing.Point(12, 194);
             this.btn_download.Name = "btn_download";
             this.btn_download.Size = new System.Drawing.Size(75, 23);
             this.btn_download.TabIndex = 2;
@@ -74,12 +74,12 @@ namespace G8M_ArchivosEDI
             this.crviewer_planets.Cursor = System.Windows.Forms.Cursors.Default;
             this.crviewer_planets.Location = new System.Drawing.Point(103, 12);
             this.crviewer_planets.Name = "crviewer_planets";
-            this.crviewer_planets.Size = new System.Drawing.Size(563, 269);
+            this.crviewer_planets.Size = new System.Drawing.Size(743, 422);
             this.crviewer_planets.TabIndex = 3;
             // 
             // btn_crystalreports
             // 
-            this.btn_crystalreports.Location = new System.Drawing.Point(12, 158);
+            this.btn_crystalreports.Location = new System.Drawing.Point(12, 224);
             this.btn_crystalreports.Name = "btn_crystalreports";
             this.btn_crystalreports.Size = new System.Drawing.Size(75, 23);
             this.btn_crystalreports.TabIndex = 4;
@@ -89,7 +89,7 @@ namespace G8M_ArchivosEDI
             // 
             // btn_showcrystalreports
             // 
-            this.btn_showcrystalreports.Location = new System.Drawing.Point(12, 187);
+            this.btn_showcrystalreports.Location = new System.Drawing.Point(12, 253);
             this.btn_showcrystalreports.Name = "btn_showcrystalreports";
             this.btn_showcrystalreports.Size = new System.Drawing.Size(75, 23);
             this.btn_showcrystalreports.TabIndex = 5;
@@ -102,7 +102,7 @@ namespace G8M_ArchivosEDI
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(678, 293);
+            this.ClientSize = new System.Drawing.Size(858, 446);
             this.Controls.Add(this.btn_showcrystalreports);
             this.Controls.Add(this.btn_crystalreports);
             this.Controls.Add(this.crviewer_planets);

@@ -57,8 +57,6 @@ namespace G8_MillenniumCode
 
 			void btn_fnc(object sender2, EventArgs e2)
 			{
-				//Button btn = (Button)sender;
-				//MessageBox.Show(btn.Name.ToString());
 				this.formShowPanel.Controls.Clear();
 
 				Form newForm;

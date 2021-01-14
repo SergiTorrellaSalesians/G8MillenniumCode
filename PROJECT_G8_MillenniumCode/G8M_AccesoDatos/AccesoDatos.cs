@@ -32,7 +32,6 @@ namespace G8M_AccesoDatos
         }
         public string connectionString()
         {
-            //String hostname = System.Environment.MachineName; //Coge el nombre del ordenador
             string connectString = ConfigurationManager.ConnectionStrings["G8_MillenniumCode.Properties.Settings.SecureCoreConnectionString"].ToString();
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(connectString);
 
@@ -47,7 +46,6 @@ namespace G8M_AccesoDatos
             //SqlConnection conn;
             string cnx;
             cnx = connectionString();
-            //cnx = "Data Source=DESKTOP-3TIAVU5\\SQLEXPRESS;Initial Catalog=SecureCore;Integrated Security=True";//
             conn = new SqlConnection(cnx);
         }
 
@@ -65,7 +63,6 @@ namespace G8M_AccesoDatos
             conn.Open();
 
             adapter.Fill(dts, table_name);
-            //dtgAgencies.DataSource = dts.Tables[table_name]; //-> datagridview
 
             conn.Close();
 
@@ -85,7 +82,6 @@ namespace G8M_AccesoDatos
             conn.Open();
 
             adapter.Fill(dataset_portarperconsulta);
-            //dtgAgencies.DataSource = dts.Tables[table_name]; //-> datagridview
 
             conn.Close();
 
@@ -105,7 +101,6 @@ namespace G8M_AccesoDatos
             conn.Open();
 
             adapter.Fill(dataset_portarperconsulta, dataset_name);
-            //dtgAgencies.DataSource = dts.Tables[table_name]; //-> datagridview
 
             conn.Close();
 
@@ -137,16 +132,8 @@ namespace G8M_AccesoDatos
             return correct;
         }
 
-        //Hi haurà una funció Executa que rebrà una consulta de modificació, 
-        //inserció o esborrat
-        //i l’executarà directament sobre BBDD.
-
         public void Executa(string consulta)
         {
-            //string valor1, valor2;
-            //valor1 = "";
-            //valor2 = "";
-            //string query = "INSERT INTO Agencies(CodeAgencie, DescAgency) VALUES('"+ valor1 + "','" + valor2 + "')";
             string query = consulta;
 
             conn.Open();
@@ -157,13 +144,6 @@ namespace G8M_AccesoDatos
             conn.Close();
         }
 
-        /*
-        Una funció GeneraConsultaCerca que rebrà el nom de la taula i 
-        un Dictionary amb
-        nom de camp i valor del camp per tal de generar la consulta en runtime.
-        Aquesta consulta s’ha de generar parametritzada per tal d’evitar atacs 
-        de SQL Injection.
-        */
         public void GeneraConsultaCerca(string tablename, Dictionary<string, string> nomvalorcamps)
         {
             string query = "select count(*) from" + tablename;
@@ -172,15 +152,6 @@ namespace G8M_AccesoDatos
             int numAlumnes = (int)cmd.ExecuteScalar();
             cmd.Dispose();
         }
-
-        /*
-        Preveure que potser caldrà inserir imatges i/o documents en format PDF a la
-        BBDD. En la classe heretada caldrà implementar una funció que, en cas d’inserció o
-        modificació, permeti sobreescriure la funció Actualitza per tal de fer una crida a la
-        funció del base i a continuació modificar el registre acabat de modificar per tal de
-        modificar la fotografia o el document adjunt.
-        */
-
         public string GetTableData(string nomCamp, string query)
         {
             Connectar();

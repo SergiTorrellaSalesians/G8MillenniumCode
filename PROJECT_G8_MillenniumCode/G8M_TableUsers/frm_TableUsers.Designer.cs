@@ -42,6 +42,7 @@ namespace G8M_TableUsers
             this.tbx_code = new G8M_LibreriaControles.SWTextbox();
             this.tbx_login = new G8M_LibreriaControles.SWTextbox();
             this.tbx_password = new G8M_LibreriaControles.SWTextbox();
+            this.btn_usercard = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_actualitzar
@@ -199,12 +200,23 @@ namespace G8M_TableUsers
             this.tbx_password.TabIndex = 36;
             this.tbx_password.Tag = "Password";
             // 
+            // btn_usercard
+            // 
+            this.btn_usercard.Location = new System.Drawing.Point(442, 99);
+            this.btn_usercard.Name = "btn_usercard";
+            this.btn_usercard.Size = new System.Drawing.Size(75, 23);
+            this.btn_usercard.TabIndex = 37;
+            this.btn_usercard.Text = "Card";
+            this.btn_usercard.UseVisualStyleBackColor = true;
+            this.btn_usercard.Click += new System.EventHandler(this.btn_usercard_Click);
+            // 
             // frm_tableUsers
             // 
             this._nomTaula = "";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(642, 517);
+            this.Controls.Add(this.btn_usercard);
             this.Controls.Add(this.tbx_password);
             this.Controls.Add(this.tbx_login);
             this.Controls.Add(this.tbx_code);
@@ -237,6 +249,7 @@ namespace G8M_TableUsers
             this.Controls.SetChildIndex(this.tbx_code, 0);
             this.Controls.SetChildIndex(this.tbx_login, 0);
             this.Controls.SetChildIndex(this.tbx_password, 0);
+            this.Controls.SetChildIndex(this.btn_usercard, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,10 +260,6 @@ namespace G8M_TableUsers
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private G8M_LibreriaControles.SWComboFK swComboFK4;
-        private G8M_LibreriaControles.SWComboFK swComboFK3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -261,5 +270,6 @@ namespace G8M_TableUsers
         private G8M_LibreriaControles.SWTextbox tbx_code;
         private G8M_LibreriaControles.SWTextbox tbx_login;
         private G8M_LibreriaControles.SWTextbox tbx_password;
+        private System.Windows.Forms.Button btn_usercard;
     }
 }
