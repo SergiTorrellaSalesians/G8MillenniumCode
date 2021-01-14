@@ -11,6 +11,7 @@ using System.IO;
 using System.Configuration;
 using System.Net;
 using CrystalDecisions.CrystalReports.Engine;
+using System.Diagnostics;
 
 namespace G8M_ArchivosEDI
 {
@@ -95,45 +96,53 @@ namespace G8M_ArchivosEDI
 
         private void btn_download_Click(object sender, EventArgs e)
         {
-            if (fileName == "")
-            {
-                MessageBox.Show("No file selected");
-            } else
-            {
-                string finalpath = downloadserverpath + fileName;
-                string finaldownloadpath = downloadpath + fileName;
-                //MessageBox.Show(finalpath);
+            ProcessStartInfo startInfo = new ProcessStartInfo(@"C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_ConsoleApp.exe");
 
-                string inputfilepath = @"C:\Tractats\" + fileName;
-                string ftphost = serverip;
-                string ftpfilepath = downloadserverpath + fileName;
+            startInfo.Arguments = "header.h"; // Your arguments
 
-                string ftpfullpath = "ftp://" + ftphost + ftpfilepath;
+            Process.Start(startInfo);
 
-                try
-                {
-                    using (WebClient request = new WebClient())
-                    {
-                        request.Credentials = new NetworkCredential(user, password);
-                        byte[] fileData = request.DownloadData(ftpfullpath);
+            //Process.Start(startInfo);
+            //Process.Start(@"C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_ConsoleApp\G8M_ConsoleApp.exe");
+            //if (fileName == "")
+            //{
+            //    MessageBox.Show("No file selected");
+            //} else
+            //{
+            //    string finalpath = downloadserverpath + fileName;
+            //    string finaldownloadpath = downloadpath + fileName;
+            //    //MessageBox.Show(finalpath);
 
-                        using (FileStream file = File.Create(inputfilepath))
-                        {
-                            file.Write(fileData, 0, fileData.Length);
-                            file.Close();
-                        }
-                        MessageBox.Show("Download Complete");
-                    }
-                }
-                catch (WebException ex)
-                {
-                    //FtpWebResponse response = (FtpWebResponse)ex.Response;
-                    //if (response.StatusCode == FtpStatusCode.ActionNotTakenFileUnavailable)
-                    //{
+            //    string inputfilepath = @"C:\Tractats\" + fileName;
+            //    string ftphost = serverip;
+            //    string ftpfilepath = downloadserverpath + fileName;
 
-                    //}
-                }
-            }
+            //    string ftpfullpath = "ftp://" + ftphost + ftpfilepath;
+
+            //    try
+            //    {
+            //        using (WebClient request = new WebClient())
+            //        {
+            //            request.Credentials = new NetworkCredential(user, password);
+            //            byte[] fileData = request.DownloadData(ftpfullpath);
+
+            //            using (FileStream file = File.Create(inputfilepath))
+            //            {
+            //                file.Write(fileData, 0, fileData.Length);
+            //                file.Close();
+            //            }
+            //            MessageBox.Show("Download Complete");
+            //        }
+            //    }
+            //    catch (WebException ex)
+            //    {
+            //        //FtpWebResponse response = (FtpWebResponse)ex.Response;
+            //        //if (response.StatusCode == FtpStatusCode.ActionNotTakenFileUnavailable)
+            //        //{
+
+            //        //}
+            //    }
+            //}
         }
 
         private void frm_edis_Load(object sender, EventArgs e)

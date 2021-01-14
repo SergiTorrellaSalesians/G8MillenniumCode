@@ -163,5 +163,11 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\G8M_ConsoleApp\G8M_ConsoleApp.csproj">
+      <Project>{f0deb23a-3477-4b4c-96a7-9a2b3ab06c65}</Project>
+      <Name>G8M_ConsoleApp</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
