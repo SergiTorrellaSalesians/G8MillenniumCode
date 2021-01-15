@@ -202,7 +202,7 @@ namespace G8M_TableUsers
             // 
             // btn_usercard
             // 
-            this.btn_usercard.Location = new System.Drawing.Point(442, 99);
+            this.btn_usercard.Location = new System.Drawing.Point(443, 105);
             this.btn_usercard.Name = "btn_usercard";
             this.btn_usercard.Size = new System.Drawing.Size(75, 23);
             this.btn_usercard.TabIndex = 37;
