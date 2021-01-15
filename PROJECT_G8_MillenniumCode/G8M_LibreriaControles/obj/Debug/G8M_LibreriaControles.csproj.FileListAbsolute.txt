@@ -12,6 +12,7 @@ C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_L
 C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\obj\Debug\G8M_LibreriaControles.csproj.CoreCompileInputs.cache
 C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\obj\Debug\G8M_LibreriaControles.dll
 C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\obj\Debug\G8M_LibreriaControles.pdb
+C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\obj\Debug\G8M_LibreriaControles.csprojAssemblyReference.cache
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_LibreriaControles.dll
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_LibreriaControles.pdb
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\obj\Debug\G8M_LibreriaControles.csprojAssemblyReference.cache
@@ -23,4 +24,3 @@ C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_L
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\obj\Debug\G8M_LibreriaControles.csproj.CoreCompileInputs.cache
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\obj\Debug\G8M_LibreriaControles.dll
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\obj\Debug\G8M_LibreriaControles.pdb
-C:\Users\Torry\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_LibreriaControles\obj\Debug\G8M_LibreriaControles.csprojAssemblyReference.cache

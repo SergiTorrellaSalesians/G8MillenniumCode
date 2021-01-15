@@ -1,8 +1,11 @@
-﻿using System;
+﻿using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -99,7 +102,37 @@ namespace G8M_TableUsers
 
         private void btn_usercard_Click(object sender, EventArgs e)
         {
-            new frm_usercard().Show();
+            ReportDocument cryRpt = new ReportDocument();
+            ConnectionInfo crConnectionInfo = new ConnectionInfo();
+            TableLogOnInfo crtableLogoninfo = new TableLogOnInfo();
+
+            //cryRpt.Load("../Formularios/report.rpt");
+            string route = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
+            cryRpt.Load(route + @"\G8_MillenniumCode\cr_useridentification.rpt");
+            crConnectionInfo.ServerName = Environment.MachineName.ToString() + "\\SQLEXPRESS";
+            crConnectionInfo.IntegratedSecurity = true;
+            crConnectionInfo.DatabaseName = "SecureCore";
+            Tables CrTables = cryRpt.Database.Tables;
+
+            foreach (CrystalDecisions.CrystalReports.Engine.Table CrTable in CrTables)
+            {
+                crtableLogoninfo = CrTable.LogOnInfo;
+                crtableLogoninfo.ConnectionInfo = crConnectionInfo;
+                CrTable.ApplyLogOnInfo(crtableLogoninfo);
+            }
+
+            cryRpt.RecordSelectionFormula = "{Comando.UserName} = '" + tbx_username.Text+"'";
+            ////cryRpt.RecordSelectionFormula = "{Command.codeOrder} = 'Ord01'";
+
+
+            int printerId = 0;
+            do printerId++;
+            while (PrinterSettings.InstalledPrinters[printerId] != "Microsoft Print to PDF");
+
+            cryRpt.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, @"C:\UserCard\usercard.pdf");
+            //frm_usercard usercardFRM = new frm_usercard();
+            //usercardFRM.usernameCrystalReports = tbx_username.Text;
+            //usercardFRM.Show();
 
         }
         //public byte[] imageToByteArray(Image i)
