@@ -88,8 +88,8 @@ namespace G8M_ArchivosEDI
 
         private void btn_download_Click(object sender, EventArgs e)
         {
-            ProcessStartInfo startInfo = new ProcessStartInfo(@"C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_ConsoleApp.exe");
-
+            string route = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
+            ProcessStartInfo startInfo = new ProcessStartInfo(route + @"\DLL\G8M_ConsoleApp.exe");
             startInfo.Arguments = "header.h";
 
             Process.Start(startInfo);
@@ -309,10 +309,16 @@ namespace G8M_ArchivosEDI
                 MessageBox.Show("No file selected");
             } else {
                 var cryRpt = new ReportDocument();
-                cryRpt.Load(@"C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_ArchivosEDI\EDI_to_crystalreports.rpt");
+                string route = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
+                cryRpt.Load(route + @"\G8M_ArchivosEDI\EDI_to_crystalreports.rpt");
                 crviewer_planets.ReportSource = cryRpt;
                 crviewer_planets.Refresh();
             }
+        }
+
+        private void crviewer_planets_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
