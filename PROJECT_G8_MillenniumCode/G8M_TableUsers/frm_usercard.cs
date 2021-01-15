@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Drawing;
 using System.Windows.Forms;
 using CrystalDecisions.CrystalReports.Engine;
@@ -18,7 +19,8 @@ namespace G8M_TableUsers
         private void crystalReportViewer1_Load(object sender, EventArgs e)
         {
             var cryRpt = new ReportDocument();
-            cryRpt.Load(@"C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8_MillenniumCode\cr_useridentification.rpt");
+            string route = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
+            cryRpt.Load(route + @"\G8_MillenniumCode\cr_useridentification.rpt");
             crystalReportViewer1.ReportSource = cryRpt;
             crystalReportViewer1.Refresh();
         }
