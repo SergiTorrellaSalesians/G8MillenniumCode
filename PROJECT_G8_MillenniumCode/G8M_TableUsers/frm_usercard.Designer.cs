@@ -43,33 +43,38 @@ namespace G8M_TableUsers
             this.crystalReportViewer1.ActiveViewIndex = -1;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(-4, 50);
+            this.crystalReportViewer1.Location = new System.Drawing.Point(-5, 62);
+            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(792, 405);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1055, 498);
             this.crystalReportViewer1.TabIndex = 0;
+            this.crystalReportViewer1.ToolPanelWidth = 267;
             this.crystalReportViewer1.Load += new System.EventHandler(this.crystalReportViewer1_Load);
             // 
             // topbar
             // 
             this.topbar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.topbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.topbar.BackgroundImage = global::G8M_TableUsers.Properties.Resources.istockphoto_606667670_612x612;
             this.topbar.Controls.Add(this.line);
             this.topbar.Controls.Add(this.btn_topbarExit);
             this.topbar.Controls.Add(this.btn_topbarMinimize);
             this.topbar.Controls.Add(this.txt_topbarTitle);
             this.topbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.topbar.Location = new System.Drawing.Point(0, 0);
+            this.topbar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.topbar.Name = "topbar";
-            this.topbar.Size = new System.Drawing.Size(800, 39);
+            this.topbar.Size = new System.Drawing.Size(1067, 48);
             this.topbar.TabIndex = 1;
             // 
             // line
             // 
             this.line.BackColor = System.Drawing.Color.White;
             this.line.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.line.Location = new System.Drawing.Point(0, 38);
+            this.line.Location = new System.Drawing.Point(0, 47);
+            this.line.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.line.Name = "line";
-            this.line.Size = new System.Drawing.Size(800, 1);
+            this.line.Size = new System.Drawing.Size(1067, 1);
             this.line.TabIndex = 2;
             // 
             // btn_topbarExit
@@ -79,9 +84,10 @@ namespace G8M_TableUsers
             this.btn_topbarExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_topbarExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_topbarExit.ForeColor = System.Drawing.Color.White;
-            this.btn_topbarExit.Location = new System.Drawing.Point(755, -4);
+            this.btn_topbarExit.Location = new System.Drawing.Point(1007, -5);
+            this.btn_topbarExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_topbarExit.Name = "btn_topbarExit";
-            this.btn_topbarExit.Size = new System.Drawing.Size(45, 45);
+            this.btn_topbarExit.Size = new System.Drawing.Size(60, 55);
             this.btn_topbarExit.TabIndex = 0;
             this.btn_topbarExit.TabStop = false;
             this.btn_topbarExit.Text = "x";
@@ -95,9 +101,10 @@ namespace G8M_TableUsers
             this.btn_topbarMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_topbarMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_topbarMinimize.ForeColor = System.Drawing.Color.White;
-            this.btn_topbarMinimize.Location = new System.Drawing.Point(714, -4);
+            this.btn_topbarMinimize.Location = new System.Drawing.Point(952, -5);
+            this.btn_topbarMinimize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_topbarMinimize.Name = "btn_topbarMinimize";
-            this.btn_topbarMinimize.Size = new System.Drawing.Size(45, 48);
+            this.btn_topbarMinimize.Size = new System.Drawing.Size(60, 59);
             this.btn_topbarMinimize.TabIndex = 0;
             this.btn_topbarMinimize.TabStop = false;
             this.btn_topbarMinimize.Text = "—";
@@ -111,21 +118,23 @@ namespace G8M_TableUsers
             this.txt_topbarTitle.Font = new System.Drawing.Font("SimSun-ExtB", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_topbarTitle.ForeColor = System.Drawing.Color.Yellow;
-            this.txt_topbarTitle.Location = new System.Drawing.Point(1, 8);
+            this.txt_topbarTitle.Location = new System.Drawing.Point(1, 10);
+            this.txt_topbarTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txt_topbarTitle.Name = "txt_topbarTitle";
-            this.txt_topbarTitle.Size = new System.Drawing.Size(127, 24);
+            this.txt_topbarTitle.Size = new System.Drawing.Size(157, 30);
             this.txt_topbarTitle.TabIndex = 1;
             this.txt_topbarTitle.Text = "USER CARD";
             // 
             // frm_usercard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.topbar);
             this.Controls.Add(this.crystalReportViewer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frm_usercard";
             this.Text = "frm_usercard";
             this.topbar.ResumeLayout(false);
