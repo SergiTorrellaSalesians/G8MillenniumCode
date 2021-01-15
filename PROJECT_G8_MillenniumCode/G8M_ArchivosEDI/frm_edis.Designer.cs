@@ -39,9 +39,10 @@ namespace G8M_ArchivosEDI
             // 
             // btn_selectfile
             // 
-            this.btn_selectfile.Location = new System.Drawing.Point(12, 136);
+            this.btn_selectfile.Location = new System.Drawing.Point(16, 167);
+            this.btn_selectfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_selectfile.Name = "btn_selectfile";
-            this.btn_selectfile.Size = new System.Drawing.Size(75, 23);
+            this.btn_selectfile.Size = new System.Drawing.Size(100, 28);
             this.btn_selectfile.TabIndex = 0;
             this.btn_selectfile.Text = "Seleccionar";
             this.btn_selectfile.UseVisualStyleBackColor = true;
@@ -49,9 +50,10 @@ namespace G8M_ArchivosEDI
             // 
             // btn_uploadfile
             // 
-            this.btn_uploadfile.Location = new System.Drawing.Point(12, 165);
+            this.btn_uploadfile.Location = new System.Drawing.Point(16, 203);
+            this.btn_uploadfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_uploadfile.Name = "btn_uploadfile";
-            this.btn_uploadfile.Size = new System.Drawing.Size(75, 23);
+            this.btn_uploadfile.Size = new System.Drawing.Size(100, 28);
             this.btn_uploadfile.TabIndex = 1;
             this.btn_uploadfile.Text = "Subir Archivo";
             this.btn_uploadfile.UseVisualStyleBackColor = true;
@@ -59,9 +61,10 @@ namespace G8M_ArchivosEDI
             // 
             // btn_download
             // 
-            this.btn_download.Location = new System.Drawing.Point(12, 194);
+            this.btn_download.Location = new System.Drawing.Point(16, 239);
+            this.btn_download.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_download.Name = "btn_download";
-            this.btn_download.Size = new System.Drawing.Size(75, 23);
+            this.btn_download.Size = new System.Drawing.Size(100, 28);
             this.btn_download.TabIndex = 2;
             this.btn_download.Text = "Descargar";
             this.btn_download.UseVisualStyleBackColor = true;
@@ -72,16 +75,21 @@ namespace G8M_ArchivosEDI
             this.crviewer_planets.ActiveViewIndex = -1;
             this.crviewer_planets.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crviewer_planets.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crviewer_planets.Location = new System.Drawing.Point(103, 12);
+            this.crviewer_planets.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.crviewer_planets.Location = new System.Drawing.Point(137, 15);
+            this.crviewer_planets.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.crviewer_planets.Name = "crviewer_planets";
-            this.crviewer_planets.Size = new System.Drawing.Size(743, 422);
+            this.crviewer_planets.Size = new System.Drawing.Size(990, 519);
             this.crviewer_planets.TabIndex = 3;
+            this.crviewer_planets.ToolPanelWidth = 267;
+            this.crviewer_planets.Load += new System.EventHandler(this.crviewer_planets_Load);
             // 
             // btn_crystalreports
             // 
-            this.btn_crystalreports.Location = new System.Drawing.Point(12, 224);
+            this.btn_crystalreports.Location = new System.Drawing.Point(16, 276);
+            this.btn_crystalreports.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_crystalreports.Name = "btn_crystalreports";
-            this.btn_crystalreports.Size = new System.Drawing.Size(75, 23);
+            this.btn_crystalreports.Size = new System.Drawing.Size(100, 28);
             this.btn_crystalreports.TabIndex = 4;
             this.btn_crystalreports.Text = "Crear Reporte";
             this.btn_crystalreports.UseVisualStyleBackColor = true;
@@ -89,9 +97,10 @@ namespace G8M_ArchivosEDI
             // 
             // btn_showcrystalreports
             // 
-            this.btn_showcrystalreports.Location = new System.Drawing.Point(12, 253);
+            this.btn_showcrystalreports.Location = new System.Drawing.Point(16, 311);
+            this.btn_showcrystalreports.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_showcrystalreports.Name = "btn_showcrystalreports";
-            this.btn_showcrystalreports.Size = new System.Drawing.Size(75, 23);
+            this.btn_showcrystalreports.Size = new System.Drawing.Size(100, 28);
             this.btn_showcrystalreports.TabIndex = 5;
             this.btn_showcrystalreports.Text = "Mostrar";
             this.btn_showcrystalreports.UseVisualStyleBackColor = true;
@@ -99,17 +108,19 @@ namespace G8M_ArchivosEDI
             // 
             // frm_edis
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(858, 446);
+            this.BackgroundImage = global::G8M_ArchivosEDI.Properties.Resources.istockphoto_606667670_612x612;
+            this.ClientSize = new System.Drawing.Size(1144, 549);
             this.Controls.Add(this.btn_showcrystalreports);
             this.Controls.Add(this.btn_crystalreports);
-            this.Controls.Add(this.crviewer_planets);
             this.Controls.Add(this.btn_download);
             this.Controls.Add(this.btn_uploadfile);
             this.Controls.Add(this.btn_selectfile);
+            this.Controls.Add(this.crviewer_planets);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frm_edis";
             this.Text = "frm_edis";
             this.Load += new System.EventHandler(this.frm_edis_Load);

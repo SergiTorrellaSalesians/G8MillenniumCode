@@ -314,5 +314,10 @@ namespace G8M_ArchivosEDI
                 crviewer_planets.Refresh();
             }
         }
+
+        private void crviewer_planets_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
