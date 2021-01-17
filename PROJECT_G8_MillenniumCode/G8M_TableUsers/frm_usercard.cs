@@ -18,43 +18,11 @@ namespace G8M_TableUsers
         private bool mouseDown;
         private Point lastLocation;
         public string usernameCrystalReports;
+        public string codeuserCrystalReports;
 
         private void crystalReportViewer1_Load(object sender, EventArgs e)
         {
-            //var cryRpt = new ReportDocument();
-            //string route = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-            //cryRpt.Load(route + @"\G8_MillenniumCode\cr_useridentification.rpt");
-            //crystalReportViewer1.ReportSource = cryRpt;
-            //crystalReportViewer1.Refresh();
-
-            ReportDocument cryRpt = new ReportDocument();
-            ConnectionInfo crConnectionInfo = new ConnectionInfo();
-            TableLogOnInfo crtableLogoninfo = new TableLogOnInfo();
-
-            //cryRpt.Load("../Formularios/report.rpt");
-            string route = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-            cryRpt.Load(route + @"\G8_MillenniumCode\cr_useridentification.rpt");
-            crConnectionInfo.ServerName = "LAPTOP-45H9O8I4\\SQLEXPRESS";
-            crConnectionInfo.IntegratedSecurity = true;
-            crConnectionInfo.DatabaseName = "SecureCore";
-            Tables CrTables = cryRpt.Database.Tables;
-
-            foreach (CrystalDecisions.CrystalReports.Engine.Table CrTable in CrTables)
-            {
-                crtableLogoninfo = CrTable.LogOnInfo;
-                crtableLogoninfo.ConnectionInfo = crConnectionInfo;
-                CrTable.ApplyLogOnInfo(crtableLogoninfo);
-            }
-
-            cryRpt.RecordSelectionFormula = "{Comando.UserName} = " + usernameCrystalReports;
-            ////cryRpt.RecordSelectionFormula = "{Command.codeOrder} = 'Ord01'";
-
-
-            int printerId = 0;
-            do printerId++;
-            while (PrinterSettings.InstalledPrinters[printerId] != "Microsoft Print to PDF");
-
-            //cryRpt.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, @"C:rd.pdf");
+            rpt_usercard1.RecordSelectionFormula = "{Comando.CodeUser} = '" + codeuserCrystalReports+"'";
         }
 
         private void btn_topbarMinimize_Click(object sender, EventArgs e)

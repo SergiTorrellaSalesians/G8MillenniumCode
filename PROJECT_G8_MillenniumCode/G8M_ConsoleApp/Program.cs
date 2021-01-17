@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace G8M_ConsoleApp
 {
-    class Program
+    public class Program
     {
         static string serverpath = ConfigurationManager.AppSettings.Get("ServerPath");
         static string localpath = ConfigurationManager.AppSettings.Get("MovePath");

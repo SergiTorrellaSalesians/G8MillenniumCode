@@ -6,6 +6,7 @@ using System.IO;
 using System.Net;
 using CrystalDecisions.CrystalReports.Engine;
 using System.Diagnostics;
+using G8M_ConsoleApp;
 
 namespace G8M_ArchivosEDI
 {
@@ -88,11 +89,23 @@ namespace G8M_ArchivosEDI
 
         private void btn_download_Click(object sender, EventArgs e)
         {
-            string route = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-            ProcessStartInfo startInfo = new ProcessStartInfo(route + @"\DLL\G8M_ConsoleApp.exe");
-            startInfo.Arguments = "header.h";
+            //string route = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
+            //ProcessStartInfo startInfo = new ProcessStartInfo(route + @"\DLL\G8M_ConsoleApp.exe");
+
+            G8M_ConsoleApp.Program consoleApp = new Program();
+
+            ProcessStartInfo startInfo = new ProcessStartInfo("G8M_ConsoleApp.exe");
 
             Process.Start(startInfo);
+
+            //startInfo.Arguments = "header.h";
+
+            //Process.Start(startInfo);
+
+
+            //frm_usercard usercardFRM = new frm_usercard();
+            //usercardFRM.usernameCrystalReports = tbx_username.Text;
+            //usercardFRM.Show();
 
             //The following code downloads the EDI file from FTP Server using windows form
             //Process.Start(startInfo);
@@ -141,6 +154,8 @@ namespace G8M_ArchivosEDI
         private void frm_edis_Load(object sender, EventArgs e)
         {
             //crviewer_planets escondido??
+            //EDI_to_crystalreports1.Vis
+                //.Visible = true;
         }
 
         string lines = "";
@@ -310,15 +325,11 @@ namespace G8M_ArchivosEDI
             } else {
                 var cryRpt = new ReportDocument();
                 string route = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-                cryRpt.Load(route + @"\G8M_ArchivosEDI\EDI_to_crystalreports.rpt");
-                crviewer_planets.ReportSource = cryRpt;
+                //cryRpt.Load(route + @"\G8M_ArchivosEDI\EDI_to_crystalreports.rpt");
+                //crviewer_planets.ReportSource = cryRpt;
                 crviewer_planets.Refresh();
+                //EDI_to_crystalreports1.
             }
-        }
-
-        private void crviewer_planets_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

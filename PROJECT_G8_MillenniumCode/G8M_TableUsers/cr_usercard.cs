@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace G8_MillenniumCode {
+namespace G8M_TableUsers {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace G8_MillenniumCode {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class cr_useridentification : ReportClass {
+    public class cr_usercard : ReportClass {
         
-        public cr_useridentification() {
+        public cr_usercard() {
         }
         
         public override string ResourceName {
             get {
-                return "cr_useridentification.rpt";
+                return "cr_usercard.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace G8_MillenniumCode {
         
         public override string FullResourceName {
             get {
-                return "G8_MillenniumCode.cr_useridentification.rpt";
+                return "G8M_TableUsers.cr_usercard.rpt";
             }
             set {
                 // Do nothing
@@ -74,7 +74,7 @@ namespace G8_MillenniumCode {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section DetailSection1 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
             get {
                 return this.ReportDefinition.Sections[3];
             }
@@ -82,25 +82,17 @@ namespace G8_MillenniumCode {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
-            get {
-                return this.ReportDefinition.Sections[4];
-            }
-        }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
         public CrystalDecisions.CrystalReports.Engine.Section Section5 {
             get {
-                return this.ReportDefinition.Sections[5];
+                return this.ReportDefinition.Sections[4];
             }
         }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class Cachedcr_useridentification : Component, ICachedReport {
+    public class Cachedcr_usercard : Component, ICachedReport {
         
-        public Cachedcr_useridentification() {
+        public Cachedcr_usercard() {
         }
         
         [Browsable(false)]
@@ -137,7 +129,7 @@ namespace G8_MillenniumCode {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            cr_useridentification rpt = new cr_useridentification();
+            cr_usercard rpt = new cr_usercard();
             rpt.Site = this.Site;
             return rpt;
         }

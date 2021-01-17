@@ -35,17 +35,19 @@ namespace G8M_TableUsers
             this.btn_topbarExit = new System.Windows.Forms.Button();
             this.btn_topbarMinimize = new System.Windows.Forms.Button();
             this.txt_topbarTitle = new System.Windows.Forms.Label();
+            this.rpt_usercard1 = new G8M_TableUsers.rpt_usercard();
             this.topbar.SuspendLayout();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
             // 
-            this.crystalReportViewer1.ActiveViewIndex = -1;
+            this.crystalReportViewer1.ActiveViewIndex = 0;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(12, 50);
+            this.crystalReportViewer1.Location = new System.Drawing.Point(26, 67);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(776, 405);
+            this.crystalReportViewer1.ReportSource = this.rpt_usercard1;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(755, 359);
             this.crystalReportViewer1.TabIndex = 0;
             this.crystalReportViewer1.Load += new System.EventHandler(this.crystalReportViewer1_Load);
             // 
@@ -143,5 +145,6 @@ namespace G8M_TableUsers
         private System.Windows.Forms.Button btn_topbarExit;
         private System.Windows.Forms.Button btn_topbarMinimize;
         private System.Windows.Forms.Label txt_topbarTitle;
+        private rpt_usercard rpt_usercard1;
     }
 }

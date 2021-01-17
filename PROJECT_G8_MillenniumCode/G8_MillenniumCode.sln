@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G8_MillenniumCode", "G8_MillenniumCode\G8_MillenniumCode.csproj", "{15947912-29B2-435D-ACA1-E6B5551398FA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F0DEB23A-3477-4B4C-96A7-9A2B3AB06C65} = {F0DEB23A-3477-4B4C-96A7-9A2B3AB06C65}
+		{556C8698-272A-4DA7-B55B-64692B0B76C9} = {556C8698-272A-4DA7-B55B-64692B0B76C9}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G8M_FormBase", "G8M_FormBase\G8M_FormBase.csproj", "{F4633FEA-BC70-4823-BF39-03BDB0E42018}"
 EndProject
