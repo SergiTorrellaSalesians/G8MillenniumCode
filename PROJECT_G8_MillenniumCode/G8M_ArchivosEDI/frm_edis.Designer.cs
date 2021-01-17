@@ -153,6 +153,7 @@ namespace G8M_ArchivosEDI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_edis";
             this.Text = "frm_edis";
+            this.Load += new System.EventHandler(this.frm_edis_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

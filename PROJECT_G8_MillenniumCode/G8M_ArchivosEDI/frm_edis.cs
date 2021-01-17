@@ -257,7 +257,25 @@ namespace G8M_ArchivosEDI
 
         private void btn_showcrystalreports_Click(object sender, EventArgs e)
         {
-            EDI_to_crystalreports1.RecordSelectionFormula = "{Comando.codeOrder} = '" + ordercodetosearch + "'";
+            //panel1.Refresh;
+
+            ordercodetosearch = tbx_codeOrders.Text;
+
+            if (ordercodetosearch == "")
+            {
+                MessageBox.Show("Insert Code");
+            } else
+            {
+                panel1.Visible = true;
+
+                EDI_to_crystalreports1.RecordSelectionFormula = "{Comando.codeOrder} = '" + ordercodetosearch + "'";
+
+            }
+        }
+
+        private void frm_edis_Load(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
         }
     }
 }
