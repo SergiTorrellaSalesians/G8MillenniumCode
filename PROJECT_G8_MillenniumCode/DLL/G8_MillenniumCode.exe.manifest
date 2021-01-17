@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="G8_MillenniumCode.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="G8_MillenniumCode.exe" version="1.0.0.5" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="logo_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="G8_MillenniumCode" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -270,14 +271,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="G8_MillenniumCode.exe" size="708576">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="G8_MillenniumCode.exe" size="717792">
       <assemblyIdentity name="G8_MillenniumCode" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>aQhClvSGsZIC+FUQBW8GsOUwOxGcEN22CkwATiVVgdY=</dsig:DigestValue>
+        <dsig:DigestValue>Z/4FqegRFBe8tpB3DmX6glCWu3XS4gYkgihEZygy25w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -390,14 +391,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="G8M_TableUsers.dll" size="203264">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="G8M_TableUsers.dll" size="153088">
       <assemblyIdentity name="G8M_TableUsers" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vs0/BIKDHHej+sALknpKVMwrALmToANpWaZLJ3EPDrU=</dsig:DigestValue>
+        <dsig:DigestValue>PDnIYaB/GiMg/z2IYTGfyOPFfbEC0NelBVPQHvZGovo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -432,6 +433,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>dBm7+FhufmxAYwlxsdt2B1vOObcr0Or8JU+izNtS+sE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="logo_icon.ico" size="8828">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kbnEO1O0pXyh/RMK23mQMzuLU5NQu9vQCKMQ7xfkV9A=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

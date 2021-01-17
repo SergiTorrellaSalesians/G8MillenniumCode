@@ -61,12 +61,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cr_usercard.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>cr_usercard.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="frm_tableUsers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,10 +119,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="cr_usercard.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>cr_usercard.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_tableUsers.resx">
       <DependentUpon>frm_tableUsers.cs</DependentUpon>
     </EmbeddedResource>
