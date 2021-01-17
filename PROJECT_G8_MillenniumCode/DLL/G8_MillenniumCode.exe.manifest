@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="G8_MillenniumCode.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="G8_MillenniumCode.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="G8_MillenniumCode" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -294,26 +294,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="G8M_ArchivosEDI.dll" size="6938624">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="G8M_ArchivosEDI.dll" size="6939648">
       <assemblyIdentity name="G8M_ArchivosEDI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6M5TEBdVluplqCkbaoWYFBE3oKI4I2LxDod2mCZSDf8=</dsig:DigestValue>
+        <dsig:DigestValue>PuewGD9zxX2SAfu81OAm9QywlTkg5ng1A/ovkk+cRFQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="G8M_ConsoleApp.exe" size="8192">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="G8M_ConsoleApp.exe" size="7680">
       <assemblyIdentity name="G8M_ConsoleApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>VrVD6eIYv+4iTC2CuOavYknO+egG5h2umeM04swzmao=</dsig:DigestValue>
+        <dsig:DigestValue>Ibi3ID9jGgpgi7zB2xPpRuR6voW3VfaZ9rhPkKuY3Gg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

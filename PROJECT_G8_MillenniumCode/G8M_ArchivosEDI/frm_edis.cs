@@ -21,7 +21,8 @@ namespace G8M_ArchivosEDI
         public string uploadserverpath = @"/home/g7/";
         public string downloadserverpath = @"/home/g7/";
         public string downloadpath = @"C:/Tractats/";
-        
+
+        public string ordercodetosearch = "";
         public frm_edis()
         {
             InitializeComponent();
@@ -89,80 +90,18 @@ namespace G8M_ArchivosEDI
 
         private void btn_download_Click(object sender, EventArgs e)
         {
-            //string route = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-            //ProcessStartInfo startInfo = new ProcessStartInfo(route + @"\DLL\G8M_ConsoleApp.exe");
-
-            G8M_ConsoleApp.Program consoleApp = new Program();
 
             ProcessStartInfo startInfo = new ProcessStartInfo("G8M_ConsoleApp.exe");
 
             Process.Start(startInfo);
 
-            //startInfo.Arguments = "header.h";
-
-            //Process.Start(startInfo);
-
-
-            //frm_usercard usercardFRM = new frm_usercard();
-            //usercardFRM.usernameCrystalReports = tbx_username.Text;
-            //usercardFRM.Show();
-
-            //The following code downloads the EDI file from FTP Server using windows form
-            //Process.Start(startInfo);
-            //Process.Start(@"C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_ConsoleApp\G8M_ConsoleApp.exe");
-            //if (fileName == "")
-            //{
-            //    MessageBox.Show("No file selected");
-            //} else
-            //{
-            //    string finalpath = downloadserverpath + fileName;
-            //    string finaldownloadpath = downloadpath + fileName;
-            //    //MessageBox.Show(finalpath);
-
-            //    string inputfilepath = @"C:\Tractats\" + fileName;
-            //    string ftphost = serverip;
-            //    string ftpfilepath = downloadserverpath + fileName;
-
-            //    string ftpfullpath = "ftp://" + ftphost + ftpfilepath;
-
-            //    try
-            //    {
-            //        using (WebClient request = new WebClient())
-            //        {
-            //            request.Credentials = new NetworkCredential(user, password);
-            //            byte[] fileData = request.DownloadData(ftpfullpath);
-
-            //            using (FileStream file = File.Create(inputfilepath))
-            //            {
-            //                file.Write(fileData, 0, fileData.Length);
-            //                file.Close();
-            //            }
-            //            MessageBox.Show("Download Complete");
-            //        }
-            //    }
-            //    catch (WebException ex)
-            //    {
-            //        //FtpWebResponse response = (FtpWebResponse)ex.Response;
-            //        //if (response.StatusCode == FtpStatusCode.ActionNotTakenFileUnavailable)
-            //        //{
-
-            //        //}
-            //    }
-            //}
-        }
-
-        private void frm_edis_Load(object sender, EventArgs e)
-        {
-            //crviewer_planets escondido??
-            //EDI_to_crystalreports1.Vis
-                //.Visible = true;
+            startInfo.Arguments = "header.h";
         }
 
         string lines = "";
 
         private void btn_crystalreports_Click(object sender, EventArgs e)
         {
-            //crviewer_planets show
 
             if (fileName == "")
             {
@@ -170,7 +109,6 @@ namespace G8M_ArchivosEDI
             } else
             {
                 string EDIFilepath = downloadpath + fileName;
-                    //"RARROrderSample.edi";
 
                 using (OpenFileDialog openFileDialog = new OpenFileDialog())
                 {
@@ -319,17 +257,7 @@ namespace G8M_ArchivosEDI
 
         private void btn_showcrystalreports_Click(object sender, EventArgs e)
         {
-            if (fileName == "")
-            {
-                MessageBox.Show("No file selected");
-            } else {
-                var cryRpt = new ReportDocument();
-                string route = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-                //cryRpt.Load(route + @"\G8M_ArchivosEDI\EDI_to_crystalreports.rpt");
-                //crviewer_planets.ReportSource = cryRpt;
-                crviewer_planets.Refresh();
-                //EDI_to_crystalreports1.
-            }
+            EDI_to_crystalreports1.RecordSelectionFormula = "{Comando.codeOrder} = '" + ordercodetosearch + "'";
         }
     }
 }
