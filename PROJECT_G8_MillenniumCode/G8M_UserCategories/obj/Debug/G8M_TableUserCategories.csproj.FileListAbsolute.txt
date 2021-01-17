@@ -14,4 +14,3 @@ C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_U
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_UserCategories\obj\Debug\G8M_TableUserCategories.csproj.CopyComplete
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_UserCategories\obj\Debug\G8M_TableUserCategories.dll
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_UserCategories\obj\Debug\G8M_TableUserCategories.pdb
-C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_UserCategories\obj\Debug\G8M_TableUserCategories.csprojAssemblyReference.cache

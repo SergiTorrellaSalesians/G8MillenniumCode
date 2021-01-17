@@ -1,8 +1,11 @@
-﻿using System;
+﻿using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -99,7 +102,10 @@ namespace G8M_TableUsers
 
         private void btn_usercard_Click(object sender, EventArgs e)
         {
-            new frm_usercard().Show();
+            frm_usercard usercardFRM = new frm_usercard();
+            usercardFRM.usernameCrystalReports = tbx_username.Text;
+            usercardFRM.codeuserCrystalReports = tbx_code.Text;
+            usercardFRM.Show();
 
         }
         //public byte[] imageToByteArray(Image i)

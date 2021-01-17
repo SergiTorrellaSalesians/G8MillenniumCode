@@ -168,6 +168,10 @@
       <Project>{f0deb23a-3477-4b4c-96a7-9a2b3ab06c65}</Project>
       <Name>G8M_ConsoleApp</Name>
     </ProjectReference>
+    <ProjectReference Include="..\G8M_LibreriaControles\G8M_LibreriaControles.csproj">
+      <Project>{E4EE86A8-0F48-49FF-84B1-00E29CD07BEF}</Project>
+      <Name>G8M_LibreriaControles</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

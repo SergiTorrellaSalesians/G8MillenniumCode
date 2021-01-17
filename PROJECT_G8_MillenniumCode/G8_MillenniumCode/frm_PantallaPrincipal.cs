@@ -40,8 +40,9 @@ namespace G8_MillenniumCode
 					createButton(dr["nomOpcio"].ToString().Trim(), dr["ensamblat"].ToString().Trim(), dr["classe"].ToString().Trim());
 				}
 			}
-			createButton("MAIN", null, "frm_pantallaInicio");
-			Form newForm = new frm_pantallaInicio();
+            createButton("MAIN", null, "frm_pantallaInicio");
+            //createButton("MAIN", "./", "frm_pantallaInicio");
+            Form newForm = new frm_pantallaInicio();
 			newForm.TopLevel = false;
 			newForm.AutoScroll = true;
 			this.formShowPanel.Controls.Add(newForm);

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+    </startup>
+	<appSettings>
+		<add key="ServerPath" value="/home/g7/"/>
+		<add key="MovePath" value="C:/Tractats/"/>
+		<add key="ftpUser" value="g7"/>
+		<add key="ftpPassword" value="12345aA"/>
+		<add key="ftpServer" value="192.168.10.1"/>
+	</appSettings>
+</configuration>
