@@ -25,3 +25,12 @@ C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_T
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableSpecies\obj\Debug\G8M_TableSpecies.csproj.CopyComplete
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableSpecies\obj\Debug\G8M_TableSpecies.dll
 C:\Users\saman\Documents\GitHub\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableSpecies\obj\Debug\G8M_TableSpecies.pdb
+D:\Proyectos\github\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_TableSpecies.dll
+D:\Proyectos\github\G8MillenniumCode\PROJECT_G8_MillenniumCode\DLL\G8M_TableSpecies.pdb
+D:\Proyectos\github\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableSpecies\obj\Debug\G8M_TableSpecies.csprojAssemblyReference.cache
+D:\Proyectos\github\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableSpecies\obj\Debug\G8M_TableSpecies.frm_tableSpecies.resources
+D:\Proyectos\github\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableSpecies\obj\Debug\G8M_TableSpecies.csproj.GenerateResource.cache
+D:\Proyectos\github\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableSpecies\obj\Debug\G8M_TableSpecies.csproj.CoreCompileInputs.cache
+D:\Proyectos\github\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableSpecies\obj\Debug\G8M_TableSpecies.csproj.CopyComplete
+D:\Proyectos\github\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableSpecies\obj\Debug\G8M_TableSpecies.dll
+D:\Proyectos\github\G8MillenniumCode\PROJECT_G8_MillenniumCode\G8M_TableSpecies\obj\Debug\G8M_TableSpecies.pdb

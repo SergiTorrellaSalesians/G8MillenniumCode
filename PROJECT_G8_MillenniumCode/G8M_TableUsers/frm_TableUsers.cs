@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CrystalDecisions.CrystalReports.Engine;
 
 
 namespace G8M_TableUsers
@@ -32,6 +33,12 @@ namespace G8M_TableUsers
             userlist = db.Users.ToList();
             dtg_BBDDdata.DataSource = userlist;
             FerBinding();
+
+            var cryRpt = new ReportDocument();
+            cryRpt.Load(@"");
+            crystalReportViewer1.ReportSource = cryRpt;
+            crystalReportViewer1.Refresh();
+
         }
 
         private void FerBinding()
